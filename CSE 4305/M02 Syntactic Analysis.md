@@ -2,29 +2,29 @@
 
 ## Front end
 Character Stream 
-V
+V  
 **__Scanner (lexical analysis)__**  
-V
+V  
 Token stream  
-V
+V  
 **__Parser (syntax analysis)__**  
-V
+V  
 Parse tree  
 V  
 **__Semantic analysis and intermediate code generation__**  
-V  
+V   
 Abstract syntax tree or other intermediate form__**  
-V
+V  
 **__Machine-independent code improvement__** 
-V
+V  
 Modified intermediate form__**  
-V
+V  
 **__Target code generation__**  
-V
+V  
 Target language (e.g., assembler)__**  
-V
+V  
 **__Machine-specific code improvement__**  
-V
+V  
 Modified target language  
 
 
