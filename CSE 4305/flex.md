@@ -114,3 +114,19 @@ flex's regular expression (RE) syntax is from an earlie, simpler age and does no
 * \s
 * \w
 
+**\d** 
+decimal digit  
+[0-9]
+
+**\s**  
+whitespace character  
+[ \f\n\r\t\v ]  
+
+**\w**  
+"word" character  
+[_a-zA-Z0-9]  
+
+etc
+
+> See the Appendix: *flex Regular Expressions* for more details on flex's RE syntax.
+
