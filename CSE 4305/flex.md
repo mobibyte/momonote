@@ -35,3 +35,59 @@ Packages
    100 /var/lib/dpkg/status
 $
 ```
+and
+
+```
+$ cat /etc/os-release
+PRETTY_NAME="Raspbian GNU/Linux 10 (buster)"
+$ uname -a
+Linux icywits-01 5.10.103-v7+ #1529 SMP Tue Mar 8 12:21:37 GMT 2022
+armv7l GNU/Linux
+$ flex --version
+flex 2.6.4
+$ apt-cache policy flex
+flex:
+ Installed: 2.6.4-6.2
+ Candidate: 2.6.4-6.2
+ Version table:
+ *** 2.6.4-6.2 500
+ 500 http://raspbian.raspberrypi.org/raspbian buster/main
+armhf Packages
+ 100 /var/lib/dpkg/status
+$
+```
+That's no guarantee that an error hasn't crept in, though, so report any difficulties you might
+encounter, but please, please, please try it with flex 2.6.4 before reporting
+
+# Process
+
+Generally,
+• Put all of your flex input in a file named <whatever>.l , as described below.
+• Generate the lexical analyzer by executing flex <whatever>.l .
+• Include the resulting lex.yy.c file (the generated lexical analyzer) in the build of your entire
+program.
+Simple, eh?
+
+# Format
+The input file for flex should have a .l suffix. flex processes it line-by-line, collects the
+information it needs and generates the lex.yy.c lexical analyzer.
+
+flex 's parsing of its input file is quite primitive so it's easy to make a typographical error that
+destroys flex 's understanding of what you're trying to do.
+
+Be careful.
+Some items have to be on lines by themselves, some items have to start at the left margin (no
+whitespace allowed in front), some items must be indented, etc., etc. We try to highlight these
+requirements in the following explanations.
+
+One significant issue is flex 's processing of comments. It's safest to stick with C's /* ... */
+style of comments. You might get away with // style comments in various places, but it could take
+fiddling to figure out how to get flex to accept it. From the flex documentation,
+> If you want to follow a simple rule, then always begin a comment on a new line, with
+one or more whitespace characters before the initial /* . This rule will work anywhere
+in the input file.
+The examples all work properly, so you can check their structure, formatting, etc. to see what's
+allowed by flex .
+
+# Input File Structure
+A .l file is split into three sections and has this general format,
