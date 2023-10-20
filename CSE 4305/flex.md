@@ -16,8 +16,10 @@ I have in the past received some questions from students re: warnings / errors f
 
 Everything in these Notes has been tested using flex 2.6.4 in two development environments, with different processor architectures and kernel versions,
 
+```
 $ cat /etc/os-release
    PRETTY_NAME="Linux Mint 20.3"
 $ uname -a
 
 Linux Hoong 5.4.0-162-generic #179-Ubuntu SMP Mon Aug 14 08:51:31 UTC 2023 x
+```
