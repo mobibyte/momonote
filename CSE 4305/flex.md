@@ -113,6 +113,7 @@ flex's regular expression (RE) syntax is from an earlie, simpler age and does no
 * \d
 * \s
 * \w
+* etc
 
 **\d** 
 decimal digit  
@@ -126,7 +127,172 @@ whitespace character
 "word" character  
 [_a-zA-Z0-9]  
 
-etc
+
 
 > See the Appendix: *flex Regular Expressions* for more details on flex's RE syntax.
 
+What flex *does* support is the creation of *Defined Names*.  
+The definitions are put in the *Definitions Section* of the .l file.  
+Here are some example definitions,  
+
+DIGIT          [0-9]  
+WHITE_SPACE    [ \f\n\r\t\v]  
+WORD_CHAR      [_a-zA-Z0-9]  
+HEX_DIGIT      [a-fA-F0-9]  
+
+The name part of the definition can have letters, digits, hyphens ( - ), and underscores ( _ ), but it cannot start with a digit.  
+It should be at the left margin (that is, no wihtespace in front of the name).  
+
+In the *Rules Section* a defined name can be used in a pattern's RE by enlosing the name in braces { ... } .  
+So, for example, we could write the following,  
+
+/* Definitions Secction */  
+DIGIT   [0-9]  
+%%  
+/* Rules Section */  
+{DIGIT}+  {
+   printf( "Saw integer %d.\n", atoi( yytext ) );
+}
+
+The { ... } substitution can be used anywhere an RE can be used.  
+The corresponding definition of the name (enclosed in parentheses ( ... )) is substituted. The above example is equivalent to,  
+
+([0-9])+ {
+ printf( "Saw integer %d.\n", atoi( yytext ) );
+}
+
+Note how the {DIGIT} name was replaced with ([0-9]) . The parentheses are automatically
+wrapped around the definition before doing the substitution to preserve the meaning of the
+definition no matter where it gets inserted.
+
+## Options  
+%option lines are used to inform flex as to how this .l file should be processed. Usually these options could have been specified on the flex cocmmand line, but putting them in the .l file is tidier.  
+
+There are zillions of flex options that you can read about in the flex documentation.  
+Many are obscure and are relevant only in very special circumstances. We use a few in our examples, so we'll explain them here.  
+
+* Header file
+%option header-file="lex.yy.h"
+
+flex can generate a header file that exposes the external interface through which one can interact with the generated lexical analyzer. This is not important in the simpler examples as we put everything in the .l file but it will be important later when we generated bison parsers. This option says to generate that .h file with teh given name.
+> You might wonder why flex's generated lexical analyzer is named lex.yy.c by defulat (and why the header file is named lex.yy.h). The best answer is "for historical reasons". Ha!
+
+* Not an interactive lexer
+%option never-interactive
+Generally our examples are not interactive — that is, input is not coming from an interactive session
+with a user. By setting this option, we let flex know this and flex can therefore generate a
+somewhat faster analyzer. (It has to do with how flex deals with lookahead.)
+
+* A bunch of stuff we don't want
+%option nodefault
+%option noinput
+%option nounistd
+%option nounput
+%option noyywrap
+
+By default, flex includes a bunch of stuff in the generted lexical analyzer. If we're not using it, we don't want it. Therefore, we turn off a bunch of items.  
+
+nodefault means flex should not generate the default rule, which is a rule that would match
+any character that isn't otherwise consumed by the given patterns. We don't need this default rule in
+our lexers because we have written an explicit mechanism to catch illegal characters.  
+
+Even going beyond simple examples, you shouldn't let flex catch unexpected characters for you;
+your rules should match anything that can occur in the character stream, even if it's illegal. Doing the
+catching yourself helps in generating meaningful error messages. Using a “default” rule to catch
+illegal characters is just plain lazy, sloppy, and not indicative of good engineering practice. (Pretty
+judgmental, eh? :)  
+
+noinput and nounput mean flex should not generate the input() and yyunput()
+functions. We don't use them and if they are generated we're going to get defined but not
+used messages from the C compiler. (There are obscure cases where these two functions are useful,
+but we're not going to encounter them in an introductory example.)
+
+nounistd means don't try to include the <unistd.h> header file. We don't need it and don't
+want it  
+
+noyywrap means when we come to the end of the given input, we stop. There's no more input to
+process. (Complex scanning cases might involve multiple input files, but that's not going to come up in
+an introductory example.)  
+
+* Reports and warnings
+%option perf-report perf-report
+%option verbose verbose
+%option warn
+
+flex does a bunch of processing on your input. There are a number of statistics that can be
+displayed. It's useful to see them, especially the comments on anything that might be affecting the
+performance of generated lexical analyzer. The perf-report and verbose options are doubled
+because that causes flex to give more detailed reports.  
+
+flex can also detect certain issues with your input that are not really errors per se but would
+probably lead to unintended consequences. Specifying the warn option tells flex to warn you if
+these issues arise. (Why this option isn't on by default is beyond my comprehension.)  
+
+* Line numbering
+%option yylineno
+flex will count line numbers for you, but the capability is not turned on by default. This option
+enables line counting and makes the current line number available through the global variable
+yylineno .
+> While flex will count lines when this option is enabled, it doesn't initialize
+yylineno , so don't forget to set yylineno to 1 in your main routine. (Why
+doesn't flex do this initialization itself? Think about what use case would be affected
+if it did. :)
+
+## Included C Code  
+Sometimes you want to access certain C items inside the action routines associated with the patterns
+in the Rules Section. flex defines a bunch of useful items for you automatically. Others you will
+have to define yourself. You can put your C definitions in the Definitions Section inside %{ ... %}
+markers.  
+> In the examples, there are some items that we will be defining that are usually defined
+by bison . Since the introductory examples are standalone lexers, they don't get the
+advantages of working with bison . As we move into syntactic analysis, we will build
+combined flex and bison applications and we won't have to manually define these
+items.
+
+The format of this C block is, 
+%{
+ /* Your C items */
+%}  
+
+The %{ and %} have to each be on their own lines and must be at the left margin (that is, no
+whitespace before them).
+In the introductory example, we ...
+• Include some header files so we can call their defined functions in the action routines.
+• Define a token ID enumeration so we can refer to token categories with names instead of
+numbers.
+• Define the union yylval to keep token attributes.
+• Define the struct yylloc to keep the token location.
+• Define yycolno to keep the current column number.
+• Define YY_USER_ACTION to automatically update the token location before entering each
+action routine.
+
+Our included C code therefore looks like this,
+```
+%{
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+enum {
+ tok_ID = 256,
+ tok_INT_LIT,
+};
+union {
+ int intval;
+ char *strval;
+} yylval;
+typedef struct {
+ int first_line, first_column;
+ int last_line, last_column;
+} YYLTYPE;
+YYLTYPE yylloc;
+int yycolno;
+#define YY_USER_ACTION \
+ yylloc.first_line = yylloc.last_line = yylineno; \
+ yylloc.first_column = yycolno; \
+ yylloc.last_column = yycolno + yyleng - 1; \
+ yycolno += yyleng;
+%}
+```
+All of these items are threafter accessible in the Rules Section action routines.  
+
+# Rules Section
