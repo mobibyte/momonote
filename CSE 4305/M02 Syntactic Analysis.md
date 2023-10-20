@@ -15,7 +15,7 @@ V
 V   
 Abstract syntax tree or other intermediate form  
 V  
-**__Machine-independent code improvement__** 
+**__Machine-independent code improvement__**  
 V  
 Modified intermediate form  
 V  
