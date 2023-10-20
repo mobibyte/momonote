@@ -107,3 +107,10 @@ expressions) and %option lines (options that control the functioning of flex ). 
 any C code the user wants included at the front of the generated lexical analyzer file. This C code is
 normally items that will be used by the action routines associated with the patterns given in the Rules
 Section.
+
+## Definitions  
+flex's regular expression (RE) syntax is from an earlie, simpler age and does not support constructs such as 
+* \d
+* \s
+* \w
+
