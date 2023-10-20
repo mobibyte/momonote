@@ -91,3 +91,19 @@ allowed by flex .
 
 # Input File Structure
 A .l file is split into three sections and has this general format,
+/* Definitions */
+%%
+/* Rules */
+%%
+/* User Code /*
+
+The %% marks have to be the only characters on their lines and at the left margin (that is, have no
+whitespace in front of them).
+
+# Definitions Section
+
+The *Definitions Section* includes the specification of “definitions” (names for reusable units of regular
+expressions) and %option lines (options that control the functioning of flex ). Also included is
+any C code the user wants included at the front of the generated lexical analyzer file. This C code is
+normally items that will be used by the action routines associated with the patterns given in the Rules
+Section.
