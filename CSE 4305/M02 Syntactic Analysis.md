@@ -1,7 +1,7 @@
 # Phases of Compilation
 
 ## Front end
-Character Stream 
+Character Stream  
 V  
 **__Scanner (lexical analysis)__**  
 V  
