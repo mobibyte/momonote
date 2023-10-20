@@ -1,6 +1,6 @@
 # Phases of Compilation
 
-0. Character Stream  
+Character Stream  
 ⬇️  
 1. **__Scanner (lexical analysis)__**  
 ⬇️  
