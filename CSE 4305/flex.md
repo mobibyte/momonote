@@ -20,6 +20,18 @@ Everything in these Notes has been tested using flex 2.6.4 in two development en
 $ cat /etc/os-release
    PRETTY_NAME="Linux Mint 20.3"
 $ uname -a
-
 Linux Hoong 5.4.0-162-generic #179-Ubuntu SMP Mon Aug 14 08:51:31 UTC 2023 x
+2023 x86_64 x86_64 x86_64 GNU/Linux
+$ flex --version
+flex 2.6.4
+$ apt-cache policy flex
+flex:
+  Installed: 2.6.4-6.2
+  Candidate: 2.6.4-6.2
+  Version table:
+*** 2.6.4-6.2 500
+   500 http://archive.ubuntu.com/ubuntu focal/main amd64
+Packages
+   100 /var/lib/dpkg/status
+$
 ```
