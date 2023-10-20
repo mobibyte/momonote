@@ -1,7 +1,7 @@
 # Phases of Compilation
 
-0. Character Stream  
-V  
+  Character Stream  
+  V  
 1. **__Scanner (lexical analysis)__**  
 V  
 Token stream  
