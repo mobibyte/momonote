@@ -123,7 +123,7 @@ One of the *Non-terminal Symbols*
 
 # CFG Example  
 expr ⟶ id | number | - expr | ( expr ) | expr op expr  
-id ⟶ (_|a|b|...|z)(_|a|b|...|z|0|1|...|9)*
+id ⟶ (\_|a|b|...|z)(_|a|b|...|z|0|1|...|9)*  
 op ⟶ + | - | * | /
 
 Notice that expr refers to itself. This definition is recursive. 
