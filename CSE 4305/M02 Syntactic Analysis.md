@@ -33,7 +33,7 @@ Modified target language
 
 ## Back end
 5. Target code generation
-6. Machine=specific code improvement (optional)
+6. Machine-specific code improvement (optional)
 
 
 
