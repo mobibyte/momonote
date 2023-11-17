@@ -1,0 +1,240 @@
+#-----------------------------------------------------------------
+Exercise 00
+
+#-----------------------------------------------------------------
+Purpose:
+
+  * Demonstrate working C development environment.
+
+#-----------------------------------------------------------------
+Background:
+
+  C does essentially no management of how one's program uses
+    memory.  As I said in class, C not only lets you shoot
+    yourself in the foot, it even hands you the gun.
+
+  This can be viewed as a great disaster OR a great enabler.  :)
+    Seriously!  The access C gives programs over their address
+    spaces makes it incredibly easy to write low-level code such
+    as device drivers, operating systems, ultra high performance
+    library packages, and so forth.
+
+  However enabling for expert programmers, this lack of management
+    is a bit rough on less experienced ones.
+
+  We use the Address Sanitizer to help us out.  It costs in
+    performance, but will pick up on memory over- / underruns as
+    well as memory leaking.
+
+#-----------------------------------------------------------------
+Platforms:
+
+  This exercise and the following instructions work great on
+    Linux, the development environment used in this class.
+
+  Those of you with Windows machines should use a VM with a
+    Linux distribution installed or the WSL (Windows Subsystem
+    for Linux).  Either way, you'll be able to run this example
+    as if you were in a true Linux environment.
+
+  Those of you wanting to use MacOS have a slightly different
+    problem.  It turns out that MacOS doesn't really have gcc
+    installed.  In fact, when you ask for gcc, you actually get
+    clang, a different C compiler.
+
+    While clang is a great C compiler, it doesn't work just like
+    gcc (and why should it? :), so the build instructions in the
+    Makefile might not work for you even though the MacOS command
+    line is very Linux like.  You might have to do some research
+    and change the sanitizer flags (line 10 in the Makefile) or
+    C compiler flags (line 12 in the Makefile) or even something
+    else.
+
+    Let me know how it works for you.  I don't have access to a
+    MacOS machine to test it myself, but will circulate any
+    feedback from actual MacOS users.
+
+#-----------------------------------------------------------------
+Tasks:
+
+  1. Download EXER_00_dalioba.zip from Canvas.
+
+  2. Unzip this file to get EXER_00_dalioba.  Rename this
+      directory by changing "dalioba" to "abc1234", where
+      "abc1234" is YOUR NetID.
+
+  3. Look in that directory.  There's a Template directory that
+      has some files in it.  Move them up one level into the
+      'exer_00_abc1234' directory.
+
+  4. Change the header lines in the file the .c files.
+
+      -- Line 1:  Family name first, then a comma, then
+                  personal name.
+
+      -- Line 2:  Your NetID.
+
+      -- Line 3:  The date you edited the file, in the format
+                  YYYY-MM-DD (all digits!).
+
+  5. Do step 4 even though there's nothing to hand in for this
+      exercise.  Get in the habit of being tidy with your source
+      code!
+
+  6. Compile and run the test program hello.exe thusly,
+
+    $ make clean ; make hello.exe
+    rm -f *.o hello.exe leaky.exe overread.exe
+    gcc -g -Wall -Wextra -fsanitize=address -c hello.c
+    gcc -fsanitize=address -o hello.exe hello.o -lm
+    rm hello.o
+    $ ./hello.exe
+    Hello, world!  My C development environment WORKS!
+    $
+
+  7. Great, a correct C program worked.  Now let's try a C program
+      with a memory leak.  Compile and run leaky.exe thusly,
+
+    $ make clean ; make leaky.exe
+    rm -f *.o hello.exe leaky.exe overread.exe
+    gcc -g -Wall -Wextra -fsanitize=address -c leaky.c
+    gcc -fsanitize=address -o leaky.exe leaky.o -lm
+    rm leaky.o
+    $ ./leaky.exe
+    malloc( 128 ) returned 0x60c000000040
+    sum was -8448.
+    Stand back!  I'm about to commit a memory leak!
+
+    =================================================================
+    ==6072==ERROR: LeakSanitizer: detected memory leaks
+
+    Direct leak of 128 byte(s) in 1 object(s) allocated from:
+        #0 0x7fe5c5acb808 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cc:144
+        #1 0x558b0b8ac23e in main ./leaky.c:14
+        #2 0x7fe5c56a1082 in __libc_start_main ../csu/libc-start.c:308
+
+    SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+    $
+
+  8. Notice that when we run leaky, we get the expected output
+      from the printf() -- that message about what malloc()
+      returned.  (Your run will probably have a different memory
+      address.)
+
+     We also get the expected message "sum was -8448."  That sum
+      is computed by adding up the contents of the uninitialized
+      newly allocated memory.  (Your run will probably have a
+      different value.  It's uninitialized! :)
+
+     We also get is a report from the LeakSanitizer telling
+      us that we had a memory leak from the call to malloc() on
+      line 14.  (You can see the reference to 'main ./leaky.c:14'
+      in the message.)
+
+     Since we malloced that memory and didn't free it, there was
+      a leak.
+
+     Spiffy-keeno-useful!
+
+  9. Now let's try a C program that misuses dynamically allocated
+      memory.  The overread.exe example allocates some memory and
+      then tries to read outside the allocation.  Compile and run
+      overread.exe thusly,
+
+    $ make clean ; make overread.exe
+    rm -f *.o hello.exe leaky.exe overread.exe
+    gcc -g -Wall -Wextra -fsanitize=address -c overread.c
+    gcc -fsanitize=address -o overread.exe overread.o -lm
+    rm overread.o
+    $ ./overread.exe
+    malloc( 128 ) returned 0x60c000000040
+    Stand back!  I'm about to commit a memory overread!
+    =================================================================
+    ==6099==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60c0000000c0 at pc 0x55778ccd12cb bp 0x7ffd0a627200 sp 0x7ffd0a6271f0
+    READ of size 1 at 0x60c0000000c0 thread T0
+        #0 0x55778ccd12ca in main ./overread.c:27
+        #1 0x7fe91651e082 in __libc_start_main ../csu/libc-start.c:308
+        #2 0x55778ccd118d in _start (./overread.exe+0x118d)
+
+    0x60c0000000c0 is located 0 bytes to the right of 128-byte region [0x60c000000040,0x60c0000000c0)
+    allocated by thread T0 here:
+        #0 0x7fe916948808 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cc:144
+        #1 0x55778ccd125e in main ./overread.c:14
+        #2 0x7fe91651e082 in __libc_start_main ../csu/libc-start.c:308
+
+    SUMMARY: AddressSanitizer: heap-buffer-overflow ./overread.c:27 in main
+    Shadow bytes around the buggy address:
+      .
+      .
+      .
+    ==6099==ABORTING
+    $
+
+ 10. I've trimmed the output here so we can concentrate on the
+      first part of the report.
+
+     When we run overread.exe, we get the first message (the one
+      about what malloc() returned) and second message ('I'm about
+      to commit a memory overread!'), but we do not get the third
+      message (line 26).  Of course not.  It was in that call to
+      printf() that the memory overread was attempted.  The
+      sanitizer stopped the overread and gave us a report on what
+      happened.  We of course didn't get the fourth message (line
+      33) about getting past the overread line.
+
+     The report tells us there was an error,
+
+      ERROR: AddressSanitizer: heap-buffer-overflow ...
+
+     It also tells us where the error occurred,
+
+      #0 0x55778ccd12ca in main ./overread.c:27
+
+     It further informs us the overrun occurred in memory that
+      had been allocated at,
+
+      #1 0x55778ccd125e in main ./overread.c:14
+
+     Super-spiffy-keeno-useful!
+
+ 11. These useful reports from the sanitizer are great when one is
+      debugging a program written in C, a language whose usual
+      implementations otherwise do not give us very much in the
+      way of helpful info when memory usage goes wrong.
+
+     Using the sanitizer will make your program run more slowly
+      of course (since it's doing all that memory checking all
+      the time), but during debugging, it can be incredibly
+      useful.
+
+#-----------------------------------------------------------------
+Hints:
+  1. Ensure your program compiles and runs correctly.  You should
+      not get ANY warnings or errors when you compile.  ALWAYS
+      compile your code with -Wall and -Wextra and deal with ANY
+      warnings or errors that are identified.  ALWAYS compile your
+      code with -fsanitize=address and deal with ANY warnings or
+      errors reported during runs.
+
+     Ensure your hello results match those given in the Results/
+      subdirectory.  Not matching EXACTLY means you are not
+      performing the operations correctly.  (Or maybe you're on a
+      macOS or Windows machine.  Those environments have a history
+      of mucking with what a programmer does.  Still, even under
+      those environments, you ought to be able to get this to
+      work.)
+
+  2. The memory addresses displayed in the leaky and overread
+      results won't necessarily match as different environments
+      can have different memory layouts.  You should however
+      still see the same *kinds* of reporting of the memory leak
+      and the memory overread.
+
+  3. Ensure that you update the three header lines in the source
+      files with YOUR name (family name first, then a comma, then
+      your personal name), YOUR NetID, and the date you edit the
+      file, in the format YYYY-MM-DD (all digits!).  Not all that
+      important since you're not turning anything in for grading,
+      but it's good practice to be tidy.
+
+#-----------------------------------------------------------------

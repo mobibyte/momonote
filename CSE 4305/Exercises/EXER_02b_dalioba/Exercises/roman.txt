@@ -1,0 +1,66 @@
+//----------------------------------------------------------------
+// Roman numerals ...
+//----------------------------------------------------------------
+
+0r            // The NOTHING value -> 0
+
+// All permissible unit values ...
+0rI           //    1
+0rII          //    2
+0rIII         //    3
+
+0rIV          //    4
+
+0rV           //    5
+
+0rVI          //    6
+0rVII         //    7
+0rVIII        //    8
+
+0rIX          //    9
+
+// All permissible tens values ...
+0rX           //   10
+0rXX          //   20
+0rXXX         //   30
+
+0rXL          //   40
+
+0rL           //   50
+
+0rLX          //   60
+0rLXX         //   70
+0rLXXX        //   80
+
+0rXC          //   90
+
+// All permissible hundreds values ...
+0rC           //  100
+0rCC          //  200
+0rCCC         //  300
+
+0rCD          //  400
+
+0rD           //  500
+
+0rDC          //  600
+0rDCC         //  700
+0rDCCC        //  800
+
+0rCM          //  900
+
+// In thousands, we go up to 3,000 only ...
+0rM           // 1000
+0rMM          // 2000
+0rMMM         // 3000
+
+// Now combine thousands, hundreds, tens, and units into full
+//  numbers.
+
+0rMMMCMXCIX   // 3999
+0rMMMCDLVI    // 3456
+0rMMCCCXLV    // 2345
+0rMCCXXXIV    // 1234
+0rXLII        //   42
+
+//----------------------------------------------------------------

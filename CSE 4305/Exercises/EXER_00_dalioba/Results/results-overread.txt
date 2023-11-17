@@ -1,0 +1,55 @@
+$ make clean ; make overread.exe
+rm -f *.o hello.exe leaky.exe overread.exe
+gcc -g -Wall -Wextra -fsanitize=address -c overread.c
+gcc -fsanitize=address -o overread.exe overread.o -lm
+rm overread.o
+$ ./overread.exe
+malloc( 128 ) returned 0x60c000000040
+Stand back!  I'm about to commit a memory overread!
+=================================================================
+==39683==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60c0000000c0 at pc 0x5593387ca2cb bp 0x7ffe51a5a030 sp 0x7ffe51a5a020
+READ of size 1 at 0x60c0000000c0 thread T0
+    #0 0x5593387ca2ca in main ./overread.c:27
+    #1 0x7f68fe0ec082 in __libc_start_main ../csu/libc-start.c:308
+    #2 0x5593387ca18d in _start (./overread.exe+0x118d)
+
+0x60c0000000c0 is located 0 bytes to the right of 128-byte region [0x60c000000040,0x60c0000000c0)
+allocated by thread T0 here:
+    #0 0x7f68fe516808 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cc:144
+    #1 0x5593387ca25e in main ./overread.c:14
+    #2 0x7f68fe0ec082 in __libc_start_main ../csu/libc-start.c:308
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow ./overread.c:27 in main
+Shadow bytes around the buggy address:
+  0x0c187fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c187fff7fd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c187fff7fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c187fff7ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c187fff8000: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+=>0x0c187fff8010: 00 00 00 00 00 00 00 00[fa]fa fa fa fa fa fa fa
+  0x0c187fff8020: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c187fff8030: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c187fff8040: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c187fff8050: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c187fff8060: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==39683==ABORTING

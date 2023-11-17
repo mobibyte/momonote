@@ -1,0 +1,152 @@
+639 bytes read from 'tryMe.txt'.
+Tokens for
+  auto      break     case      char      const     continue
+  default   do        double    else      enum      extern
+  float     for       goto      if        inline    int
+  long      register  restrict  return    short     signed
+  sizeof    static    struct    switch    typedef   typeof
+  union     unsigned  void      volatile  while
+
+  +   -   *   /   ^   !
+  [   ]   (   )
+  <   >   =   <>    <=    >=
+
+  // A simple GCD routine
+  {
+    var i : int;
+    var j : int;
+
+    read "i? ", i, "j? ", j;
+
+    while i <> j {
+      if i > j {
+        i = i - j
+      } else {
+        j = j - i
+      }
+     };
+
+    write "GCD is ", i
+  }
+
+(1:3-6) Keyword 'auto' (263)
+(1:13-17) ID 'break'
+(1:23-26) ID 'case'
+(1:33-36) ID 'char'
+(1:43-47) ID 'const'
+(1:53-60) ID 'continue'
+(2:3-9) ID 'default'
+(2:13-14) ID 'do'
+(2:23-28) ID 'double'
+(2:33-36) ID 'else'
+(2:43-46) ID 'enum'
+(2:53-58) ID 'extern'
+(3:3-7) ID 'float'
+(3:13-15) ID 'for'
+(3:23-26) ID 'goto'
+(3:33-34) ID 'if'
+(3:43-48) ID 'inline'
+(3:53-55) ID 'int'
+(4:3-6) ID 'long'
+(4:13-20) ID 'register'
+(4:23-30) ID 'restrict'
+(4:33-38) ID 'return'
+(4:43-47) ID 'short'
+(4:53-58) ID 'signed'
+(5:3-8) ID 'sizeof'
+(5:13-18) ID 'static'
+(5:23-28) ID 'struct'
+(5:33-38) ID 'switch'
+(5:43-49) ID 'typedef'
+(5:53-58) ID 'typeof'
+(6:3-7) ID 'union'
+(6:13-20) ID 'unsigned'
+(6:23-26) ID 'void'
+(6:33-40) ID 'volatile'
+(6:43-47) ID 'while'
+(8:3) Illegal character '+' (0x2b)
+(8:7) Illegal character '-' (0x2d)
+(8:11) Illegal character '*' (0x2a)
+(8:15) Illegal character '/' (0x2f)
+(8:19) Illegal character '^' (0x5e)
+(8:23) Illegal character '!' (0x21)
+(9:3) Illegal character '[' (0x5b)
+(9:7) Illegal character ']' (0x5d)
+(9:11) Punctuation '(' (40)
+(9:15) Punctuation ')' (41)
+(10:3) Illegal character '<' (0x3c)
+(10:7) Illegal character '>' (0x3e)
+(10:11) Illegal character '=' (0x3d)
+(10:15) Illegal character '<' (0x3c)
+(10:16) Illegal character '>' (0x3e)
+(10:21) Illegal character '<' (0x3c)
+(10:22) Illegal character '=' (0x3d)
+(10:27) Illegal character '>' (0x3e)
+(10:28) Illegal character '=' (0x3d)
+(12:3) Illegal character '/' (0x2f)
+(12:4) Illegal character '/' (0x2f)
+(12:6) ID 'A'
+(12:8-13) ID 'simple'
+(12:15-17) ID 'GCD'
+(12:19-25) ID 'routine'
+(13:3) Illegal character '{' (0x7b)
+(14:5-7) ID 'var'
+(14:9) ID 'i'
+(14:11) Illegal character ':' (0x3a)
+(14:13-15) ID 'int'
+(14:16) Illegal character ';' (0x3b)
+(15:5-7) ID 'var'
+(15:9) ID 'j'
+(15:11) Illegal character ':' (0x3a)
+(15:13-15) ID 'int'
+(15:16) Illegal character ';' (0x3b)
+(17:5-8) ID 'read'
+(17:10) Illegal character '"' (0x22)
+(17:11) ID 'i'
+(17:12) Illegal character '?' (0x3f)
+(17:14) Illegal character '"' (0x22)
+(17:15) Illegal character ',' (0x2c)
+(17:17) ID 'i'
+(17:18) Illegal character ',' (0x2c)
+(17:20) Illegal character '"' (0x22)
+(17:21) ID 'j'
+(17:22) Illegal character '?' (0x3f)
+(17:24) Illegal character '"' (0x22)
+(17:25) Illegal character ',' (0x2c)
+(17:27) ID 'j'
+(17:28) Illegal character ';' (0x3b)
+(19:5-9) ID 'while'
+(19:11) ID 'i'
+(19:13) Illegal character '<' (0x3c)
+(19:14) Illegal character '>' (0x3e)
+(19:16) ID 'j'
+(19:18) Illegal character '{' (0x7b)
+(20:7-8) ID 'if'
+(20:10) ID 'i'
+(20:12) Illegal character '>' (0x3e)
+(20:14) ID 'j'
+(20:16) Illegal character '{' (0x7b)
+(21:9) ID 'i'
+(21:11) Illegal character '=' (0x3d)
+(21:13) ID 'i'
+(21:15) Illegal character '-' (0x2d)
+(21:17) ID 'j'
+(22:7) Illegal character '}' (0x7d)
+(22:9-12) ID 'else'
+(22:14) Illegal character '{' (0x7b)
+(23:9) ID 'j'
+(23:11) Illegal character '=' (0x3d)
+(23:13) ID 'j'
+(23:15) Illegal character '-' (0x2d)
+(23:17) ID 'i'
+(24:7) Illegal character '}' (0x7d)
+(25:6) Illegal character '}' (0x7d)
+(25:7) Illegal character ';' (0x3b)
+(27:5-9) ID 'write'
+(27:11) Illegal character '"' (0x22)
+(27:12-14) ID 'GCD'
+(27:16-17) ID 'is'
+(27:19) Illegal character '"' (0x22)
+(27:20) Illegal character ',' (0x2c)
+(27:22) ID 'i'
+(28:3) Illegal character '}' (0x7d)
