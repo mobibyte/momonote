@@ -83,6 +83,9 @@ int yycolno;
 
 /* Some definitions to make the REs below easier to understand. */
 DIGIT       [0-9]
+/* Make a definition for hex "digits" */
+/* Allow a-f and A-F. Name it HEXIT -- for hex "digit" */
+HEXIT       [a-zA-Z0-9]
 WORD_CHAR   [_a-zA-Z0-9]
 
 %% //---- RULES --------------------------------------------------
