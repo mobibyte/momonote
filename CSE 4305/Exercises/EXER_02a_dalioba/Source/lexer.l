@@ -1,6 +1,6 @@
-  // Dalio, Brian A.
-  // dalioba
-  // 2023-10-20
+  // Vester, Diego A.
+  // dxg9342
+  // 2023-12-23
 
   //---- DEFINITIONS  --------------------------------------------
 
@@ -217,7 +217,11 @@ typedef struct {
 } Keyword;
 
 Keyword keywords[] = {
-  { "auto", tok_AUTO }
+  { "auto", tok_AUTO },
+  { "break", tok_BREAK },
+  { "case", tok_CASE },
+  { "char", tok_CHAR },
+  { "const", tok_CONST }
 };
 
 #define NUM_KEYWORDS ( sizeof(keywords) / sizeof(Keyword) )
@@ -318,6 +322,22 @@ int main( int argc, char *argv[] )
         break;
 
       case tok_AUTO :
+        printf( "Keyword '%s' (%d)\n", tokToKW( tok ), tok );
+        break;
+
+      case tok_BREAK :
+        printf( "Keyword '%s' (%d)\n", tokToKW( tok ), tok );
+        break;
+
+      case tok_CASE :
+        printf( "Keyword '%s' (%d)\n", tokToKW( tok ), tok );
+        break;
+
+      case tok_CHAR :
+        printf( "Keyword '%s' (%d)\n", tokToKW( tok ), tok );
+        break;
+
+      case tok_CONST :
         printf( "Keyword '%s' (%d)\n", tokToKW( tok ), tok );
         break;
 

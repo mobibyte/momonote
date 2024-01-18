@@ -1,6 +1,6 @@
-  // Dalio, Brian A.
-  // dalioba
-  // 2023-09-08
+  // Vester, Diego A.
+  // dxg9342
+  // 2023-12-01
 
   //---- DEFINITIONS  --------------------------------------------
 
@@ -44,6 +44,10 @@
 enum {
   tok_ID = 256,
   tok_INT_LIT,
+  tok_HEX_LIT,
+  tok_BIN_LIT,
+  tok_OCT_LIT,
+  tok_REAL_LIT,
 };
 
 // yylval is the union of all possible attributes that can be
@@ -53,6 +57,7 @@ enum {
 union {
   int   intval;
   char *strval;
+  double realval;
 } yylval;
 
 // yylloc is the location of the token.  This is usually defined
@@ -85,10 +90,34 @@ int yycolno;
 DIGIT       [0-9]
 /* Make a definition for hex "digits" */
 /* Allow a-f and A-F. Name it HEXIT -- for hex "digit" */
-HEXIT       [a-zA-Z0-9]
+HEXIT       0x([0-9a-fA-F]+)
+/*
+As soon as that works, you are clearly omnipotent.  Make up
+    another rule for binary integer literals.  These will start
+    with 0b and have only 0 and 1 as possible "digits".*/
+BINIT       0b([0-1]+)
 WORD_CHAR   [_a-zA-Z0-9]
+/*
+With that done, do another rule to recognize octal integer
+    literals.  These begin with 0o and have 0-7 as possible
+    "digits".*/
+OCTIT       0o([0-7]+)
+/*Make a rule whose pattern matches such things as 1.234 or
+        .123 or 123. or ...  These are digit strings with EXACTLY
+        one decimal point somewhere in the middle or at the front
+        or at the end.*/
+REAL_LIT    ([0-9]*\.[0-9]+|[0-9]+\.[0-9]*)
 
 %% //---- RULES --------------------------------------------------
+
+{REAL_LIT}+  {
+  //Use atof() to convert the characters indicated by yytext
+  //      into a double and assign it to yylval.realval.
+  yylval.realval = atof( yytext );
+
+  // We successfully scanned an integer literal.
+  return tok_REAL_LIT;
+}
 
 {DIGIT}+  {
   // An integer literal has the decimal value of the string of
@@ -98,6 +127,45 @@ WORD_CHAR   [_a-zA-Z0-9]
   // We successfully scanned an integer literal.
   return tok_INT_LIT;
 }
+
+{HEXIT}+  {
+  //Make a rule for hex literals.  This will look like the one
+  //      for decimal literals in lines 90-97 but will have a
+  //      pattern that recognizes such things as 0xaBc or 0x123 or
+  //      0xDeadBeef or ...
+  //
+  //      Also, the strtol() call in the action routine should use
+  //      16 for the base and it should start the conversion at
+  //      yytext+2.  (Why?)
+
+  yylval.intval = (int) strtol( yytext+2, NULL, 16 );
+
+  // We successfully scanned an integer literal.
+  return tok_HEX_LIT;
+}
+
+
+
+{BINIT}+  {
+
+  yylval.intval = (int) strtol( yytext+2, NULL, 16 );
+
+  // We successfully scanned an integer literal.
+  return tok_BIN_LIT;
+}
+
+{OCTIT}+  {
+
+
+  yylval.intval = (int) strtol( yytext+2, NULL, 16 );
+
+  // We successfully scanned an integer literal.
+  return tok_OCT_LIT;
+}
+
+
+
+
 
 [_a-zA-Z]{WORD_CHAR}*  {
   // An id has a MALLOCed copy of the characters that make it up
@@ -219,6 +287,22 @@ int main( int argc, char *argv[] )
 
       case tok_INT_LIT:
         printf( "INTEGER_LITERAL %d\n", yylval.intval );
+        break;
+
+      case tok_HEX_LIT:
+        printf( "HEX_LITERAL %d\n", yylval.intval );
+        break;
+
+      case tok_BIN_LIT:
+        printf( "BIN_LITERAL %d\n", yylval.intval );
+        break;
+
+      case tok_OCT_LIT:
+        printf( "OCT_LIT_YOUR_MOM %d\n", yylval.intval );
+        break;
+      
+      case tok_REAL_LIT:
+        printf( "REAL_LITERAL %f\n", yylval.realval );
         break;
 
       default:

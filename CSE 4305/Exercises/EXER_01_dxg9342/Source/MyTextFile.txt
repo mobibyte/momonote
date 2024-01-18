@@ -1,0 +1,1 @@
+fred _ 15 1234.345 "bob" Maddog87 0xaBc 0x123 0xDeadBeef 0b010101 0b101 0o1234567 123. .123 123.456
