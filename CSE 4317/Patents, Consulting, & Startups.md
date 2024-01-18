@@ -134,7 +134,7 @@ The other thing is to attend professional networking events. You have to go talk
 Having a good publication White papers you publish on your own is good too.  
 When someone googles your name, they should 
 
-*Could you tell us about Cloud9?*
+*Could you tell us about Cloud9?*  
 Cloud 9  
 James was the cofounder  
 Camera in box  
