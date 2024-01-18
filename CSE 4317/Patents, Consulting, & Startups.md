@@ -134,12 +134,15 @@ The other thing is to attend professional networking events. You have to go talk
 Having a good publication White papers you publish on your own is good too.  
 When someone googles your name, they should 
 
+*Could you tell us about Cloud9?*  
 Cloud 9  
 James was the cofounder  
 Camera in box  
 Still close with the cofounder.
+
+What McMurrough learned:
 Don't dilute, don't sell too many shares to one investor.  
-He and I made enough money to make it worth our time. It was like the wild west, we have a lot of battle scares.
+He and I made enough money to make it worth our time. It was like the wild west, we have a lot of battle scars.
 
 You could do the same thing that other people are doing, but you can do it cheaper and faster and be successful. If you infringe upon their patents or copyright, your company might get in trouble. Not you personall though.  
 
