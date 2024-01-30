@@ -1,4 +1,3 @@
-
 **1. Explain the fundamentals of atomic structures and define a bond.**  
 
 **2. Explain the main function of a cell’s plasma membrane.**  
@@ -20,3 +19,4 @@
 **10.Explain why active transport is important to a cell.**  
 
 **11.Identify similarities & differences between these transport processes: diffusion, facilitated diffusion, osmosis, primary active transport, secondary active transport.** 
+
