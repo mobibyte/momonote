@@ -1,13 +1,11 @@
-Date: Jan 30, 2024  
-
-**DNA is "copied" into mRNA.** 
+**DNA is "copied" into mRNA.**   
 The nucleus  
 
 **mRNA is "read" and amino acids are attached to each other.**  
 The ribosomes  
 
 **The amino acid chain is modified and sent to its correct cellular location.**  
-
+The Golgi apparatus (a.k.a. Golgi body)
 
 **The completed amino acid chain folds and moves through this organelle.**  
 The rough endoplasmic reticulum (ER)  
@@ -50,3 +48,29 @@ The chloroplasts
 
 **Lysosomes are an organelle found**  
 ONLY in animal cells  
+
+
+**These organelles perform photosynthesis and generate ATP.** 
+
+**This organelle stores the cell's genetic information**  
+The nucleus   
+
+Protein synthesis is a process that involves many locations in a cell.
+
+
+Match  
+**These organelles make ATP.**   
+The mitochondria 
+
+**These short extensions outside a cell help to move things across the surface of the cell.**  
+The cilia  
+
+**The nucleus is an organelle found**  
+in both animal and plant cells
+
+**Which of these is something that both eukaryotic AND prokaryotic cells have?**  
+A plasma membrane
+
+
+**A cell needs to be able to break down a lot of intracellular waste. Which of these organelles would it need more of to meet this need?**   
+Lysosomes  
