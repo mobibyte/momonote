@@ -12,6 +12,15 @@ List
 - iterative deepening search  
 - uniform cost search
 
+## Breadth-first search
+Fringe is A  
+
+| Nodes Popped | State Added to Closed| Nodes Added to Fringe |
+|--------------|----------------------|-----------------------|
+| A            | A                    | B C                   |
+| B            | B                    | A C E D               |
+
+
 # Task 2  
 A social network graph (SNG) is a graph where each vertex is a person and each edge represents an acquaintance.  
 In other words, an SNG is a graph showing who knows who. 
@@ -86,11 +95,20 @@ Heuristic 4:
 
 
 # Task 5  
-Figures 4 and 5 show maps where all the towns are on a grid. Each town T has coordinates (Ti, Tj), where Ti Tj are non-negative integers. We use the term Euclidean distance for the straight-line distance between two towns, and the term driving distance for the length of the shortest driving route connecting two towns. The only roads that exist connect towns that have Euclidean (straight-line) distance 1 from each other (however, there may be towns with Euclidean distance 1 from each other that are NOT directly connected by a road, for example in Figure 5).
+Figures 4 and 5 show maps where all the towns are on a grid. 
+Each town T has coordinates (Ti, Tj), 
+where Ti Tj are non-negative integers. 
+We use the term Euclidean distance for the straight-line distance between two towns, 
+and the term driving distance for the length of the shortest driving route connecting two towns. 
+
+The only roads that exist connect towns that have Euclidean (straight-line) distance 1 from each other (however, there may be towns with Euclidean distance 1 from each other that are NOT directly connected by a road, for example in Figure 5).
 
 Note: Euclidean distance formula is given here.
 
-Consider greedy search, where the node to be expanded is always the one with the shortest Euclidean distance to the destination. Also consider A* search, where h(n) is the Euclidean distance from n to the destination (remember that the next node is picked not based on h(n) but based on f(n) = g(n) + h(n)). For each of the maps showing on Figures 4 and 5, which of the following statements is true?
+Consider greedy search, where the node to be expanded is always the one with the shortest Euclidean distance to the destination. 
+Also consider A* search, where h(n) is the Euclidean distance from n to the destination (remember that the next node is picked not based on h(n) but based on f(n) = g(n) + h(n)). 
+
+For each of the maps showing on Figures 4 and 5, which of the following statements is true?
 
     Greedy search always performs better than or the same as A*.
     Greedy search always performs worse than or the same as A*.
