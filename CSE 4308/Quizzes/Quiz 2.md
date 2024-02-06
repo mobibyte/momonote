@@ -1,6 +1,4 @@
-Samples for Quiz 2
-
-Task 1
+# Task 1
 
 Consider a search space, where each state can be red, green, blue, yellow, or black. Multiple states may have the same color. The goal is to reach any black state. Here are some rules on the successors of different states, based on their color (these successor functions are unidirectional):
 Red states can only have green or blue children.
@@ -11,10 +9,11 @@ Black states can only have green or black children.
 Define a maximally admissible heuristic that assigns a value to each state based only on the color of that state
 
 Assume that any move from one state to another has cost 1. 
-Task 2
 
+# Task 2
 
-A game search tree
+![Figure 1](https://github.com/mobiclub/notes/blob/main/CSE%204308/Quizzes/assets/q2_f1.jpeg)
+
 Figure 1: A game search tree.
 a. In the game search tree of Figure 1, if we use Minmax algorithm to find the strategy to use, indicate the minmax values are for all the nodes. Also incidcate which action the Minmax algorithm will pick to exectute.
 
@@ -22,26 +21,30 @@ b. In the game search tree of Figure 1, indicate what nodes will be pruned using
 
 c. This question is also on the game search tree of Figure 1. Suppose we are given some additional knowledge about the game: the maximum utility value is 12 i.e., it is not mathematically possible for the MAX player to get an outcome greater than 12 and the minimum utility value is 2 i.e., it is not mathematically possible for the MIN player to get an outcome lower than 2. How can this knowledge be used to further improve the efficiency of alpha-beta search? Indicate the nodes that will be pruned using this improvement. Again, assume that alpha-beta search expands nodes in a left-to-right order.
 
-Task 3
+# Task 3
 
 Suppose that you want to implement an algorithm that will compete on a two-player deterministic game of perfect information. Your opponent is a supercomputer called DeepGreen. DeepGreen does not use Minimax. You are given a library function DeepGreenMove(S), that takes any state S as an argument, and returns the move that DeepGreen will choose for that state S (more precisely, DeepGreenMove (S) returns the state resulting from the opponent's move).
 Write an algorithm in pseudocode (following the style of the Minimax pseudocode) that will always make an optimal decision given the knowledge we have about DeepGreen. You are free to use the library function DeepGreenMove(S) in your pseudocode. What advantage would this algorithm have over Minimax? (if none, Justify).
 
-Task 4
+# Task 4
 
- Expectiminmax tree
+![Figure 2](https://github.com/mobiclub/notes/blob/main/CSE%204308/Quizzes/assets/q2_f2.png)
+
 Figure 2: An Expectiminmax tree.
 
 Find the value of every non-terminal node in the expectiminmax tree given above. Also indicate which action will be performed by the algoirithm. What is lowest and highest possible outcome of a single game if the minmax strategy is followed against an optimal opponent?
 
-Task 5
+# Task 5
+
+
 
 Max: [4308: 35 Points (+5 Pts EC), 5360: 35 Points (+5 Pts EC)]
 
 Consider the following map.
 
-Map Outline
+![Figure 3](https://github.com/mobiclub/notes/blob/main/CSE%204308/Quizzes/assets/q2_f3.png)
 Figure 3: Outline of a Map
+
 
 The problem is to color the sections such that no two sections sharing a border have the same color. You are allowed to use the colors (Red, Green, Blue).
 
