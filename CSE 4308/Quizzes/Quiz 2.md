@@ -1,11 +1,12 @@
 # Task 1
 
 Consider a search space, where each state can be red, green, blue, yellow, or black. Multiple states may have the same color. The goal is to reach any black state. Here are some rules on the successors of different states, based on their color (these successor functions are unidirectional):
-Red states can only have green or blue children.
-Blue states can only have red or black children.
-Green states can only have blue or yellow children.
-Yellow states can only have yellow or red children.
-Black states can only have green or black children.
+* Red states can only have green or blue children.
+* Blue states can only have red or black children.
+* Green states can only have blue or yellow children.
+* Yellow states can only have yellow or red children.
+* Black states can only have green or black children.
+
 Define a maximally admissible heuristic that assigns a value to each state based only on the color of that state
 
 Assume that any move from one state to another has cost 1. 
@@ -15,6 +16,7 @@ Assume that any move from one state to another has cost 1.
 ![Figure 1](https://github.com/mobiclub/notes/blob/main/CSE%204308/Quizzes/assets/q2_f1.jpeg)
 
 Figure 1: A game search tree.
+
 a. In the game search tree of Figure 1, if we use Minmax algorithm to find the strategy to use, indicate the minmax values are for all the nodes. Also incidcate which action the Minmax algorithm will pick to exectute.
 
 b. In the game search tree of Figure 1, indicate what nodes will be pruned using alpha-beta search, and what the minmax values are for the rest of the nodes. Assume that alpha-beta search expands nodes in a left-to-right order. Finally incidcate which action the Minmax algorithm will pick to exectute. Is this answer different from part a?
@@ -24,6 +26,7 @@ c. This question is also on the game search tree of Figure 1. Suppose we are giv
 # Task 3
 
 Suppose that you want to implement an algorithm that will compete on a two-player deterministic game of perfect information. Your opponent is a supercomputer called DeepGreen. DeepGreen does not use Minimax. You are given a library function DeepGreenMove(S), that takes any state S as an argument, and returns the move that DeepGreen will choose for that state S (more precisely, DeepGreenMove (S) returns the state resulting from the opponent's move).
+
 Write an algorithm in pseudocode (following the style of the Minimax pseudocode) that will always make an optimal decision given the knowledge we have about DeepGreen. You are free to use the library function DeepGreenMove(S) in your pseudocode. What advantage would this algorithm have over Minimax? (if none, Justify).
 
 # Task 4
