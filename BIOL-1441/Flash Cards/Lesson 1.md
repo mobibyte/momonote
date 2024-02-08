@@ -55,4 +55,5 @@ A protein
 **In ______ reaction, energy is stored in the new chemical bonds that form.**  
 an anabolic
 
-
+**Which of these is a function of the plasma membrane of a cell?**  
+To form a barrier between inside & outside the cell
