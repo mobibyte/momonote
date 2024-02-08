@@ -12,7 +12,14 @@ key:
 
 **4. Identify the hydrophobic & hydrophilic regions of the phospholipid bilayer.** ***
 
-**5. List the kinds of molecules that can & cannot diffuse across the membrane.**  ***
+**5. List the kinds of molecules that can & cannot diffuse across the membrane.**  ***  
+| Molecule      | Diffuse   | 
+|--------------|-----------|
+| Hydrophobic | Can      |
+| Nonpolar    | Can  |  
+| Hydrophilic    | Cannot  |  
+| Polar    | Cannot  |  
+| Large    | Cannot  |
 
 **6. Use the chemical properties of a molecule (hydrophobic, hydrophilic, polar, nonpolar, charged) to determine whether or not it could diffuse across the membrane.** ***
 
