@@ -1,0 +1,6 @@
+29c29
+< GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/7c60d548_f457_432e_9e36_52861cd1c2b4
+---
+> GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/16a24161_bf0b_4c64_b683_c213142980ab
+49d48
+< OLDPWD=/home/seed/Developer/notes/CSE 5382/Labs/1.Environment_Variable_and_SetUID/Labsetup/Screenshots
