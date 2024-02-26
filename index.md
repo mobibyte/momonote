@@ -20,6 +20,6 @@ features:
   - title: From anywhere
     details: Available on any device
   - title: Open Source
-    details: Available on GitHub
+    details: Contribute on GitHub
 ---
 
