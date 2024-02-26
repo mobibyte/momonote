@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "notes"
   text: "college together"
-  tagline: My great project tagline
+  tagline: the shared textbook
   actions:
     - theme: brand
       text: Markdown Examples
@@ -15,11 +15,11 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Anyone can cook
+    details: No coding experience required!
+  - title: From anywhere
+    details: Available on any device
+  - title: Open Source
+    details: Available on GitHub
 ---
 
