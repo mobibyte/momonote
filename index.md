@@ -8,11 +8,11 @@ hero:
   tagline: the shared textbook
   actions:
     - theme: brand
+      text: We only have Biology atm
+      link: /BIOL 1441/Syllabus
+    - theme: alt
       text: Markdown Examples
       link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
 
 features:
   - title: Anyone can cook
