@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "MOMO Note"
-  text: "college together"
-  tagline: the shared textbook
+  text: "shared study space"
+  tagline: 
   actions:
     - theme: brand
       text: We only have Biology atm

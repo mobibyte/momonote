@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/',
   title: "MOMO Note",
-  description: "college together",
+  description: "shared study space",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
