@@ -1,4 +1,50 @@
 # Lesson 4 Notes
+## Learning Objectives
+1. Explain why the human body needs to eat.
+2. Define the term “metabolism”
+3. Describe the function of chemical bonds.
+4. Explain how the structure of ATP makes it
+good for storing & releasing energy.
+5. Explain what happens in catabolic &
+anabolic reactions.
+6. Explain what happens in endergonic &
+exergonic reactions.
+7. Describe the relationship between
+catabolic, anabolic, endergonic, and
+exergonic reactions.
+8. Explain how ATP & ADP are related.
+9. Explain what happens during redox
+reactions.
+10. Write the overall chemical equation for
+cellular respiration.
+11. Identify the location where each step of
+cellular respiration occurs in the cell.
+12. Differentiate between substrate-level
+phosphorylation & chemiosmosis.
+13. List the number of carbons found in
+glucose & pyruvate.
+14. Identify the starting materials & products
+created by each of these processes:
+glycolysis, pyruvate oxidation, the Citric
+Acid Cycle (a.k.a. Krebs Cycle), and the
+Electron Transport Chain (and oxidative
+phosphorylation).
+15. Explain the function of electron carriers
+in cellular respiration.
+16. Explain how electrons are used to build a
+proton gradient across the inner
+mitochondrial membrane.
+17. Explain how the movement of protons is
+used to build ATP.
+18. Describe the role of oxygen in the
+process of cellular respiration.
+19. Describe the purpose of fermentation.
+20. Explain how alcohol & lactic acid
+fermentation occur, including types of
+organisms using each pathway
+21. Explain the role of feedback inhibition in
+regulating cellular respiration.
+
 ## Slide Notes
 In **cellular respiration** the energy is transferred to the bonds between the phosphate groups ATP.
 
