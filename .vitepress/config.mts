@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/',
-  title: "notes",
+  title: "MOMO Note",
   description: "college together",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

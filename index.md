@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "notes"
+  name: "MOMO Note"
   text: "college together"
   tagline: the shared textbook
   actions:
