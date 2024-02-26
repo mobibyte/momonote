@@ -28,7 +28,7 @@ Only certain molecules can pass straight through it.
 
 **11.Identify similarities & differences between these transport processes: diffusion, facilitated diffusion, osmosis, primary active transport, secondary active transport.** 
 
-# Quiz  
+## Practice Quiz  
 
 **When a molecule moves from an area of low concentration into an area of HIGH concentration, _____ transport is occuring.**  
 active  
@@ -109,10 +109,6 @@ active
 **The image shows a beaker with two NaCl solutions (20% NaCl and 5% NaCl) separated by a semipermeable membrane. In which direction would NaCl move?**  
 NaCl would move out of the solution on the left and into the solution on the right.  
 
-
-
-# Lecture
-
 **Two kinds of energy can be used in active transport** 
 1. ATP
 2. A concentration gradient  
@@ -123,19 +119,12 @@ Stores energy in its chemical bonds
 **Concentration Gradient**  
 As one molecule moves down, that movements pushes a different molecule up its own gradient.
 
-
-**Primary Active Transport**  
-
 **Sodium-potassium pump**  
 Sodium is pumped out of the cell, even though a lot is *already* outside
 Potassium is pumped *into* the cell, even though a lot is *already* inside
 
 **Secondary Active Transport**  
 movement down one concentration gradient is used to power movement up a *different* concentration gradient
-
-**How is ATP involved in concentration gradients?** 
-Refer back to Echo 360
-January 30, 2024 10:05AM 
 
 
 

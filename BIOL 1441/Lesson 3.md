@@ -1,4 +1,4 @@
-## Quiz
+## Practice Quiz
 **DNA is "copied" into mRNA.**   
 The nucleus  
 
@@ -71,7 +71,6 @@ in both animal and plant cells
 
 **Which of these is something that both eukaryotic AND prokaryotic cells have?**  
 A plasma membrane
-
 
 **A cell needs to be able to break down a lot of intracellular waste. Which of these organelles would it need more of to meet this need?**   
 Lysosomes  

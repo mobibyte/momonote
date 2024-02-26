@@ -1,8 +1,0 @@
-$ make clean ; make hello.exe
-rm -f *.o hello.exe leaky.exe overread.exe
-gcc -g -Wall -Wextra -fsanitize=address -c hello.c
-gcc -fsanitize=address -o hello.exe hello.o -lm
-rm hello.o
-$ ./hello.exe
-Hello, world!  My C development environment WORKS!
-$
