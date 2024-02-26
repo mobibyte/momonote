@@ -1,8 +1,4 @@
-key:
-| Symbols      | Meaning   | 
-|--------------|-----------|
-| *** | On Exam      |
-| **Bold**    | Term  |
+## Learning Objectives
 
 **1. Explain the fundamentals of atomic structures and define a bond.**  
 
@@ -35,7 +31,7 @@ key:
 
 **11.Identify similarities & differences between these transport processes: diffusion, facilitated diffusion, osmosis, primary active transport, secondary active transport.** ***
 
-# Quiz  
+## Quiz  
 
 **Dehydration synthesis is an example of an _______reaction.**  
 anabolic  

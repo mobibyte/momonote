@@ -1,4 +1,4 @@
-# Objectives
+## Learning Objectives
 
 **1. Explain the fundamentals of atomic structures and define a bond.**  
 A chemical bond is a lasting attraction between atoms or ions.
