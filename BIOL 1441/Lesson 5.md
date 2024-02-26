@@ -26,6 +26,7 @@ reactants of the Calvin cycle.
 
 ## Slide Notes
 ![WhatsYourSource](Flash%20Cards/assets/lesson5.1.png)
+
 **Autotrophs** (“self feeders”) are organisms that CAN build their own energy-rich macromolecules
 **Photoautotrophs** (like plants) use the energy of light to do this ^
 **Chemoautotrophs** (like some bacteria) use the energy of inorganic molecules (like sulfur or ammonia)
@@ -33,7 +34,9 @@ reactants of the Calvin cycle.
 Because humans CANNOT make these molecules themselves, we are considered **heterotrophs** (“other feeders”) Animals, fungi, and most bacteria are also
 heterotrophs.
 
+![WhatsYourSource](Flash%20Cards/assets/lesson5.2.png)
 
+**Photosynthesis** is the process used by plants to transform light energy (and carbon dioxide and water) into glucose
 
 ## Homework Answers
 One "goal" of the **light reactions** of photosynthesis is to generate ATP.
