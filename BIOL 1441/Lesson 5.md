@@ -1,6 +1,15 @@
 # Lesson 5 Notes
 ## Slide Notes
 
+**Autotrophs** (“self feeders”) are organisms that CAN build their own energy-rich macromolecules
+**Photoautotrophs** (like plants) use the energy of light to do this ^
+**Chemoautotrophs** (like some bacteria) use the energy of inorganic molecules (like sulfur or ammonia)
+
+Because humans CANNOT make these molecules themselves, we are considered **heterotrophs** (“other feeders”) Animals, fungi, and most bacteria are also
+heterotrophs.
+
+
+
 ## Homework Answers
 One "goal" of the **light reactions** of photosynthesis is to generate ATP.
 The light reactions of photosynthesis occur **In the thylakoid membrane (of a chloroplast)**
