@@ -1,0 +1,26 @@
+# Lesson 5 Notes
+## Slide Notes
+
+## Homework Answers
+One "goal" of the **light reactions** of photosynthesis is to generate ATP.
+The light reactions of photosynthesis occur **In the thylakoid membrane (of a chloroplast)**
+
+**Rubisco** is the enzyme that performs carbon fixation.
+
+**ATP Synthase** is the enzyme that uses the proton gradient to build ATP.
+
+**Photosystems (I and II)** is the name of the complexes where light is used to energize electrons.
+
+**Six** carbon dioxide (CO2) are needed to generate **one** new glucose molecule (C6H12O6)
+
+Cellular respiration & Photosynthesis are connected to each other in that cellular respiration generates carbon dioxide, which is used in photosynthesis.
+
+*Oxygen* is made during the process of photosynthes when **Photosystem II** breaks down H2O to generate it.
+
+The special electrons for **Photosystem I (PSI**) come from **Photosystem II (PSII)**
+
+**G3P (Glyceraldehyde-3-phosphate)** is organic compound is the direct output of the Calvin cycle
+
+A reactant (a.k.a. starting material) of the Calvin Cycle is **ATP**
+
+Plants are an example of an organism that would be considered **an autotroph**
