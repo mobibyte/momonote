@@ -20,7 +20,8 @@ export default defineConfig({
           { text: 'Lesson 1', link: '/BIOL 1441/Lesson 1.md' },
           { text: 'Lesson 2', link: '/BIOL 1441/Lesson 2.md' },
           { text: 'Lesson 3', link: '/BIOL 1441/Lesson 3.md' },
-          { text: 'Exam 1', link: '/BIOL 1441/Exam 1.md' }
+          { text: 'Exam 1', link: '/BIOL 1441/Exam 1.md' },
+          { text: 'Lesson 4', link: '/BIOL 1441/Lesson 4.md' }
         ]
       }
     ],
