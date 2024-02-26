@@ -3,9 +3,10 @@ Clean class notes to share with friends
 
 Official documentation: https://vitepress.dev/guide/getting-started
 
-Tips:
-- Make sure to add .vitepress/dist and .vitepress/cache to your .gitignore file.
-- Since you've chosen to customize the theme, you should also explicitly install vue as a dev dependency.
+# IMPORTANT!  
+Run these commands before you make a commit!
+> npm run docs:build
+> npm run docs:preview
 
-# Run  
-> npm run docs:dev
+
+Thank you :)
