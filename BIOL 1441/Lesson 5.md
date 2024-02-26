@@ -1,6 +1,6 @@
 # Lesson 5 Notes
 ## Slide Notes
-
+![WhatsYourSource](Flash%20Cards/assets/lesson5.1.png)
 **Autotrophs** (“self feeders”) are organisms that CAN build their own energy-rich macromolecules
 **Photoautotrophs** (like plants) use the energy of light to do this ^
 **Chemoautotrophs** (like some bacteria) use the energy of inorganic molecules (like sulfur or ammonia)
