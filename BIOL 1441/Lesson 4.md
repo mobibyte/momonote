@@ -13,6 +13,7 @@ The **Citric Acid Cycle** (Krebs Cycle) builds ATP through **substrate-level pho
 Glycolysis starts with **glucose** and ends with **pyruvate**
 
 ![ChemicalReaction](Flash%20Cards/assets/Lesson4.2.png)
+
 In the chemical reaction above, Zn loses 2 electrons, transforming it into Zn^2+.
 This means that Zn was **oxidized** in this chemical reaction.
 
