@@ -4,7 +4,7 @@ In **cellular respiration** the energy is transferred to the bonds between the p
 
 **ATP** can be used by cells as a source of energy by breaking the high-energy phosphate bonds.  
 
-![GlucoseEnergy](./lesson4.1.png)
+![GlucoseEnergy](Flash%20Cards/assets/lesson4.1.png)
 
 ## Homework Answers 
 The **Citric Acid Cycle** (Krebs Cycle) builds ATP through **substrate-level phosphorylation**
