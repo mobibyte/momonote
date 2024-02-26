@@ -1,4 +1,29 @@
 # Lesson 5 Notes
+
+## Learning Objectives
+1. Explain how autotrophs & heterotrophs obtain their energy.
+2. Write the overall chemical equation for photosynthesis.
+3. Identify which reaction words (anabolic / catabolic, endergonic / exergonic) accurately
+describe photosynthesis.
+4. Identify the source of energy for photosynthesis.
+5. Name the locations of the light reactions & the Calvin Cycle in a plant cell.
+6. Describe the general functions of the light reactions & the Calvin Cycle in photosynthesis.
+7. Explain how the wavelength of light relates to its color & energy level.
+8. Explain why plants are green.
+9. Name the structures that are found in a photosystem.
+10.Explain how photosystems trap light energy.
+11.Identify the source of the excited electrons found in Photosystem II & Photosystem I.
+12.Explain how the light reactions of photosynthesis generate oxygen.
+13.Describe how the proton (H +) gradient across the thylakoid membrane is generated.
+14.Explain how the H+ gradient is used to generate ATP.
+15.List the products & reactants of the light reactions.
+16.Explain the relationship between the products of photosynthesis’ light reactions & the
+reactants of the Calvin cycle.
+17.Explain what happens in carbon fixation.
+18.Name the enzyme that performs carbon fixation.
+19.Explain why 6 turns of the cycle is necessary to make 1 glucose.
+20.Explain how photosynthesis & cellular respiration are related to one another.
+
 ## Slide Notes
 ![WhatsYourSource](Flash%20Cards/assets/lesson5.1.png)
 **Autotrophs** (“self feeders”) are organisms that CAN build their own energy-rich macromolecules
