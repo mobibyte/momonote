@@ -57,8 +57,12 @@ ADP = adenosine diphosphate
 • ADP has 2 phosphate groups, so it has *some* energy  
 • ADP is made when the cell uses the energy in ATP (by removing one of its phosphate groups)  
 
-9. Explain what happens during redox
-reactions.
+**9. Explain what happens during redox
+reactions.**  
+Redox is a type of chemical reaction in which the oxidation states of a reactant change.   
+Oxidation is the loss of electrons or an increase in the oxidation state.  
+Reduction is the gain of electrons or a decrease in the oxidation state.  
+
 10. Write the overall chemical equation for
 cellular respiration.
 11. Identify the location where each step of
