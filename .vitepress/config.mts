@@ -41,11 +41,25 @@ export default defineConfig({
       // This sidebar gets displayed when a user
       // is on `config` directory.
       '/CSE 4308/': [
+        { text: 'Syllabus', link: '/CSE 4308/Syllabus.md'},
         {
-          text: 'Sample Quizzes',
+          text: 'Quiz 1',
           items: [
-            { text: 'Quiz 1', link: '/CSE 4308/Quizzes/Quiz 1.md' },
-            { text: 'Quiz 1', link: '/CSE 4308/Quizzes/Quiz 2.md' },
+            { text: 'Sample Quiz', link: '/CSE 4308/Quizzes/Quiz 1.md' },
+          ]
+        },
+        {
+          text: 'Quiz 2',
+          items: [
+            { text: 'Sample Quiz', link: '/CSE 4308/Quizzes/Quiz 2.md' },
+          ]
+        },
+        {
+          text: 'Quiz 3',
+          items: [
+            { text: 'Chapter 08', link: '/CSE 4308/Chapter 08.md' },
+            { text: 'Chapter 11', link: '/CSE 4308/Chapter 11.md' },
+            { text: 'Sample Quiz', link: '/CSE 4308/Quizzes/Quiz 3.md' },
           ]
         }
       ]
