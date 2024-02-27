@@ -63,8 +63,10 @@ Redox is a type of chemical reaction in which the oxidation states of a reactant
 Oxidation is the loss of electrons or an increase in the oxidation state.  
 Reduction is the gain of electrons or a decrease in the oxidation state.  
 
-10. Write the overall chemical equation for
-cellular respiration.
+**10. Write the overall chemical equation for
+cellular respiration.**  
+C6H12O6 + 6O2 --> 6CO2 + 6H2O + 36 or 38 ATP  
+
 11. Identify the location where each step of
 cellular respiration occurs in the cell.
 12. Differentiate between substrate-level
