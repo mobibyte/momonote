@@ -54,7 +54,7 @@ Ubuntu mr popular
 * grep -> searches a file for a particular pattern of characters Lots of options, but basic grep is what we need to know
 * diff -> displays differences in files, compares line by line, if 2 files are identical, it shows nothin
  
-## Tips & shortcuts
+### Tips & shortcuts
 * history -> shows every command you have typed, can redo any of commands
 * TAB completion 
 * Up arrow -> shows history aswell, for previous command
@@ -69,10 +69,7 @@ Ubuntu mr popular
  
 ## Character set
 
-
-
-
-### ASCII
+## ASCII
    * Capped letter grouped together and small letters are too
    * Used on all pc’s
    * Each character has an int value between 0 and 127
@@ -99,7 +96,7 @@ Ubuntu mr popular
    * Doesnt need multiple lines
    * Doesnt care about white spaces
  
-### Libraries in C
+## Libraries in C
 
 * A library in C is a collection of functions and definitions without a main() function
 * C contains many standard libraries
@@ -134,7 +131,7 @@ To get the remainder just use mod %
  
 ++ -- 
  
-### Arithmetic operators
+## Arithmetic operators
  
 High precedence 
 * Unary operators ++,--
@@ -147,7 +144,7 @@ Low precedence
  
 () = your best friend for this
  
-### Structure programming in C
+## Structure programming in C
 * How you “should” write your code
 * Write source code that is 
    * Modular
@@ -182,7 +179,7 @@ Low precedence
    * UPPER CASE
    * Makes ur life easier
  
-### Expression vs statements
+## Expression vs statements
 
 * Expressions
    * Sequences of tokens that can be evaluated to a numerical quantity
@@ -196,7 +193,7 @@ Low precedence
    * Cause sequences to happen
    * if for while 
  
-#### Lvalue vs rvalue expressions
+## Lvalue vs rvalue expressions
 * Lvalue
    * Left value
    * Location in memory such as a name of variable
@@ -229,7 +226,7 @@ Block statement
 * Void type
    * Doesnt return value
  
-#### Int
+## Int
 
 * Scalar type
 * Usually equivalent to a word
@@ -247,7 +244,7 @@ Block statement
    * %ld longs
    * %hd short
  
-### sizeof() vs strlen()
+## sizeof() vs strlen()
 sizeof()-1 vs sizeof(__ . -1)
 
 * Gives you number of bytes associated with a specified type or variable

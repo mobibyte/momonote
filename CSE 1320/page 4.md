@@ -1,4 +1,4 @@
-# memcpy() memcmp()
+## memcpy() memcmp()
 
 * A lot like strcpy() and strcmp()
 
@@ -9,12 +9,12 @@ Or num. Of characters to copy
 
 memcpy(array2, array1, strlen(array1));
 
-## memcmp()
+### memcmp()
 Memcmp is just like strcmp but with the number of bytes for its third parameter
 
 * Be careful not to compare garbage to garbage 
 
-## memset
+### memset
 Void *memset(void *str, int c, size_t, n)
 * A way to set all of the elements of the array to a given value
 
@@ -50,7 +50,7 @@ Since ints are 4 bytes, it set it to every 4 bytes
     * Lifespan
     * Storage location
 
-#### Automatic variables
+### Automatic variables
 * Default storage class auto int intvar;
 * Created each time they’re created and called then they get destroyed when they go away
 * Functions have overhead, they take extra processing power
@@ -67,7 +67,7 @@ Inside function - local
 * Storage location
     * stack
 
-## Static variables
+### Static variables
 * Static int intvar;
 * Static variables exits the whole tiem the program is executing
 * Mem space is allocated when program starts
@@ -94,7 +94,8 @@ No guarantee that the variable will be placed in the register
 Very limited in availability and size
 Illegal to use the address operator & with the name of a register variable
 
-### Global versus local variables
+## Global versus local variables
+
 ### Local Variables
 * It exists only in the CURLY BRACES {}
 {
@@ -127,7 +128,7 @@ SIDE EFFECT
 You can create a local version of a global variable with the same name
 
 
-## CRLF vs LF vs CR
+### CRLF vs LF vs CR
 * CRLF
 	* How windows interprets a newline
 * LF
@@ -249,13 +250,14 @@ Debug can display enums
 Legal to val in enumerated var that doesnt exist in there
 
 
-# Introduction to Structures
-## Aggregate Types
+## Introduction to Structures
+
+### Aggregate Types
 * Aggregate types are designed to hold multiple data values 
 	* Arrays can hold many data values of the same type
 	* These are same type /\
 
-## Structures
+### Structures
 * Also an aggregate type
 * Allows us to hold different types
 * We can make arrays of structures
@@ -313,7 +315,7 @@ Struct box
 };
 ```
 
-### How to use our structures
+## How to use our structures
 
 We have the dot operator 
 Variable_name.member_name
@@ -326,7 +328,7 @@ Term becomes whatever type is in the struct
 
 * Dot links it from struct
 
-### Operators on structures
+## Operators on structures
 
 * assignment
 
@@ -381,7 +383,7 @@ Pointer to a structure is used too often in c they created a shortcut for it
 (*struct_pointer).member can be written as struct_pointer->member (arrow operator)
 We will use struct_pointer->member
 
-### Passing structure to and from functions
+## Passing structure to and from functions
 
 When passing you dont put type or brackets if its an array same with structs
 
@@ -399,7 +401,7 @@ Struct tshirt *tshirtptr = &myTshirts;struct Tshirts *tshirtarrayptr = &DCCommic
 Int inventory (struct tshirt * x) 
 
 
-### Unions
+## Unions
 * Union is like a structure
 * It can hold members of different types
 * Same rules as structures

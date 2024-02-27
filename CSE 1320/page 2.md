@@ -1,6 +1,4 @@
 
-# Decimal vs hexadecimal vs octal
-
 ## Bit byte vs word
  
 * Binary digit - bit
@@ -8,7 +6,7 @@
 * Byte is 8 bits in 1
 * Word  could be one or more bytes
  
-### Types of Expression
+## Types of Expression
 *   Every expression has an associated type
    * 3+4 = 7, we know they’re ints
  *    3 + 4.1 = 7.1
@@ -43,7 +41,7 @@
  *    Variables get put here
  *    Stdout puts out what needs to be displaye*
  
-### Bit operations on the ints
+## Bit operations on the ints
 ·        Least significant bit
  *    The bit in a binary number that is of the lowest numerical value
 ·        Most significant bit
@@ -68,7 +66,7 @@
 ·        Bitwise XOR
  *    ^
  *    Same logic but with every bit
-#### Bit masks
+## Bit masks
 ·        Is a number that we can & | ^
 ·        To detect whether or not a certain bit is on or off
 ·        To turn a bit on or off
@@ -85,7 +83,7 @@
  *    Check the last bit to determine if  odd or even 0 = even, 1 = odd
  *    2^0 = 1
 
-### Bitshifting 
+## Bitshifting 
 * Shifts left <<
    * 00000001
    * 00000010
@@ -129,7 +127,7 @@
    * Basically set the formula rand() % (end-start+1) + start and fill it up in an array, asking if the number generator generates something unique and then putting that in said array and keep on asking it within a range
 
 
-# Arrays
+## Arrays
 * Aggregate type
 * Ised to store collections of related data
 * Multiple values of the same data type can eb stored with one variable name.
@@ -249,7 +247,7 @@ int main()
 
 
 
-# Functions
+## Functions
 * Type
 * Name
 * Parameters
@@ -279,7 +277,7 @@ int main()
    * Plays a little matching game
 
 
-### Ternary operators
+## Ternary operators
 * 3 things
 * Ternary if
    * If else to a 1 line statement
@@ -314,10 +312,10 @@ When passing 1d array dont specify value
 First dimension blank when passing 2d array but not the 2nd [][5]
 Calling them just the name
 
-# Passing parameters to functions
+## Passing parameters to functions
 
 
-## Two basic methods
+### Two basic methods
 * Pass by value
    * A copy is made when you pass
 * Pass by references
@@ -334,7 +332,7 @@ Calling them just the name
 * When you attempted to access a restricted area of memory, 
 * The operating system is not happy about this
 
-# Debugging
+## Debugging
 * Is a tool to help you locate logic problems
 * Also shows the line of code causing segfault
 * Printing to screen is not as effective due to buffering

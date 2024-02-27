@@ -1,5 +1,5 @@
-# Pointers
-## Memory and addresses
+## Pointers
+### Memory and addresses
 
 * In upper-level languages give the programmer little or no control over the assignment of memory addresses
 * You do get to pick what type of memory, Control What is stored in memory, But not where it’s stored
@@ -19,7 +19,7 @@ Forms vary from computer systems
 Stack address
 
 
-##Pointer
+## Pointer
 
 A variable that can store the address of another variable
 Just holds addresses of other variables, they have no idea whats in the variable
@@ -43,7 +43,7 @@ We can have pointers to pointers, nested pointers
 * makes pointers
 
 
-## Pointer initialization and the null pointer
+### Pointer initialization and the null pointer
 * Null should be used to indicated that a pointer is not pointing yet
 
 Int *A=NULL;
@@ -55,7 +55,7 @@ Int *A=NULL;
 
 * Pointers are variables
 
-### Dereferneing a Pointer variable
+## Dereferneing a Pointer variable
 
 Print the addresses of variables
 Could be useful for debugging
@@ -80,7 +80,7 @@ IntVar2 *intvarprtr1 + *&intvarptr2
 *& cancel each other out
 
 
-## Size of pointers
+### Size of pointers
 * Holds 8 bytes
 * Pointers hold addresses
 * Same size as long
@@ -160,7 +160,7 @@ strlen(cat), counts until theres a \0
 * **C does not put a limit on the number of levels of indirection.** “Fun”
 
 
-# Makefile
+## Makefile
 Adding in steps so we can link multiple object files
 
 Gcc -c (command to ONLY compile)
@@ -239,7 +239,7 @@ Compiler creates an object file, or a .o
 Linker links files to make 1 .e or executable 
 
 
-# Library
+## Libraries
 
 * Libraries are not executable
 * Do not contain a main() function
@@ -250,7 +250,7 @@ Linker links files to make 1 .e or executable
 * Mylibrary.c
 * And mylibrary.h 
 
-## Stdio.h
+### Stdio.h
 Stdio.h is a standard library file, there is no executable code in stdio.h the prototype is in the .h the real code is in stdio.c which is linked with the system library
 
 We need something for our header files to prevent stupid from happening
@@ -304,7 +304,7 @@ We can modify the contents of the variable because we passed its address
 Calling it: we print it like cat(&dog);
 In func: void cat(int *Bird)
 
-# Strings
+## Strings
 
 No string data type, in other languages they are objects
 * C doesn’t have objects

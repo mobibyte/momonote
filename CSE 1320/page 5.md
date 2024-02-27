@@ -9,7 +9,7 @@ Remember it stops at the enter key \n
 * File pointer keeps track of where we are in the file
 It moves as we do reads and writes
 
-### Two types of access
+## Two types of access
 * Sequential (VHS)
     * Open a file and just read it line by line
 
@@ -83,7 +83,7 @@ Initialized global and static variables
 Code Segment
 Programs source code
 
-### Differences between Static vs statically allocated
+## Differences between Static vs statically allocated
 * Static
     * Is a storage class
     * Automatically initialized as zero
@@ -119,7 +119,7 @@ Heap
 * Slower access allocation and deallocation (not significant)
 * Both are stored in computers RAM
 
-### Dynamic Allocation and de-Allocation of memory
+## Dynamic Allocation and de-Allocation of memory
 Functions for dynamic allocation and deallocation
 * malloc()
 * calloc()
@@ -185,7 +185,7 @@ Linked lists enable this
 But also make it EASIER
 
 
-# Linked List
+## Linked List
 Linked list are a linear data structure consists of groups of nodes in a sequence
 
 ## Nodes
@@ -217,7 +217,7 @@ Sequentially accessed like VHS tapes
 
 
 
-### Single linked list
+## Single linked list
 Only 1 node can see another node
 Thats why it cant be randomly accessed
 
@@ -232,11 +232,11 @@ Create a new node malloc it
 And depending on where we wanna add it its easy to do.
 If you wanna change it to be on the end, we change the null ptr to the new node
 
-Inserting a node
+#### Inserting a node
 * You point the node behind,and point the new node to the next one
 So much easier, no one gets moved only have to change 2 ptrs
 
-Delete a node
+#### Delete a node
 * You have to free the node
 Then change the ptr to null if its pointing to nothing
 Just change the ptrs
@@ -290,7 +290,7 @@ While (TempPtr != NULL) //this is different than the one above
 //Pasts the last node
 ```
 
-Inserting nodes
+### Inserting nodes
 
 ```
 Struct node *temptr, *Newnode, *preptr;
@@ -316,10 +316,10 @@ Else
 Put print statement inside of traversal to display a linked list
 ```
 
-Display nodes
+#### Display nodes
 * use the (tempptr != NULL) while loop to print the whole list
 
-Deleting node
+### Deleting node
 * Code for deleting is similar to inserting
 
 ```
@@ -348,10 +348,8 @@ else
 ```
 
 
-
-
 Very similar to inserting.
-Counting nodes
+#### Counting nodes
 
 ```
 Struct node *TEmpPtr;
@@ -405,7 +403,7 @@ That easy
 
 
 read a file with variable length fields using dynamic memory allocation
-Tacobell example
+## Tacobell example
 
 Want to store it without arrays
 
@@ -499,7 +497,7 @@ Stacks are meant for push and pop, nothing more
 
 
 
-Stack Push
+### Stack Push
 
 ```
 Void push(node **StackTop, int Node_Number)
@@ -520,7 +518,7 @@ Void push(node **StackTop, int Node_Number)
 }
 ```
 
-Stack Pop
+### Stack Pop
 ```
 Void pop(node **STackTop)
 {

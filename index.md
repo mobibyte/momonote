@@ -10,6 +10,9 @@ hero:
     - theme: brand
       text: We only have Biology atm
       link: /BIOL 1441/Syllabus
+    - theme: brand
+      text: Intermediate Programming
+      link: /CSE 1320/Syllabus
     - theme: alt
       text: Markdown Examples
       link: /markdown-examples
