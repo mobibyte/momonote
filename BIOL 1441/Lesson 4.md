@@ -21,20 +21,28 @@ forming new chemical bonds
 
 **4. Explain how the structure of ATP makes it
 good for storing & releasing energy.**  
-ATP = adenosine triphosphate
-• ATP has 3 phosphate groups, so it has A LOT of 
-energy
-• ATP is made when the cell has extra energy
+ATP = adenosine triphosphate  
+• ATP has 3 phosphate groups, so it has A LOT of energy  
+• ATP is made when the cell has extra energy  
 
 **5. Explain what happens in catabolic &
 anabolic reactions.**  
 Catabolic reactions break large polymers into smaller monomers    
 • These reactions release energy  
+
 Anabolic reactions build large polymers from smaller monomers  
 • These reactions require energy  
 
-6. Explain what happens in endergonic &
-exergonic reactions.
+**6. Explain what happens in endergonic &
+exergonic reactions.**  
+Exergonic reactions release energy  
+• This is because the products of the reactions 
+have LESS energy than the reactants  
+
+Endergonic reactions require energy  
+• This is because the products of the reactions 
+have MORE energy than the reactants
+
 7. Describe the relationship between
 catabolic, anabolic, endergonic, and
 exergonic reactions.
