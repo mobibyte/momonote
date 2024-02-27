@@ -67,7 +67,8 @@ export default defineConfig({
     },
 =======
       { text: 'Biology', link: '/BIOL 1441/Syllabus.md' },
-      { text: 'CSE 1320', link: '/CSE 1320/Syllabus.md' }
+      { text: 'CSE 1320', link: '/CSE 1320/Syllabus.md' },
+      { text: 'CSE 1325', link: '/CSE 1325/Syllabus.md' },
     ],
 
     sidebar: [
@@ -94,7 +95,19 @@ export default defineConfig({
           { text: 'Page 5', link: '/CSE 1320/page 5.md' },
           { text: 'Page 6', link: '/CSE 1320/page 6.md' },
         ],
-      }
+      },
+      {
+        text: 'Object Oriented Programming',
+        items: [
+          { text: 'Syllabus', link: '/CSE 1325/Syllabus.md' },
+          { text: 'Page 1', link: '/CSE 1325/page 1.md' },
+          { text: 'Page 2', link: '/CSE 1325/page 2.md' },
+          { text: 'Page 3', link: '/CSE 1325/page 3.md' },
+          { text: 'Page 4', link: '/CSE 1325/page 4.md' },
+          { text: 'Page 5', link: '/CSE 1325/page 5.md' },
+          { text: 'Page 6', link: '/CSE 1325/page 6.md' },
+        ],
+      },
     ],
 >>>>>>> 7c6f80d (feat: added 1320 notes page onto site (is visable))
 
