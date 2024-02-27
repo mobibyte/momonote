@@ -8,7 +8,10 @@ proteins & nucleic acids)
 • Energy is required for life-sustaining processes like active 
 transport
 
-2. Define the term “metabolism”
+**2. Define the term “metabolism”**    
+Metabolism is the sum of all the chemical reactions that 
+occur in your cells to keep you alive  
+
 3. Describe the function of chemical bonds.
 4. Explain how the structure of ATP makes it
 good for storing & releasing energy.
