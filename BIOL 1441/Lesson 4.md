@@ -2,9 +2,9 @@
 ## Learning Objectives
 **1. Explain why the human body needs to eat.**
 On the most basic level, you need to eat to get the 
-energy required to survive
+energy required to survive  
 • Energy is required for building macromolecules (like 
-proteins & nucleic acids)
+proteins & nucleic acids)  
 • Energy is required for life-sustaining processes like active 
 transport
 
