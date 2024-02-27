@@ -1,6 +1,13 @@
 # Lesson 4 Notes
 ## Learning Objectives
-1. Explain why the human body needs to eat.
+**1. Explain why the human body needs to eat.**
+On the most basic level, you need to eat to get the 
+energy required to survive
+• Energy is required for building macromolecules (like 
+proteins & nucleic acids)
+• Energy is required for life-sustaining processes like active 
+transport
+
 2. Define the term “metabolism”
 3. Describe the function of chemical bonds.
 4. Explain how the structure of ATP makes it
