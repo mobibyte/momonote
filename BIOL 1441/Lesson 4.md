@@ -43,10 +43,20 @@ Endergonic reactions require energy
 • This is because the products of the reactions 
 have MORE energy than the reactants
 
-7. Describe the relationship between
+**7. Describe the relationship between
 catabolic, anabolic, endergonic, and
-exergonic reactions.
-8. Explain how ATP & ADP are related.
+exergonic reactions.**  
+Catabolic & anabolic reactions are paired  
+• The monomers made in catabolic reactions are used to build polymers in anabolic reactions  
+
+Exergonic & endergonic reactions are paired  
+• The energy released in exergonic reactions is used to power endergonic reactions  
+
+**8. Explain how ATP & ADP are related.**  
+ADP = adenosine diphosphate  
+• ADP has 2 phosphate groups, so it has *some* energy  
+• ADP is made when the cell uses the energy in ATP (by removing one of its phosphate groups)  
+
 9. Explain what happens during redox
 reactions.
 10. Write the overall chemical equation for
