@@ -13,7 +13,11 @@ transport
 occur in your cells to keep you alive  
 
 **3. Describe the function of chemical bonds.**  
-
+Foods store energy in their chemical bonds  
+• By breaking those chemical bonds, that energy is released 
+into your cells  
+• Your cells can use that energy immediately or store it by 
+forming new chemical bonds 
 
 4. Explain how the structure of ATP makes it
 good for storing & releasing energy.
