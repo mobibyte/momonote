@@ -61,41 +61,42 @@ Reduction is the gain of electrons or a decrease in the oxidation state.
 C6H12O6 + 6O2 --> 6CO2 + 6H2O + 36 or 38 ATP  
 
 11. **Identify the location where each step of cellular respiration occurs in the cell.**  
-  Step 1: glycolysis - Splits the glucose into pyruvate molecules
-  Glycolysis is the initial glucose-breaking process
-  • Many chemical reactions break its chemical bonds, rearrange its elements, and harvest some of its energy
-  Starting materials: glucose (C6H12O6) + 2 ATP + 2 NAD+ *Oxygen (O2) is NOT required for this process!*
-  Ending materials: 2 pyruvate (C3H4O3) + 2 (net) ATP + 2 NADH
-  • Technically, 4 ATP are made, but 2 ATP are required, so the cell only gains 2 ATP
-  • This ATP is made through substrate-level phosphorylation
-  Location: the cytoplasm
-  Stored Forms of Energy: The energy from glucose is stored in the 2 ATPs (net gain) and 2 NADH produced.
 
-  Step 2: pyruvate oxidation - Moves the pyruvates into the mitochondria & processes them
-  Each 3-carbon pyruvate still has A LOT of energy
-    • The pyruvates are transported into the mitochondria so that energy can be harvested
-  Starting materials: 2 pyruvate + 2 NAD+ + 2 Coenzyme A complexes
-  Ending materials: 2 acetyl coenzyme A (acetyl CoA) + 2 CO2 + 2 NADH
-  Location: the mitochondrial matrix (a.k.a. its center)
-  Stored Forms of Energy: Energy is stored in the high-energy electrons of NADH.
+    Step 1: glycolysis - Splits the glucose into pyruvate molecules
+    Glycolysis is the initial glucose-breaking process
+    • Many chemical reactions break its chemical bonds, rearrange its elements, and harvest some of its energy
+    Starting materials: glucose (C6H12O6) + 2 ATP + 2 NAD+ *Oxygen (O2) is NOT required for this process!*
+    Ending materials: 2 pyruvate (C3H4O3) + 2 (net) ATP + 2 NADH
+    • Technically, 4 ATP are made, but 2 ATP are required, so the cell only gains 2 ATP
+    • This ATP is made through substrate-level phosphorylation
+    Location: the cytoplasm
+    Stored Forms of Energy: The energy from glucose is stored in the 2 ATPs (net gain) and 2 NADH produced.
   
-  Step 3: the Citric Acid (Krebs) Cycle - Remove energy-rich electrons from the process pyruvates
-  The Citric Acid Cycle harvests all the remaining energy in Acetyl Coenzyme A (Acetyl CoA)
-    • REMEMBER: one glucose molecule makes two acetyl CoA’s!
-  Starting materials: 2 acetyl CoA + 6 NAD+ + 2 FAD (+ oxaloacetate )
-  Ending materials: oxaloacetate + 4 CO2 + 2 ATP + 6 NADH + 2 FADH2
-  Location: the mitochondrial matrix (a.k.a. its center)
-  Stored Forms of Energy: Energy is stored in the high-energy electrons of NADH and FADH2, and in the ATP produced.
-  
-  Step 4: oxidative phosphorylation - Use the energy from those high-energy electrons to build ATP 
-  Oxidative phosphorylation is the only cellular respiration process that requires oxygen (O2)
-  O2 is the final electron acceptor at the end of the Electron Transport Chain (ETC)
-  • Energy-poor electrons are donated to O2, making space for other electrons to continue to move through the ETC
-  • If oxygen was not present, electrons would build up in the Electron Transport Chain & electron carriers would remain permanently reduced
-  Starting Materials: Electrons carried by NADH and FADH2, and Oxygen as the final electron acceptor
-  Ending Materials: Water (from the reduction of oxygen) and approximately 36 ATP molecules (?)
-  Location: Inner mitochondrial membrane
-  Stored Forms of Energy: The energy is stored in the ATP produced. This stage harnesses the energy from an electrochemical gradient (proton gradient) across the inner mitochondrial membrane through chemiosmosis.
+    Step 2: pyruvate oxidation - Moves the pyruvates into the mitochondria & processes them
+    Each 3-carbon pyruvate still has A LOT of energy
+      • The pyruvates are transported into the mitochondria so that energy can be harvested
+    Starting materials: 2 pyruvate + 2 NAD+ + 2 Coenzyme A complexes
+    Ending materials: 2 acetyl coenzyme A (acetyl CoA) + 2 CO2 + 2 NADH
+    Location: the mitochondrial matrix (a.k.a. its center)
+    Stored Forms of Energy: Energy is stored in the high-energy electrons of NADH.
+    
+    Step 3: the Citric Acid (Krebs) Cycle - Remove energy-rich electrons from the process pyruvates
+    The Citric Acid Cycle harvests all the remaining energy in Acetyl Coenzyme A (Acetyl CoA)
+      • REMEMBER: one glucose molecule makes two acetyl CoA’s!
+    Starting materials: 2 acetyl CoA + 6 NAD+ + 2 FAD (+ oxaloacetate )
+    Ending materials: oxaloacetate + 4 CO2 + 2 ATP + 6 NADH + 2 FADH2
+    Location: the mitochondrial matrix (a.k.a. its center)
+    Stored Forms of Energy: Energy is stored in the high-energy electrons of NADH and FADH2, and in the ATP produced.
+    
+    Step 4: oxidative phosphorylation - Use the energy from those high-energy electrons to build ATP 
+    Oxidative phosphorylation is the only cellular respiration process that requires oxygen (O2)
+    O2 is the final electron acceptor at the end of the Electron Transport Chain (ETC)
+    • Energy-poor electrons are donated to O2, making space for other electrons to continue to move through the ETC
+    • If oxygen was not present, electrons would build up in the Electron Transport Chain & electron carriers would remain permanently reduced
+    Starting Materials: Electrons carried by NADH and FADH2, and Oxygen as the final electron acceptor
+    Ending Materials: Water (from the reduction of oxygen) and approximately 36 ATP molecules (?)
+    Location: Inner mitochondrial membrane
+    Stored Forms of Energy: The energy is stored in the ATP produced. This stage harnesses the energy from an electrochemical gradient (proton gradient) across the inner mitochondrial membrane through chemiosmosis.
 
 12. **Differentiate between substrate-level
 phosphorylation & chemiosmosis.**  
