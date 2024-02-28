@@ -100,6 +100,23 @@ C6H12O6 + 6O2 --> 6CO2 + 6H2O + 36 or 38 ATP
 
 12. **Differentiate between substrate-level
 phosphorylation & chemiosmosis.**  
+   In glycolysis & the Citric Acid Cycle, ATP synthesis occurs using ***substrate-level phosphorylation**  
+   • A phosphate group is removed from one molecule (the substrate)  
+   • It is then directly attached to ADP 
+    Mechanism: In substrate-level phosphorylation, an enzyme directly transfers a phosphate group from a substrate molecule to ADP, forming ATP. This process does not involve the use of an electrochemical gradient.  
+   Location: It occurs in the cytoplasm during glycolysis and in the mitochondrial matrix during the Krebs cycle for cellular respiration. In photosynthesis, it can occur in the stroma of chloroplasts during the Calvin cycle.  
+   Energy Source: The energy for substrate-level phosphorylation comes directly from the chemical energy in substrate molecules, which are often intermediates in metabolic pathways like glycolysis or the Krebs cycle.  
+   Oxygen Requirement: It does not directly require oxygen, so it can occur under both aerobic and anaerobic conditions.  
+   
+Oxidative phosphorylation uses the Electron Transport Chain (ETC) & **Chemiosmosis**  
+   • First, the ETC creates a proton (H+) concentration gradient across the inner mitochondrial membrane  
+   • Then, ATP synthase uses the energy of that gradient to build ATP in a process called ***chemiosmosis***
+   ATP Synthase is the ATP-generating protein of oxidative phosphorylation
+   The concentration of H+ (protons) is very high in the intermembrane space & much lower in the matrix
+   • ATP synthase – which is embedded in the inner mitochondrial membrane – allows protons to move back into the matrix  
+   • The energy that is released when these protons move back in is called proton motive force ATP synthase uses the power of proton motive force to create new ATP  
+   • It takes the movement of 4 protons (H+) to make 1 molecule of ATP  
+
 
 13. **List the number of carbons found in
 glucose & pyruvate.**  
