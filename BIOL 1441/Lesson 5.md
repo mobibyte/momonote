@@ -40,10 +40,27 @@ The light-dependent reactions occur in photosystems that are embedded in the thy
     Chlorophyll absorbs light most efficiently in the blue and red parts of the visible spectrum and reflects green light. This reflected green light is what gives plants their green color.  
 
 9. **Name the structures that are found in a photosystem.**  
+    Photosystems are complex structures found in the thylakoid membranes of chloroplasts in plants and in the membranes of cyanobacteria. They play a crucial role in the light-dependent reactions of photosynthesis by capturing light energy and converting it into chemical energy. A photosystem consists of several key components:  
+        Light-Harvesting Complex: This consists of hundreds of pigment molecules, including chlorophyll a, chlorophyll b (in plants), and various carotenoids. These pigments are structured to efficiently capture light of various wavelengths and funnel the energy towards the reaction center.  
+        Reaction Center: At the core of a photosystem is the reaction center, which contains a special pair of chlorophyll a molecules. Once the Light-Harvesting complex absorbs light energy and transfers it to the reaction center, the energy excites electrons in these chlorophyll molecules to a higher energy state.  
+        Primary Electron Acceptor: This molecule is located very close to the reaction center chlorophylls. It captures the high-energy electrons from the excited chlorophyll a molecules before they can return to their ground state. This step is crucial for the subsequent electron transport chain.  
+        Core Complex: The core complex includes proteins that bind the reaction center, the primary electron acceptor, and other components together. It ensures the proper alignment and functioning of the photosystem.  
+        Peripheral Proteins: These are various proteins attached to the photosystem that play roles in electron transport, proton translocation, and the stabilization of the complex.  
 
 10. **Explain how photosystems trap light energy.**  
+    Photosystems trap light energy through the following steps:  
+    *Light Absorption:* Pigment molecules in the antenna complex absorb light of various wavelengths.  
+    *Energy Transfer:* The absorbed light energy is transferred to a special chlorophyll a molecule in the reaction center.  
+    *Electron Excitation:* This energy excites an electron in the chlorophyll a to a higher energy state.  
+    *Electron Transport:* The excited electron is transferred to an electron acceptor, starting the electron transport chain, which generates ATP and NADPH.  
+    In essence, photosystems capture light energy and convert it into chemical energy, crucial for the light-dependent reactions of photosynthesis.    
 
 11. **Identify the source of the excited electrons found in Photosystem II & Photosystem I.**  
+    Each photosystem has a central reaction center with a Chlorophyll a molecule & a pair of special electrons   
+    During the light reactions, all pigments in the photosystem collect light energy  
+        • This energy is funneled toward the reaction center  
+        • Ultimately, it energizes Chlorophyll a’s special electrons  
+        • These energized special electrons then travel through Electron Transport Chain proteins and are ultimately donated to NAD+  
 
 12. **Explain how the light reactions of photosynthesis generate oxygen.**  
 
