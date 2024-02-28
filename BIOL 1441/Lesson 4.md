@@ -145,26 +145,66 @@ phosphorylation).**
 
 16. **Explain the function of electron carriers
 in cellular respiration.**  
+   The Electron Transport Chain (ETC) uses energy from electron carriers to create the H+ concentration gradient  
+      Electron carriers “capture” the energy from one chemical reaction & transport it to a different part of the cell to be used
+      • Electron carriers are like the Uber for electrons
+      In cellular respiration, the primary electron carriers are NAD+ / NADH & FAD / FADH2  
 
 17. **Explain how electrons are used to build a
 proton gradient across the inner
 mitochondrial membrane.**  
+   Electrons (from NADH & FADH2) travel through each of the ETC protein complexes. Their energy is used by the proteins to pump H+ ions (a.k.a. protons) into the intermembrane space.
+   By the end of the ETC, the electrons no longer store any energy & are combined with O2
 
 18. **Explain how the movement of protons is
 used to build ATP.**  
+      ATP Synthase is the ATP-generating protein of oxidative phosphorylation  
+   The concentration of H+ (protons) is very high in the intermembrane space & much lower in the matrix  
+      • ATP synthase – which is embedded in the inner mitochondrial membrane – allows protons to move back into the matrix  
+      • The energy that is released when these protons move back in is called proton motive force  
+      ATP synthase uses the power of proton motive force to create new ATP  
+      • It takes the movement of 4 protons (H+) to make 1 molecule of ATP  
 
 19. **Describe the role of oxygen in the
 process of cellular respiration.**  
+      Oxidative phosphorylation is the only cellular respiration process that requires oxygen (O2)  
+      O2 is the final electron acceptor at the end of the Electron Transport Chain (ETC)  
+      • Energy-poor electrons are donated to O2, making space for other electrons to continue to move through the ETC  
+      • If oxygen was not present, electrons would build up in the Electron Transport Chain & electron carriers would remain permanently reduced  
 
 20. **Describe the purpose of fermentation.**  
+   Cells use fermentation when there is no oxygen present  
+   The goal of fermentation is to regenerate the oxidized electron carrier NAD+  
+   • Without this carrier, glycolysis cannot occur, and…  
+   • Without glycolysis, a cell has no ways to make ANY ATP  
 
 21. **Explain how alcohol & lactic acid
 fermentation occur, including types of
 organisms using each pathway**  
+   Alcohol fermentation is used by yeast to regenerate NAD+
+   • The pyruvate (made by glycolysis) is transformed into ethanol
+   • This transformation requires electrons, which NADH provides, oxidizing it back into NAD+  
+   Alcohol fermentation is used in brewing & wine-making
+   • This process generates a lot of CO2  
+   • Fermentation tanks have valves to help relieve the pressure this gas creates  
 
-22. **Explain the role of feedback inhibition in
+      Lactic acid fermentation is used to regenerate NAD+ in bacteria, fungi, & mammals
+      • The pyruvate (made by glycolysis) is transformed into lactic acid
+      • This transformation requires electrons, which NADH provides, oxidizing it back into NAD+
+      Lactic acid fermentation is used to make many different foods
+      • Examples: yogurt, cheese, sourdough **bread :3**  
+      • Lactic acid leads to a tangy taste in these foods  
+
+22. **Explain the role of feedback inhibition in 
 regulating cellular respiration.**  
-
+      
+      The steps of cellular respiration are regulated using feedback inhibition   
+             • This means that the products of the chemical reactions can inhibit the continuation of the chemical reaction  
+         
+      Many of the enzymes involved in respiration are sensitive to ATP  
+             • If A LOT of ATP is present, they are inactive  
+             • If A LITTLE ATP is present, they are active  
+         Other factors (like pH changes due to lactic acid buildup) can also influence enzyme activity  
 
 ## Slide Notes
 In **cellular respiration** the energy is transferred to the bonds between the phosphate groups ATP.
