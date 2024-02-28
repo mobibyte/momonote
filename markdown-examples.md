@@ -54,6 +54,36 @@ This is a dangerous warning.
 This is a details block.
 :::
 
+## Syntax Highlighting
+
+VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+
+**Input**
+
+````md
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+````
+
+**Output**
+
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).

@@ -8,18 +8,24 @@ hero:
   tagline: 
   actions:
     - theme: brand
-      text: We only have Biology atm
-      link: /BIOL 1441/Syllabus
-    - theme: alt
       text: Markdown Examples
       link: /markdown-examples
+    - theme: alt
+      text: BIOL 1441
+      link: /BIOL 1441/Syllabus
+    - theme: alt
+      text: CSE 1320
+      link: /CSE 1320/Syllabus
+    - theme: alt
+      text: CSE 4308
+      link: /CSE 4308/Syllabus
 
 features:
-  - title: Anyone can cook
-    details: No coding experience required!
-  - title: From anywhere
-    details: Available on any device
-  - title: Open Source
-    details: Contribute on GitHub
+  - title: What is MOMO Note?
+    details: A collection of notes for college classes. 
+  - title: What's unique about these notes?
+    details: Each course is for a specific professor, not just a general subject. You'll know what they're likely to ask for the next exam.
+  - title: Who writes these notes?
+    details: Regular college students like you and me. No coding experience required!
 ---
 
