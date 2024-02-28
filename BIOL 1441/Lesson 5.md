@@ -2,9 +2,15 @@
 
 ## Learning Objectives
 1. **Explain how autotrophs & heterotrophs obtain their energy.**  
-    Autotrophs (“self feeders”) are organisms that CAN build their own energy-rich macromolecules  
+    **Autotrophs** (“self feeders”) are organisms that CAN build their own energy-rich macromolecules  
     • Photoautotrophs (like plants) use the energy of light to do this  
     • Chemoautotrophs (like some bacteria) use the energy of inorganic molecules (like sulfur or ammonia)  
+    Autotrophs get their energy from sunlight.
+
+    Because humans CANNOT make these molecules themselves, we are considered **heterotrophs** (“other feeders”)  
+    • Animals, fungi, and most bacteria are also heterotrophs   
+    Heterotrophs get their energy from ingesting organic molecules or eating autotrophs.  
+
 2. **Write the overall chemical equation for photosynthesis.**  
     Energy + 6CO2 + 6H2O => C6H12O6 + 6O2  
 
