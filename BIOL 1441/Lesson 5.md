@@ -2,11 +2,17 @@
 
 ## Learning Objectives
 1. **Explain how autotrophs & heterotrophs obtain their energy.**  
-
+    Autotrophs (“self feeders”) are organisms that CAN build their own energy-rich macromolecules  
+    • Photoautotrophs (like plants) use the energy of light to do this  
+    • Chemoautotrophs (like some bacteria) use the energy of inorganic molecules (like sulfur or ammonia)  
 2. **Write the overall chemical equation for photosynthesis.**  
+    Energy + 6CO2 + 6H2O => C6H12O6 + 6O2  
 
 3. **Identify which reaction words (anabolic / catabolic, endergonic / exergonic) accurately
 describe photosynthesis.**  
+  Photosynthesis is an **anabolic** process. Anabolic processes build complex molecules from simpler ones. In photosynthesis, simple molecules of water and carbon dioxide are assembled into glucose, a complex sugar, along with the production of oxygen. This synthesis of glucose involves the formation of new chemical bonds, demonstrating the constructive nature of anabolism.  
+  
+    Photosynthesis is an **endergonic** process. This means it requires an input of energy to proceed. The energy needed for photosynthesis comes from sunlight. In photosynthesis, light energy is captured by chlorophyll and used to convert carbon dioxide (CO2) and water (H2O) into glucose (C6H12O6) and oxygen (O2). The process stores energy in the chemical bonds of glucose, a form of potential energy that is higher than the energy of the reactants. Therefore, the reaction is non-spontaneous without the input of energy.  
 
 4. **Identify the source of energy for photosynthesis.**  
 
