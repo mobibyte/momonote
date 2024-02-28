@@ -15,14 +15,29 @@ describe photosynthesis.**
     Photosynthesis is an **endergonic** process. This means it requires an input of energy to proceed. The energy needed for photosynthesis comes from sunlight. In photosynthesis, light energy is captured by chlorophyll and used to convert carbon dioxide (CO2) and water (H2O) into glucose (C6H12O6) and oxygen (O2). The process stores energy in the chemical bonds of glucose, a form of potential energy that is higher than the energy of the reactants. Therefore, the reaction is non-spontaneous without the input of energy.  
 
 4. **Identify the source of energy for photosynthesis.**  
+The source of energy for photosynthesis is sunlight.  
 
 5. **Name the locations of the light reactions & the Calvin Cycle in a plant cell.**  
+The light-dependent reactions occur in photosystems that are embedded in the thylakoid membranes of the chloroplasts.  
+
+    The Calvin Cycle (a.k.a. light-independent reactions) occurs in the stroma of chloroplasts.  
 
 6. **Describe the general functions of the light reactions & the Calvin Cycle in photosynthesis.**  
+        The light reactions capture light energy from the sun and convert it into chemical energy in the form of ATP (adenosine triphosphate) and NADPH (nicotinamide adenine dinucleotide phosphate, reduced form). These reactions take place in the thylakoid membranes of chloroplasts. Water molecules (H2O) are split into oxygen (O2), protons (H+), and electrons (e-). This process releases oxygen as a byproduct into the atmosphere. The movement of electrons through the electron transport chain in the thylakoid membrane creates a proton gradient across the membrane. ATP is synthesized as protons flow back across the membrane through ATP synthase, utilizing the energy stored in the gradient. The ATP and NADPH produced in the light reactions provide the energy and reducing power, respectively, needed for the synthesis of carbohydrates in the next phase of photosynthesis, the Calvin Cycle.  
+    
+    The Calvin Cycle incorporates atmospheric carbon dioxide (CO2) into organic molecules, a process known as carbon fixation. This is the first step in forming glucose from CO2 and H2O. Using the ATP and NADPH generated during the light reactions, the Calvin Cycle chemically reduces the fixed carbon to produce the sugar G3P (glyceraldehyde-3-phosphate). Two molecules of G3P can be combined to form glucose or other carbohydrates. The cycle also regenerates ribulose-1,5-bisphosphate (RuBP), the molecule that accepts CO2 in the first step of the cycle, allowing the process to continue.  
 
 7. **Explain how the wavelength of light relates to its color & energy level.**  
+    The color of an object (like a leaf) is determined by which wavelengths of light are reflected off its surface
+    
+    Light energy is made of photons that travel in waves
+        • Light with shorter wavelengths (like blue & purple) has more energy  
+        • Light with longer wavelengths (like red) has less energy  
 
 8. **Explain why plants are green.**  
+    To capture as much light as possible, plants use multiple pigment proteins that each absorb different wavelengths of light  
+    Chlorophyll a is the primary pigment protein in plants. Accessory pigments (like Chlorophyll b & β-carotene) absorb light & transfer that energy to Chlorophyll a  
+    Chlorophyll absorbs light most efficiently in the blue and red parts of the visible spectrum and reflects green light. This reflected green light is what gives plants their green color.  
 
 9. **Name the structures that are found in a photosystem.**  
 
