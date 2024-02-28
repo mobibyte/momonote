@@ -100,7 +100,7 @@ C6H12O6 + 6O2 --> 6CO2 + 6H2O + 36 or 38 ATP
 
 12. **Differentiate between substrate-level
 phosphorylation & chemiosmosis.**  
-   In glycolysis & the Citric Acid Cycle, ATP synthesis occurs using ***substrate-level phosphorylation**  
+   In glycolysis & the Citric Acid Cycle, ATP synthesis occurs using ***substrate-level phosphorylation***  
    • A phosphate group is removed from one molecule (the substrate)  
    • It is then directly attached to ADP 
     Mechanism: In substrate-level phosphorylation, an enzyme directly transfers a phosphate group from a substrate molecule to ADP, forming ATP. This process does not involve the use of an electrochemical gradient.  
