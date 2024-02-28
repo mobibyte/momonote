@@ -188,10 +188,11 @@ organisms using each pathway**
    • This process generates a lot of CO2  
    • Fermentation tanks have valves to help relieve the pressure this gas creates  
 
-      Lactic acid fermentation is used to regenerate NAD+ in bacteria, fungi, & mammals
-      • The pyruvate (made by glycolysis) is transformed into lactic acid
-      • This transformation requires electrons, which NADH provides, oxidizing it back into NAD+
-      Lactic acid fermentation is used to make many different foods
+      Lactic acid fermentation is used to regenerate NAD+ in bacteria, fungi, & mammals  
+      • The pyruvate (made by glycolysis) is transformed into lactic acid  
+      • This transformation requires electrons, which NADH provides, oxidizing it back into NAD+  
+
+      Lactic acid fermentation is used to make many different foods  
       • Examples: yogurt, cheese, sourdough **bread :3**  
       • Lactic acid leads to a tangy taste in these foods  
 
