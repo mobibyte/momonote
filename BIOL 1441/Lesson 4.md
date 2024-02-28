@@ -65,38 +65,23 @@ C6H12O6 + 6O2 --> 6CO2 + 6H2O + 36 or 38 ATP
     **Step 1:** glycolysis - Splits the glucose into pyruvate molecules  
     Glycolysis is the initial glucose-breaking process  
     • Many chemical reactions break its chemical bonds, rearrange its elements, and harvest some of its energy  
-    ***Starting materials:*** glucose (C6H12O6) + 2 ATP + 2 NAD+ *Oxygen (O2) is NOT required for this process!*  
-    ***Ending materials:*** 2 pyruvate (C3H4O3) + 2 (net) ATP + 2 NADH
-    • Technically, 4 ATP are made, but 2 ATP are required, so the cell only gains 2 ATP
-    • This ATP is made through substrate-level phosphorylation  
-    ***Location:*** the cytoplasm  
-    ***Stored Forms of Energy:*** The energy from glucose is stored in the 2 ATPs (net gain) and 2 NADH produced.
+    
   
     **Step 2:** pyruvate oxidation - Moves the pyruvates into the mitochondria & processes them  
     Each 3-carbon pyruvate still has A LOT of energy
       • The pyruvates are transported into the mitochondria so that energy can be harvested  
-    ***Starting materials:*** 2 pyruvate + 2 NAD+ + 2 Coenzyme A complexes  
-    ***Ending materials:*** 2 acetyl coenzyme A (acetyl CoA) + 2 CO2 + 2 NADH  
-    ***Location:*** the mitochondrial matrix (a.k.a. its center)  
-    ***Stored Forms of Energy:*** Energy is stored in the high-energy electrons of NADH.  
+    
     
     **Step 3:** the Citric Acid (Krebs) Cycle - Remove energy-rich electrons from the process pyruvates  
     The Citric Acid Cycle harvests all the remaining energy in Acetyl Coenzyme A (Acetyl CoA)  
-      • REMEMBER: one glucose molecule makes two acetyl CoA’s!  
-    ***Starting materials:*** 2 acetyl CoA + 6 NAD+ + 2 FAD (+ oxaloacetate )  
-    ***Ending materials:*** oxaloacetate + 4 CO2 + 2 ATP + 6 NADH + 2 FADH2  
-    ***Location:*** the mitochondrial matrix (a.k.a. its center)  
-    ***Stored Forms of Energy:*** Energy is stored in the high-energy electrons of NADH and FADH2, and in the ATP produced.  
+
     
     **Step 4:** oxidative phosphorylation - Use the energy from those high-energy electrons to build ATP  
     Oxidative phosphorylation is the only cellular respiration process that requires oxygen (O2)  
     O2 is the final electron acceptor at the end of the Electron Transport Chain (ETC)  
     • Energy-poor electrons are donated to O2, making space for other electrons to continue to move through the ETC  
     • If oxygen was not present, electrons would build up in the Electron Transport Chain & electron carriers would remain permanently reduced  
-    ***Starting Materials:*** Electrons carried by NADH and FADH2, and Oxygen as the final electron acceptor  
-    ***Ending Materials:*** Water (from the reduction of oxygen) and approximately 36 ATP molecules (?)  
-    ***Location:*** Inner mitochondrial membrane  
-    ***Stored Forms of Energy:*** The energy is stored in the ATP produced. This stage harnesses the energy from an electrochemical gradient (proton gradient) across the inner mitochondrial membrane through chemiosmosis.  
+      
 
 12. **Differentiate between substrate-level
 phosphorylation & chemiosmosis.**  
@@ -107,19 +92,22 @@ phosphorylation & chemiosmosis.**
    Location: It occurs in the cytoplasm during glycolysis and in the mitochondrial matrix during the Krebs cycle for cellular respiration. In photosynthesis, it can occur in the stroma of chloroplasts during the Calvin cycle.  
    Energy Source: The energy for substrate-level phosphorylation comes directly from the chemical energy in substrate molecules, which are often intermediates in metabolic pathways like glycolysis or the Krebs cycle.  
    Oxygen Requirement: It does not directly require oxygen, so it can occur under both aerobic and anaerobic conditions.  
-   
-Oxidative phosphorylation uses the Electron Transport Chain (ETC) & **Chemiosmosis**  
-   • First, the ETC creates a proton (H+) concentration gradient across the inner mitochondrial membrane  
-   • Then, ATP synthase uses the energy of that gradient to build ATP in a process called ***chemiosmosis***
-   ATP Synthase is the ATP-generating protein of oxidative phosphorylation
-   The concentration of H+ (protons) is very high in the intermembrane space & much lower in the matrix
-   • ATP synthase – which is embedded in the inner mitochondrial membrane – allows protons to move back into the matrix  
-   • The energy that is released when these protons move back in is called proton motive force ATP synthase uses the power of proton motive force to create new ATP  
-   • It takes the movement of 4 protons (H+) to make 1 molecule of ATP  
+      
+      Oxidative phosphorylation uses the Electron Transport Chain (ETC) & **Chemiosmosis**  
+         • First, the ETC creates a proton (H+) concentration gradient across the inner mitochondrial membrane  
+         • Then, ATP synthase uses the energy of that gradient to build ATP in a process called ***chemiosmosis***
+         ATP Synthase is the ATP-generating protein of oxidative phosphorylation
+         The concentration of H+ (protons) is very high in the intermembrane space & much lower in the matrix
+         • ATP synthase – which is embedded in the inner mitochondrial membrane – allows protons to move back into the matrix  
+         • The energy that is released when these protons move back in is called proton motive force ATP synthase uses the power of proton motive force to create new ATP  
+         • It takes the movement of 4 protons (H+) to make 1 molecule of ATP  
 
 
 13. **List the number of carbons found in
 glucose & pyruvate.**  
+   **Glucose:** Glucose is a six-carbon (C6) sugar molecule. It's the starting material for glycolysis, where it undergoes enzymatic breakdown.  
+   
+      **Pyruvate:** Pyruvate, the end product of glycolysis, is a three-carbon (C3) molecule. Each glucose molecule is broken down into two molecules of pyruvate during glycolysis.  
 
 14. **Identify the starting materials & products
 created by each of these processes:
@@ -127,27 +115,54 @@ glycolysis, pyruvate oxidation, the Citric
 Acid Cycle (a.k.a. Krebs Cycle), and the
 Electron Transport Chain (and oxidative
 phosphorylation).**  
+   
+      **Glucose:**  
+       ***Starting materials:*** glucose (C6H12O6) + 2 ATP + 2 NAD+ *Oxygen (O2) is NOT required for this process!*  
+       ***Ending materials:*** 2 pyruvate (C3H4O3) + 2 (net) ATP + 2 NADH
+       • Technically, 4 ATP are made, but 2 ATP are required, so the cell only gains 2 ATP
+       • This ATP is made through substrate-level phosphorylation  
+       ***Location:*** the cytoplasm  
+       ***Stored Forms of Energy:*** The energy from glucose is stored in the 2 ATPs (net gain) and 2 NADH produced.
+   
+      **Pyruvate oxidation:**  
+      ***Starting materials:*** 2 pyruvate + 2 NAD+ + 2 Coenzyme A complexes  
+       ***Ending materials:*** 2 acetyl coenzyme A (acetyl CoA) + 2 CO2 + 2 NADH  
+       ***Location:*** the mitochondrial matrix (a.k.a. its center)  
+       ***Stored Forms of Energy:*** Energy is stored in the high-energy electrons of NADH.  
+     
+      **the Citric Acid Cycle (a.k.a. Krebs Cycle):**  
+          • REMEMBER: one glucose molecule makes two acetyl CoA’s!  
+          ***Starting materials:*** 2 acetyl CoA + 6 NAD+ + 2 FAD (+ oxaloacetate )  
+          ***Ending materials:*** oxaloacetate + 4 CO2 + 2 ATP + 6 NADH + 2 FADH2  
+          ***Location:*** the mitochondrial matrix (a.k.a. its center)  
+          ***Stored Forms of Energy:*** Energy is stored in the high-energy electrons of NADH and FADH2, and in the ATP produced.  
+      
+      **the Electron Transport Chain (and oxidative phosphorylation):**   
+          ***Starting Materials:*** Electrons carried by NADH and FADH2, and Oxygen as the final electron acceptor  
+          ***Ending Materials:*** Water (from the reduction of oxygen) and approximately 36 ATP molecules (?)  
+          ***Location:*** Inner mitochondrial membrane  
+          ***Stored Forms of Energy:*** The energy is stored in the ATP produced. This stage harnesses the energy from an electrochemical gradient (proton gradient) across the inner mitochondrial membrane through chemiosmosis.  
 
-15. **Explain the function of electron carriers
+16. **Explain the function of electron carriers
 in cellular respiration.**  
 
-16. **Explain how electrons are used to build a
+17. **Explain how electrons are used to build a
 proton gradient across the inner
 mitochondrial membrane.**  
 
-17. **Explain how the movement of protons is
+18. **Explain how the movement of protons is
 used to build ATP.**  
 
-18. **Describe the role of oxygen in the
+19. **Describe the role of oxygen in the
 process of cellular respiration.**  
 
-19. **Describe the purpose of fermentation.**  
+20. **Describe the purpose of fermentation.**  
 
-20. **Explain how alcohol & lactic acid
+21. **Explain how alcohol & lactic acid
 fermentation occur, including types of
 organisms using each pathway**  
 
-21. **Explain the role of feedback inhibition in
+22. **Explain the role of feedback inhibition in
 regulating cellular respiration.**  
 
 
