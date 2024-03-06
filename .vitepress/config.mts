@@ -77,6 +77,7 @@ export default defineConfig({
           text: 'Quiz 3',
           collapsed: true,
           items: [
+            { text: 'Chapter 04', link: '/CSE 4308/Chapter 04.md' },
             { text: 'Chapter 08', link: '/CSE 4308/Chapter 08.md' },
             { text: 'Chapter 11', link: '/CSE 4308/Chapter 11.md' },
             { text: 'Sample Quiz', link: '/CSE 4308/Quizzes/Quiz 3.md' },
