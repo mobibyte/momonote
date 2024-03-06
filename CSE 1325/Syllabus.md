@@ -2,7 +2,13 @@
 Object Oriented Programming
 
 Topics covered:
-* UNIX, Libraries, Overflow, Bitwise operations, Pointers, Makefile, 
-* Strings, Automatic vs Static vars, Global bs local, Pointer Arithmetic, 
-* Enums, Structs, Unions, File handling, layout of memory, linked list, 
-* stacks, queues, recursion, Binary Search Trees 
+* JVM JRE and JDK, Primitive & non Primitive data types, Scanner
+* Sequential Sum & product, Strings, Heap, Objects, Wrapper Classes
+* Tokens, Parsing, Arrays, Collection Framework(Linked lists, Lists, Stack, and queues)
+* Exception Handling, File Handling, Creating classes and objects
+
+Note: 
+* I'll say that these aren't the best set of notes, this class wasn't the best w/ professor marika
+* shes not a bad professor, but she was kinda all over the place.
+
+Mostly read the code and you'll be fine, check the GH for the inclass folder inside of this folder
