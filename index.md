@@ -19,6 +19,9 @@ hero:
     - theme: alt
       text: CSE 4308
       link: /CSE 4308/Syllabus
+    - theme: alt
+      text: CSE 5382
+      link: /CSE 5382/Syllabus
 
 features:
   - title: What is MOMO Note?

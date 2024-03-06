@@ -11,7 +11,8 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'BIOL 1441', link: '/BIOL 1441/Syllabus.md' },
       { text: 'CSE 1320', link: '/CSE 1320/Syllabus.md' },
-      { text: 'CSE 4308', link: '/CSE 4308/Syllabus.md' }
+      { text: 'CSE 4308', link: '/CSE 4308/Syllabus.md' },
+      { text: 'CSE 5382', link: '/CSE 5382/Syllabus.md' }
     ],
 
     // https://vitepress.dev/reference/default-theme-sidebar
@@ -63,24 +64,62 @@ export default defineConfig({
           text: 'Quiz 1',
           collapsed: true,
           items: [
-            { text: 'Sample Quiz', link: '/CSE 4308/Quizzes/Quiz 1.md' },
+            { text: 'Sample Quiz', link: '/CSE 4308/Quiz 1/Quiz 1.md' },
           ]
         },
         {
           text: 'Quiz 2',
           collapsed: true,
           items: [
-            { text: 'Sample Quiz', link: '/CSE 4308/Quizzes/Quiz 2.md' },
+            { text: 'Sample Quiz', link: '/CSE 4308/Quiz 2/Quiz 2.md' },
           ]
         },
         {
           text: 'Quiz 3',
           collapsed: true,
           items: [
-            { text: 'Chapter 04', link: '/CSE 4308/Chapter 04.md' },
-            { text: 'Chapter 08', link: '/CSE 4308/Chapter 08.md' },
-            { text: 'Chapter 11', link: '/CSE 4308/Chapter 11.md' },
-            { text: 'Sample Quiz', link: '/CSE 4308/Quizzes/Quiz 3.md' },
+            { text: 'Chapter 04', link: '/CSE 4308/Quiz 3/Chapter 04.md' },
+            { text: 'Chapter 08', link: '/CSE 4308/Quiz 3/Chapter 08.md' },
+            { text: 'Chapter 11', link: '/CSE 4308/Quiz 3/Chapter 11.md' },
+            { text: 'Sample Quiz', link: '/CSE 4308/Quiz 3/Quiz 3.md' },
+          ]
+        }
+      ],
+      '/CSE 5382/': [
+        { text: 'Syllabus', link: '/CSE 5382/Syllabus.md'},
+        {
+          text: 'Quiz 1',
+          collapsed: true,
+          items: [
+            { text: 'Chapter 00', link: '/CSE 5382/Quiz 1/Chapter 00.md' },
+            { text: 'Chapter 01', link: '/CSE 5382/Quiz 1/Chapter 01.md' },
+            { text: 'Chapter 01', link: '/CSE 5382/Quiz 1/Chapter 01.md' },
+            { text: 'Chapter 03', link: '/CSE 5382/Quiz 1/Chapter 03.md' },
+            { text: 'Chapter 16', link: '/CSE 5382/Quiz 1/Chapter 16.md' },
+            { text: 'Sample Quiz', link: '/CSE 5382/Quiz 1/Quiz 1.md' },
+          ]
+        },
+        {
+          text: 'Quiz 2',
+          collapsed: true,
+          items: [
+            { text: 'Chapter 04', link: '/CSE 5382/Quiz 2/Chapter 04.md' },
+            { text: 'Chapter 05', link: '/CSE 5382/Quiz 2/Chapter 05.md' },
+            { text: 'Chapter 06', link: '/CSE 5382/Quiz 2/Chapter 06.md' },
+            { text: 'Chapter 07', link: '/CSE 5382/Quiz 2/Chapter 07.md' },
+            { text: 'Chapter 08', link: '/CSE 5382/Quiz 2/Chapter 08.md' },
+            { text: 'Sample Quiz', link: '/CSE 5382/Quiz 2/Quiz 2.md' },
+            
+          ]
+        },
+        {
+          text: 'Quiz 3',
+          collapsed: true,
+          items: [
+            { text: 'Chapter 12', link: '/CSE 5382/Quiz 3/Chapter 12.md' },
+            { text: 'Chapter 13', link: '/CSE 5382/Quiz 3/Chapter 13.md' },
+            { text: 'Chapter 14', link: '/CSE 5382/Quiz 2/Chapter 14.md' },
+            { text: 'Sample Quiz', link: '/CSE 5382/Quiz 3/Quiz 3.md' },
           ]
         }
       ]
