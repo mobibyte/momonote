@@ -1,5 +1,10 @@
 # Buffer Overflow Attack Lab (Set-UID Version)
 
+::: info
+Copyright © 2006 - 2020 by Wenliang Du.
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. If you remix, transform, or build upon the material, this copyright notice must be left intact, or reproduced in a way that is reasonable to the medium in which the work is being re-published.
+:::
+
 ## 1 Overview
 Buffer overflow is defined as the condition in which a program attempts to write data beyond the boundary
 of a buffer. This vulnerability can be used by a malicious user to alter the flow control of the program,
@@ -209,7 +214,7 @@ To exploit the buffer-overflow vulnerability in the target program, the most imp
 
 We will add the -g flag to gcc command, so debugging information is added to the binary. If you run make, the debugging version is already created. We will use gdb to debug stack-L1-dbg. We need to create a file called badfile before running the program.  
 
-```
+```bash
 $ touch badfile     ⬅️ Create an empty badfile
 $ gdb stack-L1-dbg
 gdb-peda$ b bof     ⬅️ Set a break point at function bof()
@@ -231,3 +236,46 @@ gdb-peda$ quit      ⬅️ exit
 
 **Note 2.** It should be noted that the frame pointer value obtained from gdb is different from that during the actual execution (without using gdb). This is because gdb has pushed some environment data into the stack before running the debugged program. When the program runs directly without using gdb, the stack does not have those data, so the actual frame pointer value will be larger. You should keep this in mind when constructing your payload.
 
+### 5.2 Launching Attacks  
+To exploit the buffer-overflow vulnerability in the target program, we need to prepare a payload, and save it inside badfile. We will use a Python program to do that. We provide a skeleton program called exploit.py, which is included in the lab setup file. The code is incomplete, and students need to replace some of the essential values in the code.  
+
+Listing 3: exploit.py  
+```py
+#!/usr/bin/python3
+import sys
+shellcode= (
+""           # ⬅️ Need to change
+).encode(’latin-1’)
+
+# Fill the content with NOP’s
+content = bytearray(0x90 for i in range(517))
+
+################################################################## 
+# Put the shellcode somewhere in the payload
+start = 0    # ⬅️ Need to change
+content[start:start + len(shellcode)] = shellcode
+
+# Decide the return address value
+# and put it somewhere in the payload
+ret = 0x00   # ⬅️ Need to change 
+offset = 0 # ⬅️ Need to change
+
+L = 4     # Use 4 for 32-bit address and 8 for 64-bit address
+content[offset:offset + L] = (ret).to_bytes(L,byteorder=’little’)
+##################################################################
+# Write the content to a file
+with open(’badfile’, ’wb’) as f:
+f.write(content)
+```
+
+After you finish the above program, run it. This will generate the contents for badfile. Then run the vulnerable program stack. If your exploit is implemented correctly, you should be able to get a root shell:  
+
+```bash
+$./exploit.py     // create the badfile
+$./stack-L1       // launch the attack by running the vulnerable program
+# <---- Bingo! You’ve got a root shell!
+```
+
+In your lab report, in addition to providing screenshots to demonstrate your investigation and attack, you also need to explain how the values used in your exploit.py are decided. These values are the most important part of the attack, so a detailed explanation can help the instructor grade your report. Only demonstrating a successful attack without explaining why the attack works will not receive many points.  
+
+## 6 Task 4: Launching Attack without Knowing Buffer Size (Level 2)
