@@ -1,5 +1,5 @@
 # Lecture Notes  
-![WhatsYourSource](../assets/lesson5.1.png)
+![WhatsYourSource](./assets/lesson5.1.png)
 
 **Autotrophs** (“self feeders”) are organisms that CAN build their own energy-rich macromolecules
 **Photoautotrophs** (like plants) use the energy of light to do this ^
@@ -8,7 +8,7 @@
 Because humans CANNOT make these molecules themselves, we are considered **heterotrophs** (“other feeders”) Animals, fungi, and most bacteria are also
 heterotrophs.
 
-![WhatsYourSource](../assets/lesson5.2.png)
+![WhatsYourSource](./assets/lesson5.2.png)
 
 **Photosynthesis** is the process used by plants to transform light energy (and carbon dioxide and water) into glucose
 
