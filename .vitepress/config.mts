@@ -103,7 +103,12 @@ export default defineConfig({
           text: 'Quiz 2',
           collapsed: true,
           items: [
-            { text: 'Chapter 04', link: '/CSE 5382/Quiz 2/Chapter 04.md' },
+            { text: 'Chapter 04',
+              items: [
+                { text: 'Lecture', link: '/CSE 5382/Quiz 2/Chapter 04 Lecture.md'},
+                { text: 'Lab', link: '/CSE 5382/Quiz 2/Chapter 04 Lab.md'}
+              ]
+            },
             { text: 'Chapter 05', link: '/CSE 5382/Quiz 2/Chapter 05.md' },
             { text: 'Chapter 06', link: '/CSE 5382/Quiz 2/Chapter 06.md' },
             { text: 'Chapter 07', link: '/CSE 5382/Quiz 2/Chapter 07.md' },
