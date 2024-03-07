@@ -26,17 +26,30 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'Lesson 1',
+              collapsed: true,
               items: [
                 { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 01/Learning Objectives.md'},
+                { text: 'Lecture Notes', link: '/BIOL 1441/Lesson 01/Lecture Notes.md'},
                 { text: 'Lecture Exercises', link: '/BIOL 1441/Lesson 01/Lecture Exercises.md'},
                 { text: 'Homework Answers', link: '/BIOL 1441/Lesson 01/Homework Answers.md'},
               ]
             },
             { text: 'Lesson 2',
+              collapsed: true,
               items: [
-                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 07/Learning Objectives.md'},
-                { text: 'Lecture Exercises', link: '/BIOL 1441/Lesson 07/Lecture Exercises.md'},
-                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 07/Homework Answers.md'},
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 02/Learning Objectives.md'},
+                { text: 'Lecture Notes', link: '/BIOL 1441/Lesson 02/Lecture Notes.md'},
+                { text: 'Lecture Exercises', link: '/BIOL 1441/Lesson 02/Lecture Exercises.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 02/Homework Answers.md'},
+              ]
+            },
+            { text: 'Lesson 3',
+              collapsed: true,
+              items: [
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 03/Learning Objectives.md'},
+                { text: 'Lecture Notes', link: '/BIOL 1441/Lesson 03/Lecture Notes.md'},
+                { text: 'Lecture Exercises', link: '/BIOL 1441/Lesson 03/Lecture Exercises.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 03/Homework Answers.md'},
               ]
             },
           ]
@@ -45,8 +58,25 @@ export default defineConfig({
           text: 'Exam 2',
           collapsed: true,
           items: [
-            { text: 'Lesson 4', link: '/BIOL 1441/Lesson 4.md' },
-            { text: 'Lesson 5', link: '/BIOL 1441/Lesson 5.md' }
+            { text: 'Lesson 4',
+              collapsed: true,
+              items: [
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 04/Learning Objectives.md'},
+                { text: 'Lecture Notes', link: '/BIOL 1441/Lesson 04/Lecture Notes.md'},
+                { text: 'Lecture Exercises', link: '/BIOL 1441/Lesson 04/Lecture Exercises.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 04/Homework Answers.md'},
+              ]
+            },
+            { text: 'Lesson 5',
+              collapsed: true,
+              items: [
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 05/Learning Objectives.md'},
+                { text: 'Lecture Notes', link: '/BIOL 1441/Lesson 05/Lecture Notes.md'},
+                { text: 'Lecture Exercises', link: '/BIOL 1441/Lesson 05/Lecture Exercises.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 05/Homework Answers.md'},
+              ]
+            },
+
           ]
         },
         {
@@ -54,15 +84,19 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'Lesson 6',
+              collapsed: true,
               items: [
                 { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 06/Learning Objectives.md'},
+                { text: 'Lecture Notes', link: '/BIOL 1441/Lesson 06/Lecture Notes.md'},
                 { text: 'Lecture Exercises', link: '/BIOL 1441/Lesson 06/Lecture Exercises.md'},
                 { text: 'Homework Answers', link: '/BIOL 1441/Lesson 06/Homework Answers.md'},
               ]
             },
             { text: 'Lesson 7',
+              collapsed: true,
               items: [
                 { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 07/Learning Objectives.md'},
+                { text: 'Lecture Notes', link: '/BIOL 1441/Lesson 07/Lecture Notes.md'},
                 { text: 'Lecture Exercises', link: '/BIOL 1441/Lesson 07/Lecture Exercises.md'},
                 { text: 'Homework Answers', link: '/BIOL 1441/Lesson 07/Homework Answers.md'},
               ]
