@@ -149,7 +149,7 @@ strcpy(code, shellcode); // Copy the shellcode to the stack
 
 The code above includes two copies of shellcode, one is 32-bit and the other is 64-bit. When we compile the program using the -m32 flag, the 32-bit version will be used; without this flag, the 64-bit version will be used. Using the provided Makefile, you can compile the code by typing make. Two binaries will be created, a32.out (32-bit) and a64.out (64-bit). Run them and describe your observations. It should be noted that the compilation uses the execstack option, which allows code to be executed from the stack; without this option, the program will fail.  
 
-### 4 Task 2: Understanding the Vulnerable Program  
+## 4 Task 2: Understanding the Vulnerable Program  
 
 The vulnerable program used in this lab is called stack.c, which is in the code folder. This program has a buffer-overflow vulnerability, and your job is to exploit this vulnerability and gain the root privilege. The code listed below has some non-essential information removed, so it is slightly different from what you get from the lab setup file.  
 
@@ -200,4 +200,34 @@ The compilation and setup commands are already included in Makefile, so we just 
 - L2: pick a number between 100 and 200
 - L3: pick a number between 100 and 400
 - L4: we need to keep this number smaller, to make this level more challenging than the previous level. Since there are not many choices, we will fix this number at 10.  
+
+## 5 Task 3: Launching Attack on 32-bit Program (Level 1)
+
+### 5.1 Investigation
+
+To exploit the buffer-overflow vulnerability in the target program, the most important thing to know is the distance between the buffer’s starting position and the place where the return-address is stored. We will use a debugging method to find it out. Since we have the source code of the target program, we can compile it with the debugging flag turned on. That will make it more convenient to debug.
+
+We will add the -g flag to gcc command, so debugging information is added to the binary. If you run make, the debugging version is already created. We will use gdb to debug stack-L1-dbg. We need to create a file called badfile before running the program.  
+
+```
+$ touch badfile     ⬅️ Create an empty badfile
+$ gdb stack-L1-dbg
+gdb-peda$ b bof     ⬅️ Set a break point at function bof()
+Breakpoint 1 at 0x124d: file stack.c, line 18. 
+gdb-peda$ run       ⬅️ Start executing the program 
+...
+Breakpoint 1, bof (str=0xffffcf57 ...) at stack.c:18 
+18 {
+gdb-peda$ next      ⬅️ See the note below
+...
+22     strcpy(buffer, str);
+gdb-peda$ p $ebp    ⬅️ Get the ebp value $1 = (void *) 0xffffdfd8
+gdb-peda$ p &buffer ⬅️ Get the buffer’s address 
+$2 = (char (*)[100]) 0xffffdfac
+gdb-peda$ quit      ⬅️ exit
+```  
+
+**Note 1.** When gdb stops inside the bof() function, it stops before the ebp register is set to point to the current stack frame, so if we print out the value of ebp here, we will get the caller’s ebp value. We need to use next to execute a few instructions and stop after the ebp register is modified to point to the stack frame of the bof() function. The SEED book is based on Ubuntu 16.04, and gdb’s behavior is slightly different, so the book does not have the next step.  
+
+**Note 2.** It should be noted that the frame pointer value obtained from gdb is different from that during the actual execution (without using gdb). This is because gdb has pushed some environment data into the stack before running the debugged program. When the program runs directly without using gdb, the stack does not have those data, so the actual frame pointer value will be larger. You should keep this in mind when constructing your payload.
 
