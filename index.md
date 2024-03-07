@@ -5,7 +5,8 @@ layout: home
 hero:
   name: "MOMO Note"
   text: "shared study space"
-  tagline: 
+  image: 
+    src: https://github.com/mobibyte/MOMO/blob/main/2D/momo.png?raw=true
   actions:
     - theme: brand
       text: Markdown Examples
@@ -19,6 +20,9 @@ hero:
     - theme: alt
       text: CSE 4308
       link: /CSE 4308/Syllabus
+    - theme: alt
+      text: CSE 5382
+      link: /CSE 5382/Syllabus
 
 features:
   - title: What is MOMO Note?
