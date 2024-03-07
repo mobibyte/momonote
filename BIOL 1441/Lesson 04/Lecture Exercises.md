@@ -13,6 +13,6 @@ In **cellular respiration** the energy is transferred to the bonds between the p
 
 **ATP** can be used by cells as a source of energy by breaking the high-energy phosphate bonds.  
 
-![GlucoseEnergy](Flash%20Cards/assets/lesson4.1.png)
+![GlucoseEnergy](../assets/lesson4.1.png)
 The energy in glucose is stored in the chemical bonds between the atoms. It is not directly available for your cells to use.
 
