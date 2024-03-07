@@ -5,7 +5,8 @@ layout: home
 hero:
   name: "MOMO Note"
   text: "shared study space"
-  tagline: 
+  image: 
+    src: https://github.com/mobibyte/MOMO/blob/main/2D/momo.png?raw=true
   actions:
     - theme: brand
       text: Markdown Examples
