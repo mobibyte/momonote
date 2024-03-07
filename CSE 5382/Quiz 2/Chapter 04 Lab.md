@@ -278,4 +278,93 @@ $./stack-L1       // launch the attack by running the vulnerable program
 
 In your lab report, in addition to providing screenshots to demonstrate your investigation and attack, you also need to explain how the values used in your exploit.py are decided. These values are the most important part of the attack, so a detailed explanation can help the instructor grade your report. Only demonstrating a successful attack without explaining why the attack works will not receive many points.  
 
-## 6 Task 4: Launching Attack without Knowing Buffer Size (Level 2)
+## 6 Task 4: Launching Attack without Knowing Buffer Size (Level 2)  
+In the Level-1 attack, using gdb, we get to know the size of the buffer. In the real world, this piece of information may be hard to get. For example, if the target is a server program running on a remote machine, we will not be able to get a copy of the binary or source code. In this task, we are going to add a constraint: you can still use gdb, but you are not allowed to derive the buffer size from your investigation. Actually, the buffer size is provided in Makefile, but you are not allowed to use that information in your attack.
+Your task is to get the vulnerable program to run your shellcode under this constraint. We assume that you do know the range of the buffer size, which is from 100 to 200 bytes. Another fact that may be useful to you is that, due to the memory alignment, the value stored in the frame pointer is always multiple of four (for 32-bit programs).
+Please be noted, you are only allowed to construct one payload that works for any buffer size within this range. You will not get all the credits if you use the brute-force method, i.e., trying one buffer size each time. The more you try, the easier it will be detected and defeated by the victim. That’s why minimizing the number of trials is important for attacks. In your lab report, you need to describe your method, and provide evidences.  
+
+## 7 Task 5: Launching Attack on 64-bit Program (Level 3)  
+In this task, we will compile the vulnerable program into a 64-bit binary called stack-L3. We will launch attacks on this program. The compilation and setup commands are already included in Makefile. Similar to the previous task, detailed explanation of your attack needs to be provided in the lab report.
+Using gdb to conduct an investigation on 64-bit programs is the same as that on 32-bit programs. The only difference is the name of the register for the frame pointer. In the x86 architecture, the frame pointer is ebp, while in the x64 architecture, it is rbp.  
+
+**Challenges.** Compared to buffer-overflow attacks on 32-bit machines, attacks on 64-bit machines is more difficult. The most difficult part is the address. Although the x64 architecture supports 64-bit address space, only the address from 0x00 through 0x00007FFFFFFFFFFF is allowed. That means for every address (8 bytes), the highest two bytes are always zeros. This causes a problem.  
+
+In our buffer-overflow attacks, we need to store at least one address in the payload, and the payload will be copied into the stack via strcpy(). We know that the strcpy() function will stop copying when it sees a zero. Therefore, if zero appears in the middle of the payload, the content after the zero cannot be copied into the stack. How to solve this problem is the most difficult challenge in this attack.  
+
+## Task 6: Launching Attack on 64-bit Program (Level 4)  
+The target program (stack-L4) in this task is similar to the one in the Level 2, except that the buffer size is extremely small. We set the buffer size to 10, while in Level 2, the buffer size is much larger. Your goal is the same: get the root shell by attacking this Set-UID program. You may encounter additional challenges in this attack due to the small buffer size. If that is the case, you need to explain how your have solved those challenges in your attack.  
+
+## Tasks 7: Defeating dash’s Countermeasure  
+The dash shell in the Ubuntu OS drops privileges when it detects that the effective UID does not equal to the real UID (which is the case in a Set-UID program). This is achieved by changing the effective UID back to the real UID, essentially, dropping the privilege. In the previous tasks, we let /bin/sh points to another shell called zsh, which does not have such a countermeasure. In this task, we will change it back, and see how we can defeat the countermeasure. Please do the following, so /bin/sh points back to /bin/dash.  
+
+```bash
+$ sudo ln -sf /bin/dash /bin/sh
+```
+
+To defeat the countermeasure in buffer-overflow attacks, all we need to do is to change the real UID, so it equals the effective UID. When a root-owned Set-UID program runs, the effective UID is zero, so before we invoke the shell program, we just need to change the real UID to zero. We can achieve this by invoking setuid(0) before executing execve() in the shellcode.
+The following assembly code shows how to invoke setuid(0). The binary code is already put inside call shellcode.c. You just need to add it to the beginning of the shellcode.  
+
+```asm
+; Invoke setuid(0): 32-bit
+xor ebx, ebx      ; ebx = 0: setuid()’s argument
+xor eax, eax
+mov  al, 0xd5     ; setuid()’s system call number
+int 0x80
+; Invoke setuid(0): 64-bit
+xor rdi, rdi      ; rdi = 0: setuid()’s argument
+xor rax, rax
+mov  al, 0x69     ; setuid()’s system call number
+syscall
+```
+
+**Experiment.** Compile call shellcode.c into root-owned binary (by typing "make setuid"). Run the shellcode a32.out and a64.out with or without the setuid(0) system call. Please describe and explain your observations.
+
+**Launching the attack again.** Now, using the updated shellcode, we can attempt the attack again on the vulnerable program, and this time, with the shell’s countermeasure turned on. Repeat your attack on Level 1, and see whether you can get the root shell. After getting the root shell, please run the following command to prove that the countermeasure is turned on. Although repeating the attacks on Levels 2 and 3 are not required, feel free to do that and see whether they work or not.  
+
+```
+# ls -l /bin/sh /bin/zsh /bin/dash
+```
+
+## 10 Task 8: Defeating Address Randomization  
+
+On 32-bit Linux machines, stacks only have 19 bits of entropy, which means the stack base address can have 2^19 = 524, 288 possibilities. This number is not that high and can be exhausted easily with the brute-force approach. In this task, we use such an approach to defeat the address randomization countermeasure on our 32-bit VM. First, we turn on the Ubuntu’s address randomization using the following command. Then we run the same attack against stack-L1. Please describe and explain your observation.
+
+```bash 
+$ sudo /sbin/sysctl -w kernel.randomize_va_space=2
+```
+
+We then use the brute-force approach to attack the vulnerable program repeatedly, hoping that the ad- dress we put in the badfile can eventually be correct. We will only try this on stack-L1, which is a 32-bit program. You can use the following shell script to run the vulnerable program in an infinite loop. If your attack succeeds, the script will stop; otherwise, it will keep running. Please be patient, as this may take a few minutes, but if you are very unlucky, it may take longer. Please describe your observation.  
+
+```bash
+#!/bin/bash
+SECONDS=0
+value=0
+while true; do
+  value=$(( $value + 1 ))
+  duration=$SECONDS
+  min=$(($duration / 60))
+sec=$(($duration % 60))
+  echo "$min minutes and $sec seconds elapsed."
+  echo "The program has been running $value times so far."
+  ./stack-L1
+done
+```
+
+Brute-force attacks on 64-bit programs is much harder, because the entropy is much larger. Although this is not required, free free to try it just for fun. Let it run overnight. Who knows, you may be very lucky.
+
+## 11 Tasks 9: Experimenting with Other Countermeasures  
+
+### 11.1 Task 9.a: Turn on the StackGuard Protection  
+
+Many compiler, such as gcc, implements a security mechanism called StackGuard to prevent buffer over- flows. In the presence of this protection, buffer overflow attacks will not work. In our previous tasks, we disabled the StackGuard protection mechanism when compiling the programs. In this task, we will turn it on and see what will happen.
+First, repeat the Level-1 attack with the StackGuard off, and make sure that the attack is still success- ful. Remember to turn off the address randomization, because you have turned it on in the previous task. Then, we turn on the StackGuard protection by recompiling the vulnerable stack.c program without the -fno-stack-protector flag. In gcc version 4.3.3 and above, StackGuard is enabled by default. Launch the attack; report and explain your observations.  
+
+### 11.2 Task 9.b: Turn on the Non-executable Stack Protection  
+
+Operating systems used to allow executable stacks, but this has now changed: In Ubuntu OS, the binary images of programs (and shared libraries) must declare whether they require executable stacks or not, i.e., they need to mark a field in the program header. Kernel or dynamic linker uses this marking to decide whether to make the stack of this running program executable or non-executable. This marking is done automatically by the gcc, which by default makes stack non-executable. We can specifically make it non- executable using the "-z noexecstack" flag in the compilation. In our previous tasks, we used "-z execstack" to make stacks executable.
+In this task, we will make the stack non-executable. We will do this experiment in the shellcode folder. The call shellcode program puts a copy of shellcode on the stack, and then executes the code from the stack. Please recompile call shellcode.c into a32.out and a64.out, without the "-z execstack" option. Run them, describe and explain your observations.  
+
+**Defeating the non-executable stack countermeasure.** It should be noted that non-executable stack only makes it impossible to run shellcode on the stack, but it does not prevent buffer-overflow attacks, because there are other ways to run malicious code after exploiting a buffer-overflow vulnerability. The return-to- libc attack is an example. We have designed a separate lab for that attack. If you are interested, please see our Return-to-Libc Attack Lab for details.  
+
+## 12 Submission  
+You need to submit a detailed lab report, with screenshots, to describe what you have done and what you have observed. You also need to provide explanation to the observations that are interesting or surprising. Please also list the important code snippets followed by explanation. Simply attaching code without any explanation will not receive credits.

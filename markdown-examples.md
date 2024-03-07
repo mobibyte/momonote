@@ -84,6 +84,8 @@ export default {
 }
 ```
 
+[See built-in languages here](https://shiki.style/languages)
+
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
