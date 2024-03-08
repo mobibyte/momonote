@@ -54,26 +54,26 @@ History | grep SHELL
 
 ### Assembly Opcodes meanings
 
-* MUL Rd, Ra, Rb	 ==	 Rd = Ra * Rb
-* MLA Rd, Ra, Rb, Rc 	== 	Rd = Ra * Rb + Rc (Rd and Rc can be the same)
-* AND Rd, Ra, Rb or const 	 ==	 Rd = Ra & Rb &lt;- C style (bitwise and)
-* ORR Rd, Ra, Rb or const	 == 	Rd = Ra | Rb (bitwise or)
-* EOR Rd, Ra, Rb or const	 ==	 Rd = Ra ^ Rb (exclusive or)
-* LSL  Rd, const  	== 	Rd = RA &lt;< Const (logical shift left, or bitshift left) 
-	Or
-* LSL Rd, Ra, Const  	
-* LSR Rd, Const	== 	rd = Rn >> Const   (logical shift right, or bitshift right)
-	Or 
-* LSR Rd, Ra, Const
-* LSL = logical shift left / logical shift right LSR
-* ASR Rd, const
-* ASR Rd, Ra const
-* ASR = Arithmetic shift
-* ROR Rd, const
-* ROR Rd, Ra, const
-* ROR = rotate right
-* Rd = |A|B|C|D|
-* LSL RD, #1
+    * MUL Rd, Ra, Rb	 ==	 Rd = Ra * Rb
+    * MLA Rd, Ra, Rb, Rc 	== 	Rd = Ra * Rb + Rc (Rd and Rc can be the same)
+    * AND Rd, Ra, Rb or const 	 ==	 Rd = Ra & Rb &lt;- C style (bitwise and)
+    * ORR Rd, Ra, Rb or const	 == 	Rd = Ra | Rb (bitwise or)
+    * EOR Rd, Ra, Rb or const	 ==	 Rd = Ra ^ Rb (exclusive or)
+    * LSL  Rd, const  	== 	Rd = RA &lt;< Const (logical shift left, or bitshift left) 
+        Or
+    * LSL Rd, Ra, Const  	
+    * LSR Rd, Const	== 	rd = Rn >> Const   (logical shift right, or bitshift right)
+        Or 
+    * LSR Rd, Ra, Const
+    * LSL = logical shift left / logical shift right LSR
+    * ASR Rd, const
+    * ASR Rd, Ra const
+    * ASR = Arithmetic shift
+    * ROR Rd, const
+    * ROR Rd, Ra, const
+    * ROR = rotate right
+    * Rd = |A|B|C|D|
+    * LSL RD, #1
 
 
 

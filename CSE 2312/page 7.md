@@ -178,7 +178,7 @@ Works the same way like how the functions being called looks
 
 
 ## Examples of stacks
-
+```
 Ex.s
 
 	.global_start
@@ -202,6 +202,8 @@ End:
 	Mov r7, #1
 
 	Swi 0
+
+```
 
 In gdb
 

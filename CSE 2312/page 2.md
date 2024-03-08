@@ -153,7 +153,7 @@ Starting off with the basic
 
 
 ### The skeleton
-
+```
 .global _start
 
 _start: 
@@ -192,7 +192,7 @@ Keil (compiler that uses ; for comments)
 /* for multi line comments*/
 
 // and slash slash for comments
-
+```
 
 
 * Assembly is not case sensitive 
