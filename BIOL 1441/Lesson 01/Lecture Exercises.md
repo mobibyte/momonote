@@ -1,4 +1,2 @@
 # Lecture Exercises  
 
-
-
