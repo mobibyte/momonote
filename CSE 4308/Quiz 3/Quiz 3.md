@@ -286,7 +286,7 @@ v. `Shorter(Bob, John); Shorter(x, Mary)`
 
 ## Task 6
 
-Task 6
+### Question
 
 Consider the 8-Puzzle problem. There are 8 tiles on a 3 by 3 grid. Your task is to get from some given configuration to a goal configuration. You can move a tile to an adjacent location as long as that location is empty.
 
@@ -304,3 +304,169 @@ Sample Goal configuration:
 
 
 Your task is to define this problem in PDDL Describe the initial state and the goal test using PDDL. Define appropriate actions for this planning problem, in the PDDL language. For each action, provide a name, arguments, preconditions, and effects.
+
+### Answer
+
+In PDDL (Planning Domain Definition Language), we can represent the 8-puzzle problem as follows. The domain describes the types, predicates, and actions, while the problem definition includes the specific initial state and the goal state.
+
+### Domain Definition
+
+::: details 
+*pddl*
+:::
+```lisp
+(define (domain eight-puzzle)
+
+    (:requirements :strips)
+
+    ;; Types
+    (:types 
+        position
+    )
+
+    ;; Predicates
+    (:predicates
+        (tile-at ?t - position ?p - position) ; Tile ?t is at position ?p
+        (adjacent ?p1 ?p2 - position) ; Position ?p1 is adjacent to ?p2
+        (empty ?p - position) ; Position ?p is empty
+    )
+
+    ;; Actions
+    (:action move-tile
+        :parameters (?t - position ?from - position ?to - position)
+        :precondition (and (tile-at ?t ?from) (empty ?to) (adjacent ?from ?to))
+        :effect (and (tile-at ?t ?to) (empty ?from) (not (tile-at ?t ?from)) (not (empty ?to)))
+    )
+)
+```
+
+### Problem Definition
+
+::: details 
+*pddl*
+:::
+```lisp
+(define (problem eight-puzzle-problem)
+    (:domain eight-puzzle)
+
+    ;; Initial state
+    (:init
+        (tile-at t2 p1) (tile-at t3 p2) (tile-at t6 p3)
+        (tile-at t1 p4) (empty p5) (tile-at t7 p6)
+        (tile-at t4 p7) (tile-at t8 p8) (tile-at t5 p9)
+
+        ;; Define adjacency (assuming p1 to p9 are the positions in the grid)
+        (adjacent p1 p2) (adjacent p2 p1)
+        (adjacent p2 p3) (adjacent p3 p2)
+        (adjacent p4 p5) (adjacent p5 p4)
+        (adjacent p5 p6) (adjacent p6 p5)
+        (adjacent p7 p8) (adjacent p8 p7)
+        (adjacent p8 p9) (adjacent p9 p8)
+        (adjacent p1 p4) (adjacent p4 p1)
+        (adjacent p2 p5) (adjacent p5 p2)
+        (adjacent p3 p6) (adjacent p6 p3)
+        (adjacent p4 p7) (adjacent p7 p4)
+        (adjacent p5 p8) (adjacent p8 p5)
+        (adjacent p6 p9) (adjacent p9 p6)
+    )
+
+    ;; Goal state
+    (:goal (and
+        (tile-at t1 p1) (tile-at t2 p2) (tile-at t3 p3)
+        (tile-at t4 p4) (tile-at t5 p5) (tile-at t6 p6)
+        (tile-at t7 p7) (tile-at t8 p8) (empty p9)
+    ))
+)
+```
+
+In this PDDL representation:
+
+- The domain defines a single action type, `move-tile`, with parameters for the tile and its from/to positions. The precondition checks that the tile is in the 'from' position, the 'to' position is adjacent and empty. The effect moves the tile and updates the empty position.
+  
+- The problem definition specifies the initial state, with each tile's position and the empty slot, and the adjacency relationships between positions. The goal state reflects the desired configuration.
+
+## Task 7
+### Question  
+Suppose that we are using PDDL to describe facts and actions in a certain world called JUNGLE. In the JUNGLE world there are 3 predicates, each predicate takes at most 4 arguments, and there are 5 constants. Give a reasonably tight bound on the number of unique states in the JUNGLE world. Justify your answer.
+
+### Answer
+
+Each of the 3 predicates can have a varying number of arguments ranging from 1 to 4.
+
+For each predicate:
+- When it has 1 argument, there are $5^1 = 5$ combinations (since there are 5 constants to choose from).
+- When it has 4 arguments, there are $5^4 = 625$ combinations (since each argument can be any of the 5 constants).
+
+Since there are 3 predicates, we consider the combinations for both cases (1 argument and 4 arguments) for each predicate. This gives:
+- $3 \times 5^1 = 15$ combinations for the 1-argument scenario.
+- $3 \times 5^4 = 1875$ combinations for the 4-argument scenario.
+
+Now, for calculating the number of possible states, we consider that each predicate can be either true or false. Therefore, the total number of states is based on the binary possibilities for all the combinations:
+- For the 15 combinations (1-argument scenario), there are $2^{15}$ possible states.
+- For the 1875 combinations (4-argument scenario), there are $2^{1875}$ possible states.
+
+These represent the range of possible states in the JUNGLE world, from the simplest scenario (where each predicate has only 1 argument) to the most complex (where each predicate has 4 arguments).
+
+For the JUNGLE world with the specified predicates and constants:
+
+- When each predicate has 1 argument, there are 15 possible combinations. This leads to $2^{15} = 32,768$ possible states.
+- When each predicate has 4 arguments, there are 1,875 possible combinations. This leads to $2^{1875}$ possible states, which is an extraordinarily large number.
+
+
+## Task 8
+
+### Question  
+
+Consider the following PDDL state description for the Blocks world problem.
+
+On(A, B)
+On(B, C)
+On(C, Table)
+On(D, E)
+On(D, Table)
+
+Consider the definition of Move(block, from, to) as given in the slides
+
+Can you perform action Move(A, B, D) in this state.
+
+What is the outcome of performing this action in this state.
+
+### Answer
+
+To determine whether the action `Move(A, B, D)` can be performed in the given state of the Blocks world and what the outcome would be, we need to consider the preconditions for the `Move` action and the state of the world before and after the action.
+
+In the Blocks world, the typical preconditions for a `Move(block, from, to)` action are:
+1. `block` is clear (i.e., no other block is on top of it).
+2. `from` is the current location of `block`.
+3. `to` is clear (i.e., no other block is on top of it) and different from `from`.
+4. `block` is not the same as `to`.
+
+Given the state description:
+- On(A, B)
+- On(B, C)
+- On(C, Table)
+- On(D, E)
+- On(E, Table)
+
+Let's analyze whether the action `Move(A, B, D)` can be performed:
+
+1. **A is clear**: True, as there is no block on top of A.
+2. **A is on B**: True, as stated in the state description.
+3. **D is clear**: False, since E is on top of D.
+4. **A is not D**: True.
+
+Since one of the preconditions (D being clear) is not satisfied, the action `Move(A, B, D)` cannot be performed in this state.
+
+If we hypothetically ignore the precondition that "D must be clear", and still perform the action, the resulting state would be:
+- A is now on D.
+- B is clear.
+- C, E, and Table remain unchanged.
+
+So, the new state would be:
+- On(A, D)
+- On(B, Table) (since A was moved from B)
+- On(C, Table)
+- On(D, E)
+- On(E, Table)
+
+But, it's important to note that in the real Blocks world problem as traditionally defined, this action would not be allowed due to the violation of the preconditions.
