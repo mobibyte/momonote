@@ -34,10 +34,10 @@ First, let's define the predicates and constants:
 
 Using these, the contract can be represented as two implications in first-order logic:
 
-1. If it rains on Monday, then John must give Mary a check for $100 on Tuesday:
+1. If it rains on Monday, then John must give Mary a check for 100 dollars on Tuesday:
    $Rains(Monday) \rightarrow GivesCheck(J, M, Tuesday)$
 
-2. If John gives Mary a check for $100 on Tuesday, Mary must mow the lawn on Wednesday:
+2. If John gives Mary a check for 100 dollars on Tuesday, Mary must mow the lawn on Wednesday:
    $GivesCheck(J, M, Tuesday) \rightarrow MowsLawn(M, Wednesday)$
 
 ### Part b: Logical Statement of the Events
@@ -45,7 +45,7 @@ Using these, the contract can be represented as two implications in first-order 
 Now, we express the actual events:
 
 - It did not rain on Monday: $\neg Rains(Monday)$
-- John gave Mary a check for $100 on Tuesday: $GivesCheck(J, M, Tuesday)$
+- John gave Mary a check for 100 dollars on Tuesday: $GivesCheck(J, M, Tuesday)$
 - Mary mowed the lawn on Wednesday: $MowsLawn(M, Wednesday)$
 
 ### Part c: Propositional Logic Conversion
