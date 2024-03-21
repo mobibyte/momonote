@@ -297,7 +297,10 @@ Sample Initial configuration:
 | 4 | 8 | 5 |
 
 Sample Goal configuration:
-
+| 1 | 2 | 3 |
+|---|---|---|
+| 4 | 5 | 6 |
+| 7 | 8 |   |
 
 
 Your task is to define this problem in PDDL Describe the initial state and the goal test using PDDL. Define appropriate actions for this planning problem, in the PDDL language. For each action, provide a name, arguments, preconditions, and effects.
