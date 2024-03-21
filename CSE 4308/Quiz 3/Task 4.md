@@ -60,14 +60,14 @@ Now, rewrite the first-order logic statements from parts a and b into propositio
 
 From part a:
 
-1. $ P \rightarrow Q $
-2. $ Q \rightarrow R $
+1. $P \rightarrow Q$
+2. $Q \rightarrow R$
 
 From part b:
 
-1. $ \neg P $
-2. $ Q $
-3. $ R $
+1. $ \neg P$
+2. $ Q$
+3. $ R$
 
 ### Part d: Contract Violation Analysis
 
