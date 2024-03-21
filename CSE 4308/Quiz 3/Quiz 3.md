@@ -38,3 +38,14 @@ For this, we need to check if every time KB is false, S1 is also false:
 3. In the fifth and sixth rows, KB is false and S1 is also false.  
 
 Since there are cases (rows 2 and 3) where KB is false but S1 is true, NOT(KB) does not always lead to NOT(S1) being true. Therefore, NOT(KB) does not entail NOT(S1).
+
+## Task 2
+
+### Question
+
+Suppose that some  knowledge base contains various propositional-logic sentences that utilize symbols A, B, C, D (connected with various connectives). There are only two cases when the knowledge base is false:  
+- First case: when A is true, B is false, C is true, D is false.
+- Second case: when A is false, B is false, C is true, D is true.
+
+In all other cases, the knowledge base is true.  
+Write a conjunctive normal form (CNF)  for the knowledge base.
