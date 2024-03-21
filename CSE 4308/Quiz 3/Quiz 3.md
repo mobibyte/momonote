@@ -238,3 +238,14 @@ To analyze if the contract was violated or not, let's consider the logical impli
 - John still gave Mary a check on Tuesday (\( Q \)), and Mary mowed the lawn on Wednesday (\( R \)).
 
 Since the second condition \( Q \rightarrow R \) (if John gives the check, Mary must mow the lawn) is satisfied, and the first condition \( P \rightarrow Q \) is vacuously true because \( P \) (it raining on Monday) is false, the contract has not been violated. The actions taken are in alignment with the conditions set out in the contract, even though the first condition's premise was not met.
+
+## Task 5
+### Question  
+
+Does a unifier exist for these pairs of predicates. If they do, give the unifier
+
+i. Taller(x, John); Taller(Bob, y)
+ii. Taller(y, Mother(x)); Taller(Bob, Mother(Bob))
+iii. Taller(Sam, Mary); Shorter(x, Sam)
+iv. Shorter(x, Bob); Shorter(y, z)
+v. Shorter(Bob, John); Shorter(x, Mary)
