@@ -2,6 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  markdown: {
+    math: true
+  },
   base: '/',
   title: "MOMO Note",
   description: "shared study space",
