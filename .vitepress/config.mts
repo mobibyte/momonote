@@ -149,7 +149,19 @@ export default defineConfig({
             { text: 'Chapter 04', link: '/CSE 4308/Quiz 3/Chapter 04.md' },
             { text: 'Chapter 08', link: '/CSE 4308/Quiz 3/Chapter 08.md' },
             { text: 'Chapter 11', link: '/CSE 4308/Quiz 3/Chapter 11.md' },
-            { text: 'Sample Quiz', link: '/CSE 4308/Quiz 3/Quiz 3.md' },
+            { 
+              text: 'Sample Quiz', 
+              items: [
+                { text: 'Task 1', link: '/CSE 4308/Quiz 3/Task 1.md' },
+                { text: 'Task 2', link: '/CSE 4308/Quiz 3/Task 2.md' },
+                { text: 'Task 3', link: '/CSE 4308/Quiz 3/Task 3.md' },
+                { text: 'Task 4', link: '/CSE 4308/Quiz 3/Task 4.md' },
+                { text: 'Task 5', link: '/CSE 4308/Quiz 3/Task 5.md' },
+                { text: 'Task 6', link: '/CSE 4308/Quiz 3/Task 6.md' },
+                { text: 'Task 7', link: '/CSE 4308/Quiz 3/Task 7.md' },
+                { text: 'Task 8', link: '/CSE 4308/Quiz 3/Task 8.md' },
+              ]
+            },
           ]
         }
       ],
