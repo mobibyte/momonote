@@ -156,3 +156,26 @@ In resolution, we convert all statements into clauses and use the resolution rul
 Thus, by resolution, we can derive $ G $ from the knowledge base.
 
 In summary, all three methods — forward chaining, backward chaining, and resolution — demonstrate that $ G $ is entailed by the given knowledge base.
+
+## Task 4
+
+### Question
+
+John and Mary sign the following contract:
+
+- If it rains on Monday, then John must give Mary a check for $100 on Tuesday
+- If John gives Mary a check for $100 on Tuesday, Mary must mow the lawn on Wednesday.
+
+What truly happened those days is the following:
+- It did not rain on Monday
+- John gave Mary a check for $100 on Tueday
+- Mary mowed the lawn on Wednesday.
+
+Part a (10 pts): Write a first order logic statement to express the contract. Make sure that you clearly define what constants and predicates that you use are. (NOTE: DO NOT use functions)
+
+Part b (8 pts): Write a logical statement to express what truly happened. When possible, use the same predicates and constants as in question 6a. If you need to define any new predicates or constants, clearly define what they stand for.
+
+Part c (12 pts): Define the symbols required to convert any KB involved in the above domanin from FOL to Propositional logic. Use this to convert the answers to part a and b to Propositional Logic.
+
+Part d (5 pts) (Extra Credit): Was the contract violated or not, Justify your answer [Note: Contract is definitely not violated if the events entail the contract. Contract is definitly violated if the events entail the opposite of the contract. Unknown otherwise]
+
