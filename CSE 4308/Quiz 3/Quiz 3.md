@@ -80,3 +80,15 @@ Finally, the CNF for the knowledge base (representing when the knowledge base is
 $(\neg A \lor B \lor \neg C \lor D) \land (A \lor B \lor \neg C \lor \neg D)$
 
 This expression captures all the conditions under which the knowledge base is true, except for the two specific false cases.
+
+## Task 3
+### Question
+Consider the KB
+
+(A => C) AND (B <=> C) AND (D => A) AND E AND [(B AND E) => G] AND (B => F) AND D
+
+Show that this entails G (if possible) by
+
+i. Forward Chaining
+ii. Backward Chaining
+iii. Resolution
