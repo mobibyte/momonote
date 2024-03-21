@@ -65,9 +65,9 @@ From part a:
 
 From part b:
 
-1. $ \neg P$
-2. $ Q$
-3. $ R$
+1. $\neg P$
+2. $Q$
+3. $R$
 
 ### Part d: Contract Violation Analysis
 
