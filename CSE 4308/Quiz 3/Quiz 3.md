@@ -470,3 +470,5 @@ So, the new state would be:
 - On(E, Table)
 
 But, it's important to note that in the real Blocks world problem as traditionally defined, this action would not be allowed due to the violation of the preconditions.
+
+## Task bop
