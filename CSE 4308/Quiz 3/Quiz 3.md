@@ -89,6 +89,6 @@ Consider the KB
 
 Show that this entails G (if possible) by
 
-i. Forward Chaining
-ii. Backward Chaining
-iii. Resolution
+i. Forward Chaining  
+ii. Backward Chaining  
+iii. Resolution  
