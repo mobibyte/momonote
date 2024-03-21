@@ -283,3 +283,21 @@ v. `Shorter(Bob, John); Shorter(x, Mary)`
    No unifier exists.
 
    Reason: The constants ('Bob', 'John', 'Mary') cannot be changed and there is no substitution that makes the predicates identical.
+
+## Task 6
+
+Task 6
+
+Consider the 8-Puzzle problem. There are 8 tiles on a 3 by 3 grid. Your task is to get from some given configuration to a goal configuration. You can move a tile to an adjacent location as long as that location is empty.
+
+Sample Initial configuration:
+| 2 | 3 | 6 |
+|---|---|---|
+| 1 |   | 7 |
+| 4 | 8 | 5 |
+
+Sample Goal configuration:
+
+
+
+Your task is to define this problem in PDDL Describe the initial state and the goal test using PDDL. Define appropriate actions for this planning problem, in the PDDL language. For each action, provide a name, arguments, preconditions, and effects.
