@@ -56,7 +56,7 @@ In resolution, we convert all statements into clauses and use the resolution rul
 
 1. Convert KB into clauses:
    - $A \implies C$ becomes $\neg A \vee C$.
-   - $B \Leftrightarrow C$ becomes $ (\neg B \vee C) \wedge (\neg C \vee B)$.
+   - $B \Leftrightarrow C$ becomes $(\neg B \vee C) \wedge (\neg C \vee B)$.
    - $D \implies A$ becomes $\neg D \vee A$.
    - $E$.
    - $(B \wedge E) \implies G$ becomes $\neg B \vee \neg E \vee G$.
