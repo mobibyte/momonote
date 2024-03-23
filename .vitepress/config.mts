@@ -12,10 +12,22 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'BIOL 1441', link: '/BIOL 1441/Syllabus.md' },
-      { text: 'CSE 1320', link: '/CSE 1320/Syllabus.md' },
-      { text: 'CSE 4308', link: '/CSE 4308/Syllabus.md' },
-      { text: 'CSE 5382', link: '/CSE 5382/Syllabus.md' }
+      {
+        text: 'CSE Notes',
+        items: [
+          { text: 'CSE 1320', link: '/CSE 1320/Syllabus.md' },
+          { text: 'CSE 1325', link: '/CSE 1325/Syllabus.md' },
+          { text: 'CSE 2312', link: '/CSE 2312/Syllabus.md' },
+          { text: 'CSE 4308', link: '/CSE 4308/Syllabus.md' },
+          { text: 'CSE 5382', link: '/CSE 5382/Syllabus.md' }
+        ]
+      },
+      {
+        text: 'BIOL Notes',
+        items: [
+          { text: 'BIOL 1441', link: '/BIOL 1441/Syllabus.md' },
+        ]
+      }
     ],
 
     // https://vitepress.dev/reference/default-theme-sidebar
@@ -122,6 +134,61 @@ export default defineConfig({
             { text: 'Page 6', link: '/CSE 1320/page 6.md' },
           ]
         },
+      ],
+
+      '/CSE 1325/': [
+        { text: 'Syllabus', link: '/CSE 1325/Syllabus.md'},
+        {
+          text: 'Midterm',
+          collapsed: true,
+          items: [
+            { text: 'Page 1', link: '/CSE 1325/page 1.md' },
+            { text: 'Page 2', link: '/CSE 1325/page 2.md' },
+            { text: 'Page 3', link: '/CSE 1325/page 3.md' },
+            { text: 'Page 4', link: '/CSE 1325/page 4.md' },
+            { text: 'Page 5', link: '/CSE 1325/page 5.md' },
+          ]
+        },
+        {
+          text: 'Final',
+          collapsed: true,
+          items: [
+            { text: 'Page 6', link: '/CSE 1325/page 6.md' },
+          ]
+        }
+      ],
+
+      '/CSE 2312/': [
+        { text: 'Syllabus', link: '/CSE 2312/Syllabus.md'},
+        {
+          text: 'Exam 1',
+          collapsed: true,
+          items: [
+            { text: 'Page 1', link: '/CSE 2312/page 1.md' },
+            { text: 'Page 2', link: '/CSE 2312/page 2.md' },
+            { text: 'Page 3', link: '/CSE 2312/page 3.md' },
+            { text: 'Page 4', link: '/CSE 2312/page 4.md' },
+            { text: 'Page 5', link: '/CSE 2312/page 5.md' },
+            
+          ]
+        },
+        {
+          text: 'Exam 2',
+          collapsed: true,
+          items: [
+            { text: 'Page 6', link: '/CSE 2312/page 6.md' },
+            { text: 'Page 7', link: '/CSE 2312/page 7.md' },
+            { text: 'Page 8', link: '/CSE 2312/page 8.md' },
+            { text: 'Page 9', link: '/CSE 2312/page 9.md' },
+          ]
+        },
+        {
+          text: 'Final',
+          collapsed: true,
+          items: [
+            { text: 'final note', link: '/CSE 2312/final.md'}
+          ]
+        }
       ],
 
       // This sidebar gets displayed when a user
