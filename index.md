@@ -41,4 +41,3 @@ features:
   - title: Who writes these notes?
     details: Regular college students like you and me. No coding experience required!
 ---
-

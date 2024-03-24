@@ -5,6 +5,7 @@ export default defineConfig({
   markdown: {
     math: true
   },
+  lastUpdated: true,
   base: '/',
   title: "MOMO Note",
   description: "shared study space",
@@ -304,6 +305,16 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/mobiclub' }
-    ]
+    ],
+
+    search: 
+    {
+      provider: 'local'
+    },
+
+    editLink: {
+      pattern: 'https://github.com/mobibyte/momonote'
+    },
+    
   }
 })
