@@ -287,7 +287,7 @@ Theres numbers you cant represent
 
 
 * Double x = 0.1; (you cannot store this exactly in binary
-* Same thing as ⅓ = 0.333.. (takes an infinite number of threes in base 10)
+* Same thing as ⅓ = 0.333.. (takes an infinite number of threes in base 10))
 * In base 3: (⅓)10 = (0.1)3
 
 We can represent 0.5, and 0.25, its just a base thing that can be easily represented in a finite characters.

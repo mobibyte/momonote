@@ -18,6 +18,15 @@ hero:
       text: CSE 1320
       link: /CSE 1320/Syllabus
     - theme: alt
+      text: CSE 1325
+      link: /CSE 1325/Syllabus
+    - theme: alt
+      text: CSE 2312
+      link: /CSE 2312/Syllabus
+    - theme: alt
+      text: CSE 3318
+      link: /CSE 3318/Syllabus
+    - theme: alt
       text: CSE 4308
       link: /CSE 4308/Syllabus
     - theme: alt
@@ -32,4 +41,3 @@ features:
   - title: Who writes these notes?
     details: Regular college students like you and me. No coding experience required!
 ---
-
