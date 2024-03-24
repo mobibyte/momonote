@@ -18,6 +18,7 @@ export default defineConfig({
           { text: 'CSE 1320', link: '/CSE 1320/Syllabus.md' },
           { text: 'CSE 1325', link: '/CSE 1325/Syllabus.md' },
           { text: 'CSE 2312', link: '/CSE 2312/Syllabus.md' },
+          { text: 'CSE 3318', link: '/CSE 3318/Syllabus.md' },
           { text: 'CSE 4308', link: '/CSE 4308/Syllabus.md' },
           { text: 'CSE 5382', link: '/CSE 5382/Syllabus.md' }
         ]
@@ -187,6 +188,31 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'final note', link: '/CSE 2312/final.md'}
+          ]
+        }
+      ],
+
+      '/CSE 3318/': [
+        { text: 'Syllabus', link: '/CSE 3318/Syllabus.md'},
+        {
+          text: 'Exam 1',
+          collapsed: true,
+          items: [
+            { text: 'Page 1', link: '/CSE 3318/page 1.md' },
+            { text: 'Page 2', link: '/CSE 3318/page 2.md' },
+            
+          ]
+        },
+        {
+          text: 'Exam 2',
+          collapsed: true,
+          items: [
+          ]
+        },
+        {
+          text: 'Final',
+          collapsed: true,
+          items: [
           ]
         }
       ],

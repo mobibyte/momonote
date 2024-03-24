@@ -24,6 +24,9 @@ hero:
       text: CSE 2312
       link: /CSE 2312/Syllabus
     - theme: alt
+      text: CSE 3318
+      link: /CSE 3318/Syllabus
+    - theme: alt
       text: CSE 4308
       link: /CSE 4308/Syllabus
     - theme: alt
