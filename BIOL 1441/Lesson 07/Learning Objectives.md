@@ -16,7 +16,7 @@ A gene typically includes a promoter, coding sequence, and terminator. The promo
 Transcription involves copying a gene's DNA sequence to make an mRNA molecule. RNA polymerase binds to the DNA at the promoter region, separates the DNA strands, and synthesizes a complementary RNA strand from the DNA template.
 
 ## 6. Transcribe a DNA sequence into an mRNA sequence.
-To transcribe a DNA sequence into mRNA, substitute thymine (T) with uracil (U) and transcribe the complementary bases (A->U, T->A, G->C, C->G). For example, DNA 5’-ATGC-3’ becomes mRNA 5’-UACG-3’.
+To transcribe a DNA sequence into mRNA, substitute thymine (T) with uracil (U) and transcribe the complementary bases (A->U, T->A, G->C, C->G). For example, DNA 5’-ATGC-3’ becomes mRNA 3’-UACG-5’.
 
 ## 7. Describe the structures that are added to & removed from an mRNA transcript before it leaves the nucleus.
 Before mRNA leaves the nucleus, a 5’ cap and a poly-A tail are added for stability and regulation, and introns (non-coding regions) are removed while exons (coding regions) are spliced together.
