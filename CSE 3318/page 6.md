@@ -159,3 +159,70 @@ remove(int *A, int *N)
 --- 
 <img src="/CSE 3318/image-5.png" width="100%" height="100%">
  -->
+
+ ## Heap Cont...
+
+* Max-Heap largest in root for every node less than parent or equal.
+* Min-Heap Same concept but smallest at top and largest at bottom
+
+<badge type="info" text="Heres a visualization" />
+--- 
+<img src="/CSE 3318/image-9.png" width="100%" height="100%">
+
+```
+Heapsort(A,N)
+{
+    build MaxHeap(A,N) //θ(N)
+    for (N>1) //θ(N)
+    {
+        remove(A, &N) O(lgN)
+    }
+}
+```
+* Heapsort is ***Not Stable***
+  
+### TC & SC
+* TC: O(NlgN)
+* SC: O(1)
+
+### Bottom-up initialization
+```
+BuildMaxHeap(int *A, N)//θ(N)
+{
+    for (P = N/2; P>1; p--)
+    {
+        sinkdown(A, P, N)
+    }
+}
+```
+
+
+
+<badge type="info" text="Heres a visualization" />
+--- 
+<img src="/CSE 3318/image-11.png" width="100%" height="100%">
+
+### TC & SC
+* TC: O(N)
+* SC: O(1)
+
+### Find TopK elements
+N = 10, k = 3
+
+arr: 5, 3, ***15***, 7, ***34***, 9, ***14***, 8, 11
+
+Build maxheap & call remove 3 times (15, 7, 34)
+
+--- 
+#### using the min heap
+* min heap is good when continously getting data
+  * essentially works like a strainer
+
+<badge type="info" text="Heres a visualization" />
+--- 
+<img src="/CSE 3318/image-10.png" width="100%" height="100%">
+
+
+
+![alt text](image-6.png)
+![alt text](image-7.png)
