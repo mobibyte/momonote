@@ -199,8 +199,8 @@ export default defineConfig({
           text: 'Exam 1',
           collapsed: true,
           items: [
-            { text: 'Page 1', link: '/CSE 3318/page 1.md' },
-            { text: 'Page 2', link: '/CSE 3318/page 2.md' },
+            { text: 'Stable, Insertion, Indirect Sort & Binary Search', link: '/CSE 3318/page 1.md' },
+            { text: 'Time Complexity & Growth of Functions', link: '/CSE 3318/page 2.md' },
             
           ]
         },
@@ -208,7 +208,8 @@ export default defineConfig({
           text: 'Exam 2',
           collapsed: true,
           items: [
-            { text: 'Page 6', link: '/CSE 3318/page 6.md' },
+            { text: 'Priority Queue, Heap/Sort', link: '/CSE 3318/page 6.md' },
+            { text: 'FIFO Queues & HashTables', link: '/CSE 3318/page 7.md' },
           ]
         },
         {

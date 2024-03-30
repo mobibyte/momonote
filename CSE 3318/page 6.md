@@ -160,7 +160,7 @@ remove(int *A, int *N)
 <img src="/CSE 3318/image-5.png" width="100%" height="100%">
  -->
 
- ## Heap Cont...
+ ## Heap Sort
 
 * Max-Heap largest in root for every node less than parent or equal.
 * Min-Heap Same concept but smallest at top and largest at bottom
@@ -221,8 +221,3 @@ Build maxheap & call remove 3 times (15, 7, 34)
 <badge type="info" text="Heres a visualization" />
 --- 
 <img src="/CSE 3318/image-10.png" width="100%" height="100%">
-
-
-
-![alt text](image-6.png)
-![alt text](image-7.png)
