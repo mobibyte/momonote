@@ -154,11 +154,72 @@ for(i = 0; i < p; i++)
 }
 ```
 <details>
-  <summary><i>Answer/Explanation</i></summary>
-  <p>By examining the code we want to start with the second for loop, the inner part of that loop is a simple O(r) TC</p>
-
-  <p>The outer part is more complicated though</p>
-  <p>
-  
-  </p>
+  <summary><i>Answer</i></summary>
+  <p>Total TC: O(C + Pr) C = Right - Left + 1</p>
 </details>
+
+## TC iter j * x
+
+```
+for(j=1; j<=N; j=j*2)
+{
+    for(k=0;k<j;k++)
+        printf(A[k]);
+}
+```
+
+| j | Tc1iter(j)=O(j) |
+| - | --------------- |
+| 1 | O(1)            |
+| 2 | O(2)            |
+| 4 | O(4)            |
+| 8 | O(8)            |
+| N | O(N)            |
+
+$$
+    1+2+4+8+16+32...+N 
+$$
+$$
+    2^0+2^1+2^2+2^3+...2^P = \frac{2^N+1 - 1}{2-1} = 2^P == P=log_2N
+$$
+
+TC: O(Log_2N) 
+* can be written as lgN
+* this is the same proccess if it was j/2 
+
+## TC j + x
+
+```
+for(v=1; v<=t; v+5)
+{
+    someFunc(v); //O(V);
+}
+```
+TC1iter(v) = O(1) + O(1) +O(V) = O(V)
+
+|     | V   | Tciters |
+| --- | --- | ------- |
+| 5^0 | 1   | O(1)    |
+| 5^1 | 5   | O(5)    |
+| 5^2 | 25  | O(25)   |
+| 5^3 | 125 | O(125)  |
+|     | T   | O(T)    |
+
+$$
+5^0 + 5^1 + 5^2 ... + 5^p = T
+$$
+
+$$
+\frac{5^p+1 - 1}{5-1} = O(T);
+$$
+
+## Growth of functions
+
+    O = Big Oh            - Upper Bound <=
+    θ = Theta (Uppercase) - Tight bound =
+    Ω = Omega (Uppercase) - Lower bound >=
+    ω = Omega (LowerCase) - Strictly lower bound >
+    o = little oh         - Strictly upper bound <
+
+Using it:
+* Insertion sort takes O(N^2) or Ω(N)

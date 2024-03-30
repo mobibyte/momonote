@@ -208,6 +208,7 @@ export default defineConfig({
           text: 'Exam 2',
           collapsed: true,
           items: [
+            { text: 'Page 6', link: '/CSE 3318/page 6.md' },
           ]
         },
         {
