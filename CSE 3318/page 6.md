@@ -93,7 +93,7 @@ Increase (int *A, int idx, int k)
 }
 ```
 ---
-<img src="/CSE 3318/image-1.png" width="50%" height="50%">
+<img src="./assets/image-1.png" width="50%" height="50%">
 
 ## Inserting new record
 ```
@@ -107,7 +107,7 @@ insert (int *A, int newKey, int *N)
 ```
 <badge type="info" text="Heres a visualization" />
 --- 
-<img src="/CSE 3318/image-3.png" width="50%" height="50%">
+<img src="./assets/image-3.png" width="50%" height="50%">
 ---
 
 ## Sinkdown
@@ -137,7 +137,7 @@ int idxOfMaxVal(int *a, int p, int le, int ri, int n)
 ```
 <badge type="info" text="Heres a visualization" />
 --- 
-<img src="/CSE 3318/image-4.png" width="50%" height="50%">
+<img src="./assets/image-4.png" width="50%" height="50%">
 
 ## Remove root
 
@@ -157,7 +157,7 @@ remove(int *A, int *N)
 
 <badge type="info" text="Heres a visualization" />
 --- 
-<img src="/CSE 3318/image-5.png" width="100%" height="100%">
+<img src="./assets/image-5.png" width="100%" height="100%">
  -->
 
  ## Heap Sort
@@ -167,7 +167,7 @@ remove(int *A, int *N)
 
 <badge type="info" text="Heres a visualization" />
 --- 
-<img src="/CSE 3318/image-9.png" width="100%" height="100%">
+<img src="./assets/image-9.png" width="100%" height="100%">
 
 ```
 Heapsort(A,N)
@@ -200,7 +200,7 @@ BuildMaxHeap(int *A, N)//θ(N)
 
 <badge type="info" text="Heres a visualization" />
 --- 
-<img src="/CSE 3318/image-11.png" width="100%" height="100%">
+<img src="./assets/image-11.png" width="100%" height="100%">
 
 ### TC & SC
 * TC: O(N)
@@ -220,4 +220,4 @@ Build maxheap & call remove 3 times (15, 7, 34)
 
 <badge type="info" text="Heres a visualization" />
 --- 
-<img src="/CSE 3318/image-10.png" width="100%" height="100%">
+<img src="./assets/image-10.png" width="100%" height="100%">
