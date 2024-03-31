@@ -43,14 +43,14 @@ e.g:
 * Is an Array
 * Will view as a nearly complete Tree 
 EX:
-![alt text](image.png)
+![alt text](./assets/image-1.png)
 * 1st element at index 1
 
 | val | \- | 9 | 7 | 5 | 3 | 5 | 4 | 3 | 2 | 1 | 1  | 3  | 4  | 1  |
 | --- | -- | - | - | - | - | - | - | - | - | - | -- | -- | -- | -- |
 | idx | 0  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
 
-![alt text](image-2.png)
+![alt text](./assets/image-2.png)
 
 * Order: The priorty of every note is <= parent
 * Max is the root

@@ -210,7 +210,7 @@ export default defineConfig({
           items: [
             { text: 'Priority Queue, Heap/Sort', link: '/CSE 3318/page 6.md' },
             { text: 'FIFO Queues, HashTables, Seperate Chaining & Open Addressing', link: '/CSE 3318/page 7.md' },
-            { text: 'Amorotized Analysist', link: '/CSE 3318/page 8.md' },
+            { text: 'Amorotized Analysist & Dynamic Programming', link: '/CSE 3318/page 8.md' },
           ]
         },
         {
