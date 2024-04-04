@@ -9,15 +9,6 @@ Run these commands before you make a commit!
 ## For wanting to do extra things
 Official documentation: https://vitepress.dev/guide/getting-started
 
-## Legend  
-
-| Symbols      | Meaning   | 
-|--------------|-----------|
-| *** | On Exam      |
-| **Bold**    | Term or Question  |
-
-Thank you :)
-
 
 ## How to Contribute 
 To contribute, simply fork this repository and create a new branch for your changes. 
@@ -27,7 +18,7 @@ This will make sure the site is up and running, without any huge problems!
 
 
 ### How to run on local machine <Badge type="info" text="You can run this on github codespaces to make it easier!" />
-1. Clone the repo using `git clone https://github.com/Betim-Hodza/CSEC-CTF-REP` in your terminal or command prompt.
+1. Clone the repo using `git clone https://github.com/mobibyte/momonote.git` in your terminal or command prompt.
 2. Install NodeJS from [here](https://nodejs.org/) if you haven't already installed it.
 3. Install NPM &  VitePress by using these commands in terminal or cmd :
 bash

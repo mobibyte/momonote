@@ -119,6 +119,39 @@ export default defineConfig({
               ]
             },
           ]
+        },
+        {
+          text: 'Exam 4',
+          collapsed: true,
+          items: [
+            { text: 'Lesson 8',
+              collapsed: true,
+              items: [
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 08/Learning Objectives.md'},
+                { text: 'Lecture Notes', link: '/BIOL 1441/Lesson 08/Lecture Notes.md'},
+                { text: 'Lecture Exercises', link: '/BIOL 1441/Lesson 08/Lecture Exercises.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 08/Homework Answers.md'},
+              ]
+            },
+            { text: 'Lesson 9',
+              collapsed: true,
+              items: [
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 09/Learning Objectives.md'},
+                { text: 'Lecture Notes', link: '/BIOL 1441/Lesson 09/Lecture Notes.md'},
+                { text: 'Lecture Exercises', link: '/BIOL 1441/Lesson 09/Lecture Exercises.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 09/Homework Answers.md'},
+              ]
+            },
+            { text: 'Lesson 10',
+              collapsed: true,
+              items: [
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 10/Learning Objectives.md'},
+                { text: 'Lecture Notes', link: '/BIOL 1441/Lesson 10/Lecture Notes.md'},
+                { text: 'Lecture Exercises', link: '/BIOL 1441/Lesson 10/Lecture Exercises.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 10/Homework Answers.md'},
+              ]
+            },
+          ]
         }
       ],
 
