@@ -119,6 +119,63 @@ export default defineConfig({
               ]
             },
           ]
+        },
+        {
+          text: 'Exam 4',
+          collapsed: true,
+          items: [
+            { text: 'Lesson 8',
+              collapsed: true,
+              items: [
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 08/Learning Objectives.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 08/Homework Answers.md'},
+                {
+                  text: 'Flash Cards',
+                  collapsed: true,
+                  items: [
+                    { text: 'Lecture', link: '/BIOL 1441/Lesson 08/Flash Cards/Lecture.md' },
+                    { text: 'Mitosis', link: '/BIOL 1441/Lesson 08/Flash Cards/Mitosis.md' },
+                    { text: 'The Cell Cycle', link: '/BIOL 1441/Lesson 08/Flash Cards/The Cell Cycle.md' },
+                    { text: 'The Cell Cycle and Cancer', link: '/BIOL 1441/Lesson 08/Flash Cards/The Cell Cycle and Cancer.md' },
+                  ]
+                }
+              ]
+            },
+            { text: 'Lesson 9',
+              collapsed: true,
+              items: [
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 09/Learning Objectives.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 09/Homework Answers.md'},
+                {
+                  text: 'Flash Cards',
+                  collapsed: true,
+                  items: [
+                    { text: 'Lecture', link: '/BIOL 1441/Lesson 09/Flash Cards/Lecture.md' },
+                    { text: 'Sexual Reproduction', link: '/BIOL 1441/Lesson 09/Flash Cards/Sexual Reproduction.md' },
+                    { text: 'The Process of Meiosis', link: '/BIOL 1441/Lesson 09/Flash Cards/The Process of Meiosis.md' },
+                    { text: 'Errors in Meiosis', link: '/BIOL 1441/Lesson 09/Flash Cards/Errors in Meiosis.md' },
+                  ]
+                }
+              ]
+            },
+            { text: 'Lesson 10',
+              collapsed: true,
+              items: [
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 10/Learning Objectives.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 10/Homework Answers.md'},
+                {
+                  text: 'Flash Cards',
+                  collapsed: true,
+                  items: [
+                    { text: 'Lecture', link: '/BIOL 1441/Lesson 10/Flash Cards/Lecture.md' },
+                    { text: 'Mendel\'s Experiments', link: '/BIOL 1441/Lesson 10/Flash Cards/Mendel\'s Experiments.md' },
+                    { text: 'Law of Inheritance', link: '/BIOL 1441/Lesson 10/Flash Cards/Laws of Inheritance.md' },
+                    { text: 'Extensions of the Law of Inheritance', link: '/BIOL 1441/Lesson 10/Flash Cards/Extensions of the Laws of Inheritance.md' },
+                  ]
+                }
+              ]
+            },
+          ]
         }
       ],
 
