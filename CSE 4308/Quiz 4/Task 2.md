@@ -2,8 +2,8 @@
 
 In a certain probability problem, we have 11 variables: A, B1, B2, ..., B10.
 
-    Variable A has 7 values.
-    Each of variables B1, ..., B10 have 8 possible values. Each Bi is conditionally indepedent of all other 9 Bjvariables (with j != i) given A.
+- Variable A has 7 values.
+- Each of variables B1, ..., B10 have 8 possible values. Each Bi is conditionally indepedent of all other 9 Bjvariables (with j != i) given A.
 
 Based on these facts:
 
