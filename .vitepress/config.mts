@@ -314,6 +314,23 @@ export default defineConfig({
               ]
             },
           ]
+        },
+        {
+          text: 'Quiz 4',
+          collapsed: true,
+          items: [
+            { text: 'Chapter 13', link: '/CSE 4308/Quiz 4/Chapter 13.md' },
+            { text: 'Chapter 14', link: '/CSE 4308/Quiz 4/Chapter 14.md' },
+            { 
+              text: 'Sample Quiz', 
+              items: [
+                { text: 'Task 1', link: '/CSE 4308/Quiz 4/Task 1.md' },
+                { text: 'Task 2', link: '/CSE 4308/Quiz 4/Task 2.md' },
+                { text: 'Task 3', link: '/CSE 4308/Quiz 4/Task 3.md' },
+                { text: 'Task 4', link: '/CSE 4308/Quiz 4/Task 4.md' },
+              ]
+            },
+          ]
         }
       ],
       '/CSE 5382/': [
