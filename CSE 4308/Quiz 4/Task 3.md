@@ -28,7 +28,8 @@ $P(\frac{not(Baseball\_game\_on\_TV)}{not(George\_feeds\_cat)})=P(\frac{\neg B}{
 
 $P(\frac{not(Baseball\_game\_on\_TV)}{not(George\_feeds\_cat)})=\frac{P(\neg B \wedge \neg F)}{P(\neg F)}$
 
-$P(\neg F)=P(B \wedge G \wedge C \wedge \neg F)$ \
+$P(\neg F)=$ \
+$=P(B \wedge G \wedge C \wedge \neg F)$ \
 $+P(B \wedge G \wedge \neg C \wedge \neg F)$ \
 $+P(B \wedge \neg G \wedge C \wedge \neg F)$ \
 $+P(B \wedge \neg G \wedge \neg C \wedge \neg F)$ \
@@ -37,4 +38,39 @@ $+P(\neg B \wedge G \wedge \neg C \wedge \neg F)$ \
 $+P(\neg B \wedge \neg G \wedge C \wedge \neg F)$ \
 $+P(\neg B \wedge \neg G \wedge \neg C \wedge \neg F)$  
 
-$=P(B) \times P(\frac{G}{B}) \times P(C) \times P(\frac{\neg F}{G,C})$  
+$=P(B) \times P(\frac{G}{B}) \times P(C) \times P(\frac{\neg F}{G,C})$  \
+$+P(B) \times P(\frac{G}{B}) \times P(\neg C) \times P(\frac{\neg F}{G,\neg C})$  \
+$+P(B) \times P(\frac{\neg G}{B}) \times P(C) \times P(\frac{\neg F}{\neg G,C})$  \
+$+P(B) \times P(\frac{\neg G}{B}) \times P(\neg C) \times P(\frac{\neg F}{\neg G,\neg C})$  \
+$+P(\neg B) \times P(\frac{G}{\neg B}) \times P(C) \times P(\frac{\neg F}{G, C})$  \
+$+P(\neg B) \times P(\frac{G}{\neg B}) \times P(\neg C) \times P(\frac{\neg F}{G, \neg C})$  \
+$+P(\neg B) \times P(\frac{\neg G}{\neg B}) \times P(C) \times P(\frac{\neg F}{\neg G, C})$  \
+$+P(\neg B) \times P(\frac{\neg G}{\neg B}) \times P(\neg C) \times P(\frac{\neg F}{\neg G, \neg C})$   
+
+$=0.304109589 \times 0.927927928 \times 0.169863014 \times 0.958333333$ \
+$+0.304109589 \times 0.927927928 \times 0.830136986 \times 0.293577982$ \
+$+0.304109589 \times 0.72072072 \times 0.169863014 \times 0.684210526$ \
+$+0.304109589 \times 0.72072072 \times 0.830136986 \times 0.041237113$ \
+$+0.695890411 \times 0.118110236 \times 0.169863014 \times 0.958333333$ \
+$+0.695890411 \times 0.118110236 \times 0.830136986 \times 0.293577982$ \
+$+0.695890411 \times 0.8818897644 \times 0.169863014 \times 0.684210526$ \
+$+0.695890411 \times 0.8818897644 \times 0.830136986 \times 0.041237113$ \
+
+$=0.243751575$
+
+$P(\neg B \wedge \neg F) =$ \
+$=P(\neg B \wedge G \wedge C \wedge \neg F)$ \
+$+P(\neg B \wedge G \wedge \neg C \wedge \neg F)$ \
+$+P(\neg B \wedge \neg G \wedge C \wedge \neg F)$ \
+$+P(\neg B \wedge \neg G \wedge \neg C \wedge \neg F)$ 
+
+$=P(\neg B) \times P(\frac{G}{\neg B}) \times P(C) \times P(\frac{\neg F}{G, C})$ \
+$+P(\neg B) \times P(\frac{G}{\neg B}) \times P(\neg C) \times P(\frac{\neg F}{G, \neg C})$ \
+$+P(\neg B) \times P(\frac{\neg G}{\neg B}) \times P(C) \times P(\frac{\neg F}{\neg G, C})$ \
+$+P(\neg B) \times P(\frac{\neg G}{\neg B}) \times P(\neg C) \times P(\frac{\neg F}{\neg G, \neg C})$ \
+
+$= 0.125744303$
+
+$P(\neg B \wedge \neg F) = \frac{0.125744303}{0.243751575}$ \
+
+$P(\neg B \wedge \neg F) = 0.515870730$ \
