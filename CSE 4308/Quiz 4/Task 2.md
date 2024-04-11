@@ -5,7 +5,7 @@ In a certain probability problem, we have 11 variables: A, $B_{1}$, $B_{2}$, ...
 
 
 - Variable A has 7 values.
-- Each of variables $B_{1}$, ..., $B_{10}$ have 8 possible values. Each $B_{i}$ is conditionally indepedent of all other 9 Bjvariables (with j != i) given A.
+- Each of variables $B_{1}$, ..., $B_{10}$ have 8 possible values. Each $B_{i}$ is conditionally indepedent of all other 9 $B_{j}$variables (with j != i) given A.
 
 Based on these facts:
 
