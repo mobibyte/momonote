@@ -16,6 +16,9 @@ You have been given the correct answer for Part A [here](https://crystal.uta.edu
 
 ## Answer  
 
+### Part a
+
+
 ### Part b  
 
 Let's represent  
