@@ -12,7 +12,7 @@ George doesn't watch much TV in the evening, unless there is a baseball game on.
 Your task is to connect these nodes with arrows pointing from causes to effects.
 
 ### Part b (Solve after Part a)
-You have been given the correct answer for Part A (here). You have also been given the conditional probabilties of each variable given it's parents. Calculate P ( not(Baseball Game on TV) | not(George Feeds Cat) ) using Inference by Enumeration
+You have been given the correct answer for Part A [here](https://crystal.uta.edu/%7Egopikrishnav/classes/common/4308_5360/samples/quiz4_files/BNet.png). You have also been given the conditional probabilties of each variable given it's parents. Calculate P ( not(Baseball Game on TV) | not(George Feeds Cat) ) using Inference by Enumeration
 
 ## Answer  
 
