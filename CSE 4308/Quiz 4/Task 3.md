@@ -72,5 +72,4 @@ $+P(\neg B) \times P(\frac{\neg G}{\neg B}) \times P(\neg C) \times P(\frac{\neg
 $= 0.125744303$
 
 $P(\neg B \wedge \neg F) = \frac{0.125744303}{0.243751575}$ \
-
-$P(\neg B \wedge \neg F) = 0.515870730$ \
+$P(\neg B \wedge \neg F) = 0.515870730$ 
