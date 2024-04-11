@@ -23,7 +23,7 @@ Does this scenario follow the Naive-Bayes model?
 ### Part a
 A 11 dimensional table 7 across one dimensions and 8 across the other dimension.  
 
-$7\times8^10$ values in total  
+$7\times8^{10}$ values in total  
 7,516,192,768 values in theory  
 (or)  
 7,516,192,767 in practice  
