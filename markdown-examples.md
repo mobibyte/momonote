@@ -89,7 +89,7 @@ export default {
 ## Math
 To add math equations to your notes, wrap your text in dollar signs like this:
 
-$P(Color \not= \frac{Green}{Vehicle=Truck})$
+$5 \not= \frac{2}{3}$
 
 For a for list of supported math functions, click here: 
 https://katex.org/docs/supported

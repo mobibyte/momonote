@@ -13,3 +13,9 @@ Consider the given joint probabilty distribution for a domain of two variables (
 Part a: Calculate P ( Color is not Green | Vehicle is Truck )
 
 Part b: Check if Vehicle and Color are totally independant from each other
+
+## Part A
+Calculate P ( Color is not Green | Vehicle is Truck )
+
+$=P(Color \not= \frac{Green}{Vehicle=Truck})$
+$=P(Color \not= \frac{Green}{Vehicle=Truck})$
