@@ -86,6 +86,14 @@ export default {
 
 [See built-in languages here](https://shiki.style/languages)
 
+## Math
+To add math equations to your notes, wrap your text in dollar signs like this:
+
+$P(Color \not= \frac{Green}{Vehicle=Truck})$
+
+For a for list of supported math functions, click here: 
+https://katex.org/docs/supported
+
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
