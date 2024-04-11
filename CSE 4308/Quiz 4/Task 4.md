@@ -25,7 +25,7 @@ Children's other parents: K, M
 So G, P, Q, K, M  
 
 ### Part b
-$P(A,F) = P(\frac{F}{A} P(A))$ \
+$P(A,F) = P(\frac{F}{A}) P(A)$ \
 $P(A,F) = 0.8 \times 0.8$ \
 $P(A,F) = 0.64$ 
 
