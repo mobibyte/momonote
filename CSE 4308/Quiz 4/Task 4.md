@@ -17,12 +17,12 @@ Note: You do not have to use Inference by Enumeration for parts b and c.
 ## Answers 
 
 ### Part a
-Markovian blanket of L
-Parents: G
-Children: P,Q
-Children's other parents: K, M
+Markovian blanket of L  
+Parents: G  
+Children: P,Q  
+Children's other parents: K, M  
 
-So G, P, Q, K, M
+So G, P, Q, K, M  
 
 ### Part b
 $P(A,F) = P(\frac{F}{A} P(A))$ \
