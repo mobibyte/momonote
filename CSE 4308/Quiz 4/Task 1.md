@@ -17,5 +17,18 @@ Part b: Check if Vehicle and Color are totally independant from each other
 ## Part A
 Calculate P ( Color is not Green | Vehicle is Truck )
 
-$=P(Color \not= \frac{Green}{Vehicle=Truck})$
-$=P(Color \not= \frac{Green}{Vehicle=Truck})$
+$=P(Color \not= \frac{Green}{Vehicle=Truck})$  
+
+$=P(Color \not= \frac{Green}{Vehicle=Truck})$  
+
+$=\frac{0.1554 + 0.0966}{0.1554+0.1680+0.0966}=0.6$
+
+## Part B
+Check if Vehicle and Color are totally independant from each other  
+
+$P(Color\not=Green)=1-P(Color=Green)$
+$P(Color\not=Green)=1-0.1280+0.0480+0.1680+0.0560$
+$P(Color\not=Green)=0.6=P(Color\not\frac{Green}{Vehicle=Truck})$
+
+
+

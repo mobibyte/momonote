@@ -1,3 +1,4 @@
+# Task 7
 ## Question  
 Suppose that we are using PDDL to describe facts and actions in a certain world called JUNGLE. In the JUNGLE world there are 3 predicates, each predicate takes at most 4 arguments, and there are 5 constants. Give a reasonably tight bound on the number of unique states in the JUNGLE world. Justify your answer.
 

@@ -1,3 +1,4 @@
+# Task 6
 ## Question
 
 Consider the 8-Puzzle problem. There are 8 tiles on a 3 by 3 grid. Your task is to get from some given configuration to a goal configuration. You can move a tile to an adjacent location as long as that location is empty.
