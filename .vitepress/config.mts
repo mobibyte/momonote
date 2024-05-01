@@ -19,6 +19,7 @@ export default defineConfig({
           { text: 'CSE 1320', link: '/CSE 1320/Syllabus.md' },
           { text: 'CSE 1325', link: '/CSE 1325/Syllabus.md' },
           { text: 'CSE 2312', link: '/CSE 2312/Syllabus.md' },
+          { text: 'CSE 3310', link: '/CSE 3310/Syllabus.md' },
           { text: 'CSE 3318', link: '/CSE 3318/Syllabus.md' },
           { text: 'CSE 4308', link: '/CSE 4308/Syllabus.md' },
           { text: 'CSE 5382', link: '/CSE 5382/Syllabus.md' }
@@ -248,6 +249,31 @@ export default defineConfig({
             { text: 'final note', link: '/CSE 2312/final.md'}
           ]
         }
+      ],
+
+      '/CSE 3310/': [
+        { text: 'Syllabus', link: '/CSE 3310/Syllabus.md'},
+        {
+          text: 'Midterm',
+          collapsed: true,
+          items: [
+            { text: 'Stable, Insertion, Indirect Sort & Binary Search', link: '/CSE 3318/page 1.md' },
+            { text: 'Time Complexity & Growth of Functions', link: '/CSE 3318/page 2.md' },
+            
+          ]
+        },
+        {
+          text: 'Final 2',
+          collapsed: true,
+          items: [
+            { text: 'April2', link: '/CSE 3310/3310April2.md' },
+            { text: 'April4', link: '/CSE 3310/3310April4.md' },
+            { text: 'April9', link: '/CSE 3310/3310April9.md' },
+            { text: 'April11', link: '/CSE 3310/3310April11.md' },
+            { text: 'April16', link: '/CSE 3310/3310April16.md' },
+            { text: 'April18', link: '/CSE 3310/3310April18.md' },
+          ]
+        },
       ],
 
       '/CSE 3318/': [
