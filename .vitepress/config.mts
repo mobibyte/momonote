@@ -19,6 +19,7 @@ export default defineConfig({
           { text: 'CSE 1320', link: '/CSE 1320/Syllabus.md' },
           { text: 'CSE 1325', link: '/CSE 1325/Syllabus.md' },
           { text: 'CSE 2312', link: '/CSE 2312/Syllabus.md' },
+          { text: 'CSE 3310', link: '/CSE 3310/Syllabus.md' },
           { text: 'CSE 3318', link: '/CSE 3318/Syllabus.md' },
           { text: 'CSE 4308', link: '/CSE 4308/Syllabus.md' },
           { text: 'CSE 5382', link: '/CSE 5382/Syllabus.md' }
@@ -119,6 +120,63 @@ export default defineConfig({
               ]
             },
           ]
+        },
+        {
+          text: 'Exam 4',
+          collapsed: true,
+          items: [
+            { text: 'Lesson 8',
+              collapsed: true,
+              items: [
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 08/Learning Objectives.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 08/Homework Answers.md'},
+                {
+                  text: 'Flash Cards',
+                  collapsed: true,
+                  items: [
+                    { text: 'Lecture', link: '/BIOL 1441/Lesson 08/Flash Cards/Lecture.md' },
+                    { text: 'Mitosis', link: '/BIOL 1441/Lesson 08/Flash Cards/Mitosis.md' },
+                    { text: 'The Cell Cycle', link: '/BIOL 1441/Lesson 08/Flash Cards/The Cell Cycle.md' },
+                    { text: 'The Cell Cycle and Cancer', link: '/BIOL 1441/Lesson 08/Flash Cards/The Cell Cycle and Cancer.md' },
+                  ]
+                }
+              ]
+            },
+            { text: 'Lesson 9',
+              collapsed: true,
+              items: [
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 09/Learning Objectives.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 09/Homework Answers.md'},
+                {
+                  text: 'Flash Cards',
+                  collapsed: true,
+                  items: [
+                    { text: 'Lecture', link: '/BIOL 1441/Lesson 09/Flash Cards/Lecture.md' },
+                    { text: 'Sexual Reproduction', link: '/BIOL 1441/Lesson 09/Flash Cards/Sexual Reproduction.md' },
+                    { text: 'The Process of Meiosis', link: '/BIOL 1441/Lesson 09/Flash Cards/The Process of Meiosis.md' },
+                    { text: 'Errors in Meiosis', link: '/BIOL 1441/Lesson 09/Flash Cards/Errors in Meiosis.md' },
+                  ]
+                }
+              ]
+            },
+            { text: 'Lesson 10',
+              collapsed: true,
+              items: [
+                { text: 'Learning Objectives', link: '/BIOL 1441/Lesson 10/Learning Objectives.md'},
+                { text: 'Homework Answers', link: '/BIOL 1441/Lesson 10/Homework Answers.md'},
+                {
+                  text: 'Flash Cards',
+                  collapsed: true,
+                  items: [
+                    { text: 'Lecture', link: '/BIOL 1441/Lesson 10/Flash Cards/Lecture.md' },
+                    { text: 'Mendel\'s Experiments', link: '/BIOL 1441/Lesson 10/Flash Cards/Mendel\'s Experiments.md' },
+                    { text: 'Law of Inheritance', link: '/BIOL 1441/Lesson 10/Flash Cards/Laws of Inheritance.md' },
+                    { text: 'Extensions of the Law of Inheritance', link: '/BIOL 1441/Lesson 10/Flash Cards/Extensions of the Laws of Inheritance.md' },
+                  ]
+                }
+              ]
+            },
+          ]
         }
       ],
 
@@ -193,14 +251,39 @@ export default defineConfig({
         }
       ],
 
+      '/CSE 3310/': [
+        { text: 'Syllabus', link: '/CSE 3310/Syllabus.md'},
+        {
+          text: 'Midterm',
+          collapsed: true,
+          items: [
+            { text: 'Stable, Insertion, Indirect Sort & Binary Search', link: '/CSE 3318/page 1.md' },
+            { text: 'Time Complexity & Growth of Functions', link: '/CSE 3318/page 2.md' },
+            
+          ]
+        },
+        {
+          text: 'Final 2',
+          collapsed: true,
+          items: [
+            { text: 'April2', link: '/CSE 3310/3310April2.md' },
+            { text: 'April4', link: '/CSE 3310/3310April4.md' },
+            { text: 'April9', link: '/CSE 3310/3310April9.md' },
+            { text: 'April11', link: '/CSE 3310/3310April11.md' },
+            { text: 'April16', link: '/CSE 3310/3310April16.md' },
+            { text: 'April18', link: '/CSE 3310/3310April18.md' },
+          ]
+        },
+      ],
+
       '/CSE 3318/': [
         { text: 'Syllabus', link: '/CSE 3318/Syllabus.md'},
         {
           text: 'Exam 1',
           collapsed: true,
           items: [
-            { text: 'Page 1', link: '/CSE 3318/page 1.md' },
-            { text: 'Page 2', link: '/CSE 3318/page 2.md' },
+            { text: 'Stable, Insertion, Indirect Sort & Binary Search', link: '/CSE 3318/page 1.md' },
+            { text: 'Time Complexity & Growth of Functions', link: '/CSE 3318/page 2.md' },
             
           ]
         },
@@ -208,6 +291,9 @@ export default defineConfig({
           text: 'Exam 2',
           collapsed: true,
           items: [
+            { text: 'Priority Queue, Heap/Sort', link: '/CSE 3318/page 6.md' },
+            { text: 'FIFO Queues, HashTables, Seperate Chaining & Open Addressing', link: '/CSE 3318/page 7.md' },
+            { text: 'Amorotized Analysist & Dynamic Programming', link: '/CSE 3318/page 8.md' },
           ]
         },
         {
@@ -254,6 +340,23 @@ export default defineConfig({
                 { text: 'Task 6', link: '/CSE 4308/Quiz 3/Task 6.md' },
                 { text: 'Task 7', link: '/CSE 4308/Quiz 3/Task 7.md' },
                 { text: 'Task 8', link: '/CSE 4308/Quiz 3/Task 8.md' },
+              ]
+            },
+          ]
+        },
+        {
+          text: 'Quiz 4',
+          collapsed: true,
+          items: [
+            { text: 'Chapter 13', link: '/CSE 4308/Quiz 4/Chapter 13.md' },
+            { text: 'Chapter 14', link: '/CSE 4308/Quiz 4/Chapter 14.md' },
+            { 
+              text: 'Sample Quiz', 
+              items: [
+                { text: 'Task 1', link: '/CSE 4308/Quiz 4/Task 1.md' },
+                { text: 'Task 2', link: '/CSE 4308/Quiz 4/Task 2.md' },
+                { text: 'Task 3', link: '/CSE 4308/Quiz 4/Task 3.md' },
+                { text: 'Task 4', link: '/CSE 4308/Quiz 4/Task 4.md' },
               ]
             },
           ]

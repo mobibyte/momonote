@@ -1,3 +1,4 @@
+# Task 2
 ## Question
 
 Suppose that some  knowledge base contains various propositional-logic sentences that utilize symbols A, B, C, D (connected with various connectives). There are only two cases when the knowledge base is false:  
