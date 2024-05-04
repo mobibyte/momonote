@@ -38,6 +38,7 @@ npm run docs:build
 npm run docs:preview
 ```
 1. Now you can start editing the site
+  * You can add folders to the root
   * You can add folders to the root directory for your class
   * Create Markdown files to write your notes
   * You can also link it to the navbar by going to /.vitepress/config.mjs and update the nav bar <Badge type="tip" text="follow the formatting and test often!" />
