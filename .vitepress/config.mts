@@ -408,7 +408,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/mobiclub' }
+      { icon: 'github', link: 'github.com/mobibytes' }
     ],
 
     search: 
