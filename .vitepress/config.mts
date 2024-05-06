@@ -263,15 +263,16 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Final 2',
+          text: 'Final Exam',
           collapsed: true,
           items: [
-            { text: 'April2', link: '/CSE 3310/3310April2.md' },
-            { text: 'April4', link: '/CSE 3310/3310April4.md' },
-            { text: 'April9', link: '/CSE 3310/3310April9.md' },
-            { text: 'April11', link: '/CSE 3310/3310April11.md' },
-            { text: 'April16', link: '/CSE 3310/3310April16.md' },
-            { text: 'April18', link: '/CSE 3310/3310April18.md' },
+            { text: 'Manging People', link: '/CSE 3310/managing.md' },
+            { text: 'Software Evolution', link: '/CSE 3310/SoftwareEvolution.md' },
+            { text: 'CyberSecurity', link: '/CSE 3310/CyberSecurity.md' },
+            { text: 'Distributed Systems', link: '/CSE 3310/distributedSystems.md' },
+            { text: 'Cloud Computing', link: '/CSE 3310/cloudComputing.md' },
+            { text: 'Agile', link: '/CSE 3310/agile.md' },
+            { text: 'Cocomo', link: '/CSE 3310/costEstCocomo.md' },
           ]
         },
       ],
@@ -407,7 +408,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/mobiclub' }
+      { icon: 'github', link: 'github.com/mobibytes' }
     ],
 
     search: 
