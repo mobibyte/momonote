@@ -1,12 +1,12 @@
 <h1 align="center">
   <a href="https://github.com/mobibyte/momonote">
     <!-- Please provide path to your logo here -->
-    <img src="https://utacsec.org/static/media/michi.576d038960feac1cb458.png" alt="Logo" width="100" height="100">
+    <img src="https://codewith.mobi/src/public/mobi%20logo.png" alt="Logo" width="100" height="100">
   </a>
 </h1>
 
 <div align="center">
- <h1> CSECNote </h1>
+ <h1> Momonote </h1>
 </div>
 
 <div align="center">
